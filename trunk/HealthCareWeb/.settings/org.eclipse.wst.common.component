@@ -3,6 +3,9 @@
     <wb-module deploy-name="HealthCareWeb">
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <dependent-module archiveName="HealthCareCore.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/HealthCareCore/HealthCareCore">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <property name="java-output-path" value="/HealthCareWeb/build/classes"/>
         <property name="context-root" value="/healthcare"/>
     </wb-module>

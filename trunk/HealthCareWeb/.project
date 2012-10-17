@@ -3,6 +3,7 @@
 	<name>HealthCareWeb</name>
 	<comment></comment>
 	<projects>
+		<project>HealthCareCore</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
