@@ -18,7 +18,7 @@ public class HumanId  {
     private Period period;
 
     /**
-     * Organisation that issued/manages the identifier
+     * Organization that issued/manages the identifier
      */
     private ResourceReference assigner;
 
