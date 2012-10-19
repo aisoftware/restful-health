@@ -15,8 +15,8 @@ public class Person  {
     /**
      * A name associated with the person
      */
-    private List<HumanName> name = new ArrayList<HumanName>();
-
+//    private List<HumanName> name = new ArrayList<HumanName>();
+    private HumanName name = null;
     /**
      * A contact detail for the person
      */
@@ -56,12 +56,15 @@ public class Person  {
      * A language spoken by the person, with proficiency
      */
     private List<Language> language = new ArrayList<Language>();
+    
+    
+    private String password  = null;
 
     public List<HumanId> getIdentifier() { 
       return this.identifier;
     }
 
-    public List<HumanName> getName() { 
+    public HumanName getName() { 
       return this.name;
     }
 
@@ -112,6 +115,38 @@ public class Person  {
     public List<Language> getLanguage() { 
       return this.language;
     }
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public void setIdentifier(List<HumanId> identifier) {
+		this.identifier = identifier;
+	}
+
+	public void setName(HumanName name) {
+		this.name = name;
+	}
+
+	public void setTelecom(List<Contact> telecom) {
+		this.telecom = telecom;
+	}
+
+	public void setAddress(List<Address> address) {
+		this.address = address;
+	}
+
+	public void setContactParty(List<ContactParty> contactParty) {
+		this.contactParty = contactParty;
+	}
+
+	public void setLanguage(List<Language> language) {
+		this.language = language;
+	}
 
 
 }
