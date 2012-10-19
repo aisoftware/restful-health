@@ -8,6 +8,7 @@ import java.util.Date;
  */
 public class Person  {
 
+	private String uuid = null;
     /**
      * Identifier for the person that is used to identify the person across multiple disparate systems and also for face to face identification of the person
      */
@@ -147,6 +148,22 @@ public class Person  {
 
 	public void setLanguage(List<Language> language) {
 		this.language = language;
+	}
+
+	public String getUuid() {
+		return uuid;
+	}
+
+	public void setUuid(String uuid) {
+		this.uuid = uuid;
+	}
+
+	public List<Address> getAddresses() {
+		return addresses;
+	}
+
+	public void setAddresses(List<Address> addresses) {
+		this.addresses = addresses;
 	}
 
 
