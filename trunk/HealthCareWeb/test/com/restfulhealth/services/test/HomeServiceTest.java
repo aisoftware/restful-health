@@ -63,7 +63,8 @@ public class HomeServiceTest {
 			MultivaluedMap formData = new MultivaluedMapImpl();
 			  formData.add("username", username);
 			  formData.add("password", password);
-			ClientResponse loginResp = clientResource.type(MediaType.APPLICATION_FORM_URLENCODED_TYPE).post(ClientResponse.class, formData);
+//			ClientResponse loginResp = clientResource.type(MediaType.APPLICATION_FORM_URLENCODED_TYPE).post(ClientResponse.class, formData);
+			  ClientResponse loginResp = clientResource.post(ClientResponse.class, formData);
 
 			System.out.println("login as :" + loginResp.getEntity(String.class));
 		
