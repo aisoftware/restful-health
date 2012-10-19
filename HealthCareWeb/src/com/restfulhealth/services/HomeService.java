@@ -19,36 +19,39 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.Response.ResponseBuilder;
 
-@Path ("/")
+@Path("/")
 public class HomeService {
 	public static String storageServers = null;
 	public static String mongoDBname = null;
-	
+
 	public HomeService(@Context ServletContext servletContext) {
-		try{
-			if(servletContext.getInitParameter("storageServers") != null)
-				storageServers = servletContext.getInitParameter("storageServers");
-			
-			if(servletContext.getInitParameter("mongoDBname") != null)
+		try {
+			if (servletContext.getInitParameter("storageServers") != null)
+				storageServers = servletContext
+						.getInitParameter("storageServers");
+
+			if (servletContext.getInitParameter("mongoDBname") != null)
 				mongoDBname = servletContext.getInitParameter("mongoDBname");
-			
-		}
-		catch(Throwable t){
+
+		} catch (Throwable t) {
 			t.printStackTrace();
 		}
 	}
 
 	@POST
 	@Path("/login")
-	public Response login(@FormParam("username") String username, @FormParam("password") String password) {		
-		System.out.println("username="+username);
+	public Response login(@FormParam("username") String username,
+			@FormParam("password") String password) {
+		System.out.println("username=" + username);
 		return Response.status(200).entity(username).build();
 	}
-	
-	
+
 	@GET
 	@Path("/hello/{username}")
-	public Response sayPlainTextHello( @PathParam("username") String username) {
+	public Response sayPlainTextHello(@PathParam("username") String username) {
 		return Response.status(200).entity("Hello " + username).build();
 	}
+
+
+
 }
