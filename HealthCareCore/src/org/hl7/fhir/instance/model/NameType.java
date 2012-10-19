@@ -5,7 +5,7 @@ public enum NameType {
     given, // Given name. NOTE: Not to be called "first name" since given names do not always come first.
     suffix, // Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that comes at the end of the name
     prefix, // Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that comes at the start of the name
-    screenName;  //web screen login name
+    loginName;  //web screen login name
     
     
     public static NameType fromCode(String codeString) throws Exception {
@@ -19,8 +19,8 @@ public enum NameType {
 	      return suffix;
 	    if ("prefix".equals(codeString))
 	      return prefix;
-	    if ("screenName".equals(codeString))
-	        return screenName;
+	    if ("loginName".equals(codeString))
+	        return loginName;
     
 	    throw new Exception("Unknown NamePartType code '"+codeString+"'");
     }
@@ -31,7 +31,7 @@ public enum NameType {
         case given: return "given";
         case suffix: return "suffix";
         case prefix: return "prefix";
-        case screenName: return "screenName";
+        case loginName: return "loginName";
         default: return "?";
       }
     }
