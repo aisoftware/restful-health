@@ -1,6 +1,7 @@
 package org.hl7.fhir.instance.model;
 
 import java.util.*;
+import java.util.Date;
 
 /**
  * A person who is involved in the healthcare process
@@ -20,17 +21,17 @@ public class Person  {
     /**
      * A contact detail for the person
      */
-    private List<Contact> telecom = new ArrayList<Contact>();
+    private List<Contact> contacts = new ArrayList<Contact>();
 
     /**
      * Administrative Gender
      */
-    private CodeableConcept gender;
+    private GenderType gender;
 
     /**
      * The birth date for the person
      */
-    private DateTime birthDate;
+    private Date birthDate;
 
     /**
      * Indicates if the Person deceased or not
@@ -40,7 +41,7 @@ public class Person  {
     /**
      * An address for the person
      */
-    private List<Address> address = new ArrayList<Address>();
+    private List<Address> addresses = new ArrayList<Address>();
 
     /**
      * This field contains the patient's marital (civil) status.
@@ -68,23 +69,23 @@ public class Person  {
       return this.name;
     }
 
-    public List<Contact> getTelecom() { 
-      return this.telecom;
+    public List<Contact> getContacts() { 
+      return this.contacts;
     }
 
-    public CodeableConcept getGender() { 
+    public GenderType getGender() { 
       return this.gender;
     }
 
-    public void setGender(CodeableConcept value) { 
+    public void setGender(GenderType value) { 
       this.gender = value;
     }
 
-    public DateTime getBirthDate() { 
+    public Date getBirthDate() { 
       return this.birthDate;
     }
 
-    public void setBirthDate(DateTime value) { 
+    public void setBirthDate(Date value) { 
       this.birthDate = value;
     }
 
@@ -97,7 +98,7 @@ public class Person  {
     }
 
     public List<Address> getAddress() { 
-      return this.address;
+      return this.addresses;
     }
 
     public DateTime getMaritalStatus() { 
@@ -132,12 +133,12 @@ public class Person  {
 		this.name = name;
 	}
 
-	public void setTelecom(List<Contact> telecom) {
-		this.telecom = telecom;
+	public void setContacts(List<Contact> contacts) {
+		this.contacts = contacts;
 	}
 
-	public void setAddress(List<Address> address) {
-		this.address = address;
+	public void setAddress(List<Address> addresses) {
+		this.addresses = addresses;
 	}
 
 	public void setContactParty(List<ContactParty> contactParty) {
