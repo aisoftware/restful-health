@@ -1,5 +1,7 @@
 package com.restfulhealth.services;
 
+import java.util.Date;
+
 import javax.servlet.ServletContext;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.DELETE;
@@ -10,11 +12,14 @@ import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.PathParam;
+import javax.ws.rs.QueryParam;
+import javax.ws.rs.FormParam;
 import javax.ws.rs.core.Context;
+import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.Response.ResponseBuilder;
 
-@Path ("/service/home")
+@Path ("/")
 public class HomeService {
 	public static String storageServers = null;
 	public static String mongoDBname = null;
@@ -33,11 +38,17 @@ public class HomeService {
 		}
 	}
 
-	@PUT
+	@POST
 	@Path("/login")
-	public Response put(@PathParam("username") String username, @PathParam("password") String password) {
-		
+	public Response login(@FormParam("username") String username, @FormParam("password") String password) {		
 		System.out.println("username="+username);
 		return Response.status(200).entity(username).build();
+	}
+	
+	
+	@GET
+	@Path("/hello/{username}")
+	public Response sayPlainTextHello( @PathParam("username") String username) {
+		return Response.status(200).entity("Hello " + username).build();
 	}
 }
