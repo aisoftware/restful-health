@@ -22,7 +22,7 @@ public class HumanName {
      * <NameType.family, "song">
      * <NameType.given, "jing">
      */
-    private HashMap<NameType, String> nameSet = new HashMap<NameType, String>();
+    private HashMap<NameType, String> name = new HashMap<NameType, String>();
 
     /**
      * Indicates the period of time when this name was valid for the named person.
@@ -54,11 +54,11 @@ public class HumanName {
     }
 
 	public HashMap<NameType, String> getNameSet() {
-		return nameSet;
+		return name;
 	}
 
 	public void setNameSet(HashMap<NameType, String> nameSet) {
-		this.nameSet = nameSet;
+		this.name = nameSet;
 	}
 
 
