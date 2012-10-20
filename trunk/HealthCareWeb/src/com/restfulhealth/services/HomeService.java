@@ -14,7 +14,7 @@ public class HomeService {
 
 	public HomeService(@Context ServletContext servletContext) {
 		if (ServiceUtil.mongoDBname == null) {
-		ServiceUtil.init(servletContext);
+			ServiceUtil.init(servletContext);
 		}
 	}
 
