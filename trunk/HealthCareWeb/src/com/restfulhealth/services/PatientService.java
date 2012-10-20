@@ -41,5 +41,13 @@ public class PatientService {
 		return Response.status(200)
 				.entity("Would have gotten labs for patient " + identifier).build();
 	}
+	
+	@GET
+	@Path("/patient/list")
+	public Response getPatientList() {
+		return Response.status(200)
+				.entity("Would have returned a full patient list.").build();
+	}
+	
 
 }
