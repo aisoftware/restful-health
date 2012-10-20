@@ -7,17 +7,17 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.InputStream;
 
-import org.apache.commons.io.IOUtils;
-
 import net.sf.json.JSON;
 import net.sf.json.xml.XMLSerializer;
+
+import org.apache.commons.io.IOUtils;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-public class LabResultTest {
+public class SectionTest {
 
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
@@ -40,20 +40,18 @@ public class LabResultTest {
 		FileWriter fw = null;
 		BufferedWriter bw = null;
 		try{
-	
-			File file = new File("newLabJSONTest.txt");
+
+			File file = new File("sectionJSONTest.txt");
 			fw = new FileWriter(file.getAbsoluteFile());
 			bw = new BufferedWriter(fw);
-			InputStream is = LabResultTest.class.getResourceAsStream("/new-sample.xml");
+			InputStream is = LabResultTest.class.getResourceAsStream("/ccd_all_sections.xml");
 				String xml = IOUtils.toString(is);
 				
 				XMLSerializer xmlSerializer = new XMLSerializer(); 
 				JSON json = xmlSerializer.read( xml );
-//				json.write(bw);
+				json.write(bw);
 				
 				String jsonResult = json.toString(2);
-				jsonResult = jsonResult.replaceAll("@", "");
-				fw.write(jsonResult);
 				System.out.println( jsonResult);
 		}
 		catch(Throwable t){
