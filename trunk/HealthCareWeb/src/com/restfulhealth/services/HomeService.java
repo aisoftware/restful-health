@@ -43,6 +43,7 @@ public class HomeService {
 	public Response login(@FormParam("username") String username,
 			@FormParam("password") String password) {
 		System.out.println("username=" + username);
+		
 		return Response.status(200).entity(username).build();
 	}
 
