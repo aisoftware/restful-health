@@ -18,13 +18,11 @@ import com.restfulhealth.mongoDB.MongoDB;
 
 @Path("/person")
 public class PersonService {
-	private MongoDB mongo  = null;
 	private String dbCollectionName = "person";
 	
 	public PersonService(@Context ServletContext servletContext) {
 		if (ServiceUtil.mongoDBname == null) {
 			ServiceUtil.init(servletContext);
-			mongo = ServiceUtil.mongo;
 		}
 	}
 	
@@ -32,17 +30,18 @@ public class PersonService {
 	@Path("/add")
 	@Consumes(MediaType.APPLICATION_JSON)
 	public Response addPerson(String personJson) throws Throwable{
+		String uuid = UUID.randomUUID().toString();
 		try{
 			BasicDBObject obj = new BasicDBObject();
-			obj.put("personID", UUID.randomUUID().toString());
+			obj.put("personID", uuid);
 			obj.put("PersonJSON", personJson);
-			mongo.put(dbCollectionName, obj);
+			ServiceUtil.mongo.put(dbCollectionName, obj);
 		}
 		catch(Throwable t){
 			t.printStackTrace();
 			throw t;
 		}
-		return Response.status(200).entity("added person").build();
+		return Response.status(200).entity(uuid).build();
 	}
 
 }
