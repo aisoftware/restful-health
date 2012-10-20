@@ -31,11 +31,10 @@ public class PersonService {
 	@POST
 	@Path("/add")
 	@Consumes(MediaType.APPLICATION_JSON)
-	public Response login(String personJson) throws Throwable{
+	public Response addPerson(String personJson) throws Throwable{
 		try{
 			BasicDBObject obj = new BasicDBObject();
-			obj.put("PatientID", UUID.randomUUID().toString());
-	//		obj.put("DocumentName", originalXML);
+			obj.put("personID", UUID.randomUUID().toString());
 			obj.put("PersonJSON", personJson);
 			mongo.put(dbCollectionName, obj);
 		}

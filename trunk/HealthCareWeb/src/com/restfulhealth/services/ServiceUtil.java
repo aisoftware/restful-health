@@ -14,8 +14,10 @@ public class ServiceUtil {
 	public static void init(@Context ServletContext servletContext) {
 		try {
 			if (storageServers == null) {
-				if (servletContext.getInitParameter("storageServers") != null)
+				if (servletContext.getInitParameter("storageServers") != null){
 					storageServers = servletContext.getInitParameter("storageServers");
+					System.setProperty("serverList", storageServers);
+				}
 			}
 
 			if (mongoDBname == null) {
