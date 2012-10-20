@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
+import java.util.UUID;
 
 import org.hl7.fhir.instance.model.Address;
 import org.hl7.fhir.instance.model.AddressType;
@@ -49,6 +50,7 @@ public class PersonTest {
 	public void json() {
 		Person person = new Person();
 		person.setBirthDate(new Date());
+		person.setUuid(UUID.randomUUID().toString());
 		
 		Address address = new Address();
 		address.setUse(AddressType.home);
