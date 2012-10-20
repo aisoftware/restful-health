@@ -43,16 +43,26 @@ public class MongoDB {
 		return self;
 	}
 	
-	public void put(String dbCollectionName, BasicDBObject doc) throws Throwable{
+	/**
+	 * BasicDBObject:
+	 * 		PatientID
+	 * 		DocumentName
+	 * 		ClinlicDocum (BSON)
+	 * @param dbCollectionName
+	 * @param obj
+	 * @throws Throwable
+	 */
+	public void put(String dbCollectionName, BasicDBObject obj) throws Throwable{
 		try{
 			DBCollection conn = db.getCollection(dbCollectionName);
-			WriteResult result = conn.insert(doc);	
+			WriteResult result = conn.insert(obj);	
 		}
 		catch(Throwable t){
 			t.printStackTrace();
 			throw t;
 		}
 	}
+	
 	
 	public ArrayList<DBObject> query(String dbCollectionName, BasicDBObject query) throws Throwable{
 		ArrayList<DBObject> objs = new ArrayList<DBObject>();

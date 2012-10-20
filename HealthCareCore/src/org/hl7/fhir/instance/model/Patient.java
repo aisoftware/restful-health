@@ -5,7 +5,7 @@ import java.util.*;
 /**
  * A patient is a person or animal that is receiving care
  */
-public class Patient {
+public class Patient extends Person{
 
     /**
      * A linked patient record is a record that concerns the same patient. Records are linked after it is realised that at least one was created in error.
@@ -27,10 +27,6 @@ public class Patient {
      */
     private ResourceReference provider;
 
-    /**
-     * An identifier that applies to this person as a patient
-     */
-    private List<HumanId> identifier = new ArrayList<HumanId>();
 
     /**
      * Dietary restrictions for the patient
@@ -73,10 +69,6 @@ public class Patient {
 
     public void setProvider(ResourceReference value) { 
       this.provider = value;
-    }
-
-    public List<HumanId> getIdentifier() { 
-      return this.identifier;
     }
 
     public CodeableConcept getDiet() { 
