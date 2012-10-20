@@ -14,6 +14,19 @@ import javax.ws.rs.core.Response;
  */
 public class PatientService {
 
+	
+	/**
+	 * Return a list of patients
+	 * 
+	 * @return
+	 */
+	@GET
+	@Path("/patient/list")
+	public Response getPatientList() {
+		return Response.status(200)
+				.entity("Would have returned a full patient list.").build();
+	}
+
 	/**
 	 * Return a Patient object, given the identifier
 	 * 
@@ -42,12 +55,6 @@ public class PatientService {
 				.entity("Would have gotten labs for patient " + identifier).build();
 	}
 	
-	@GET
-	@Path("/patient/list")
-	public Response getPatientList() {
-		return Response.status(200)
-				.entity("Would have returned a full patient list.").build();
-	}
 	
 
 }
