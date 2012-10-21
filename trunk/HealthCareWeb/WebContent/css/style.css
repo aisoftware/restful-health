@@ -51,20 +51,47 @@ body{
 #lab-result .dataTables_filter, #lab-results_info{
 	display:none;
 }
-.dataTable th.sorting_asc{
+/* .dataTable th.sorting_asc{
 	background: url("../img/glyphicons-halflings-up.png") no-repeat;
 	cursor:pointer;
 }
 .dataTable th.sorting_desc{
 	background: url("../img/glyphicons-halflings-down.png") no-repeat;
 	cursor:pointer;
-}
+} */
 .highlighted{
 	background:#DBF1FF;
 }
 .activated{
 	background:#DBF1FF;
 }
-#lab-results th:nth-child(3),#lab-results td:nth-child(3),#lab-results th:nth-child(2),#lab-results td:nth-child(2){
+.datatable th:nth-child(3),.datatable td:nth-child(3),.datatable th:nth-child(2),.datatable td:nth-child(2){
 	cursor:pointer;
+}
+#patientBrowser h2{
+	display:block;
+	float:left;
+	margin-left:18px;
+}
+#patientBrowser .btn{
+	float:right;
+	margin-right:10px;
+}
+#patientBrowser.container	{
+	margin: 0 auto;
+	width: 90%;
+	margin-left: 5%;
+}
+#patient-list_length, #patient-list_info, #patient-list_paginate{
+	display:none;
+}
+#patientWrapper{
+	clear: both;
+	margin-top: 0;
+}
+#patient-list tr{
+	cursor:pointer;
+}
+#patient-list tr:hover{
+	background:#DBF1FF;
 }

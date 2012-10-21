@@ -1,7 +1,8 @@
+//global variable go shoot yourself
 //DOM READY loop
 $(function() {
 	$(".hidden").removeClass("hidden");
-	renderOverView();
+	loadPatients();
 	$('html').quickTabs();
 	//login
 	if($('body#login').exists()) {
@@ -16,6 +17,45 @@ $(function() {
 		});
 	}
 });
+
+
+
+var selectPatient = function(patientData) {
+	$('#patientBrowser').hide();
+	$('#patientMain').show();
+	currentPatient = patientData;
+	renderOverView();
+};
+
+var initializePatientView = function() {
+	$('#patientBrowser').show();
+	$('#patientMain').hide();
+};
+
+var initializeList = function() {
+	
+	
+};
+
+var loadPatient = function(pid) {
+	$.ajax({
+        type: 'GET',
+        url: 'http://localhost:8080/healthcare/service/labReport/patient/'+pid,
+        success: function(data) {
+        	selectPatient(JSON.parse(data));
+        }
+    });
+};
+
+var loadPatients = function() {
+	$.ajax({
+        type: 'GET',
+        url: 'http://localhost:8080/healthcare/service/patient/list',
+        success: function(data) {
+        	renderPatients(JSON.parse(data));
+        }
+    });
+};
 
 var retrievePatientName = function() {
 	var fullName;
@@ -197,6 +237,35 @@ var renderPayer = function() {
    });
 };
 
+var renderPatients = function(data) {
+	var patients = data;
+	console.log(patients);
+	var patientArray = [];
+	for (var i=0;i<patients.length;i++) {
+		patientArray[i]=[];
+		patientArray[i][0]=patients[i].PersonJSON.name.name.family;
+		patientArray[i][1]=patients[i].PersonJSON.name.name.given;
+		patientArray[i][2]=patients[i].PersonJSON.gender;
+		patientArray[i][3]=getAge(new Date(patients[i].PersonJSON.birthDate));
+		patientArray[i][4]=patients[i].personID;
+	}
+	
+	var patients = $("#patient-list").dataTable( {
+		"aaData": patientArray,
+		"aoColumns": [
+	           { "sTitle": "Family Name" },
+	           { "sTitle": "First Name","sClass": "center" },
+	           { "sTitle": "Gender","sClass": "center", "bSortable":false  },
+	           { "sTitle": "Age","sClass": "center" },
+	           { "sTitle": "pid","sClass": "hidden" }
+       ]
+	});
+	
+	$('#patient-list tbody tr').click(function() {
+		loadPatient($(this).find('.hidden').html());
+	});
+};
+
 var renderLabs = function() {
 	var labsArray = parseLabResults();
 	var unitlabsArray = parseLabResultsWithRange();
@@ -312,4 +381,97 @@ var retrieveBirthday = function() {
 	var birthDate = new Date(birthDateRaw.substring(0,4),birthDateRaw.substring(4,6),birthDateRaw.substring(6,8));
 
 	return birthDate;
+};
+
+var parseVitalsResults = function() {
+	var labArray = retrieveVitalsObject().section;
+	var labResults=[];
+	
+	if(labArray.entry.length!==undefined) {
+		for (var i=0;i<labArray.entry.length;i++) {
+			//parent in here
+			var drivEntry = labArray.entry[i];
+			labResults[i] = [];
+			for (var j=1;j<labArray.entry[i].organizer.component.length;j++) {
+				//timestamp in here
+				var observation = labArray.entry[i].organizer.component[j].observation;
+				labResults[i][0]=new Date(observation.effectiveTime.value.substring(0,4),observation.effectiveTime.value.substring(4,6),observation.effectiveTime.value.substring(6,8));
+					
+				if(observation.code.code=='8867-4') {
+					labResults[i][1] = observation.value.value;
+				};
+				
+				if(observation.code.code=='9279-1') {
+					labResults[i][2] = observation.value.value;
+				};
+			};
+		};
+	}else{
+		//sometimes the entry is an object instead of array fix here later
+	}
+	
+	return labResults;
+};
+
+var renderVitals = function() {
+	var labsArray = parseVitalsResults();
+	$("#vital-sign .hero-unit.datatable").html('<table cellpadding="0" cellspacing="0" border="0" class="display table" id="vital-signs"></table');
+	var labsTables = $("#vital-signs").dataTable( {
+        "aaData": labsArray,
+        "aoColumns": [
+       	           { "sTitle": "Date" },
+       	           { "sTitle": "Heart Beat","sClass": "center", "bSortable":false  },
+       	           { "sTitle": "Respiration","sClass": "center", "bSortable":false  }
+       	       ],
+   	    "bPaginate": false,
+   	    "aaSorting": [[ 0, "desc" ]],
+		 "fnRowCallback": function( nRow, aData, iDisplayIndex, iDisplayIndexFull ) {
+		     // Bold the grade for all 'A' grade browsers
+		       $('td:eq(0)', nRow).html(stringifyDate($('td:eq(0)', nRow).html()));
+		   }
+	});
+
+	$('#vital-signs td, #vital-signs th').hover(function(){
+		var iCol = $('td, th').index(this) % 3;
+		if(iCol===1 || iCol===2){
+			$('td:nth-child('+(iCol+1)+'),th:nth-child('+(iCol+1)+')').addClass("highlighted");
+		}
+	}, function(){
+		var iCol = $('td, th').index(this) % 3;
+		$('td:nth-child('+(iCol+1)+'),th:nth-child('+(iCol+1)+')').removeClass("highlighted");
+	});
+	
+	//TODO what if there is no units or high or low values, catch all the null exceptions man
+	$('#vital-signs td, #vital-signs th').click(function(){
+		var iCol = $('td, th').index(this) % 3;
+		$('.activated').removeClass('activated');
+		if(iCol===1) {
+			$('#lab-result .graphTitle').html('Heart Beats Timeline<span class="grey"> (Click on a column to switch graphs)</span>');
+			var graphArray = "Date,Heart Beat\n";
+			
+			for (var i=0;i<labsArray.length;i++) {
+				graphArray = graphArray = graphArray+sanitizeDate(labsArray[i][0])+","+labsArray[i][1]+"\n"
+			};
+			h = new Dygraph(document.getElementById("graphvitalsdiv"), graphArray,{colors:["#0061AF"]});
+		}else if(iCol===2) {
+			$('#lab-result .graphTitle').html('Respiration Timeline<span class="grey"> (Click on a column to switch graphs)</span>');
+			var graphArray = "Date,Respiration\n";
+			
+			for (var i=0;i<labsArray.length;i++) {
+				graphArray = graphArray+sanitizeDate(labsArray[i][0])+","+labsArray[i][2]+"\n"
+			};
+			h = new Dygraph(document.getElementById("graphvitalsdiv"), graphArray,{colors:["#0061AF"]});
+		}
+		if(iCol===1 || iCol===2){
+			$('td:nth-child('+(iCol+1)+'),th:nth-child('+(iCol+1)+')').addClass("activated");
+		}
+	});
+	
+	var graphArray = "Date,Heart Beat\n";
+	
+	for (var i=0;i<labsArray.length;i++) {
+		graphArray = graphArray+sanitizeDate(labsArray[i][0])+","+labsArray[i][1]+"\n"
+	};
+	h = new Dygraph(document.getElementById("graphvitalsdiv"), graphArray,{colors:["#0061AF"]});
+	$('td:nth-child(2),th:nth-child(2)').addClass("activated");
 };

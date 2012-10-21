@@ -29,6 +29,10 @@ jQuery.fn.exists = function(){return this.length>0;};
                 	renderLabs();
                 };
                 
+                if (tab_class==='vital-signs') {
+                	renderVitals();
+                };
+                
                 return false;
 
            });

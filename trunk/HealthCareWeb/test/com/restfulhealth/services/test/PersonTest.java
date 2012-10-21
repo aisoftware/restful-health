@@ -94,7 +94,7 @@ public class PersonTest {
 	@Test
 	public void getPatientByID(){		
 		try {
-			String uuid = "32ef95b8-0cf2-4332-a655-dda8b1fd3442"; //song
+			String uuid = "c25654d2-6b87-48af-86e1-ac96e161e302"; //homer
 			Client client = Client.create();
 			WebResource clientResource = client.resource(uri+"patient/"+uuid);
 			
@@ -230,9 +230,9 @@ public class PersonTest {
 		
 		HumanName name = new HumanName();
 		HashMap<NameType, String> nameSet = new HashMap<NameType, String>();
-		nameSet.put(NameType.family, "song22");
-		nameSet.put(NameType.given, "jing22");
-		nameSet.put(NameType.loginName, "jingsong22");
+		nameSet.put(NameType.family, "Jing");
+		nameSet.put(NameType.given, "Song");
+		nameSet.put(NameType.loginName, "jingsong");
 		name.setNameSet(nameSet);
 		name.setUse(NameUse.usual);
 		patient.setName(name);
@@ -257,8 +257,8 @@ public class PersonTest {
 		ContactParty contactParty = new ContactParty();
 		HumanName name1 = new HumanName();
 		HashMap<NameType, String> nameSet1 = new HashMap<NameType, String>();
-		nameSet1.put(NameType.family, "Xu");
-		nameSet1.put(NameType.given, "Mike");
+		nameSet1.put(NameType.family, "Simpson");
+		nameSet1.put(NameType.given, "Drew");
 		name1.setNameSet(nameSet1);
 		name1.setUse(NameUse.usual);
 		
