@@ -167,13 +167,15 @@ var renderConditions = function() {
 		   }
    });
 	
+	$('tbody tr:nth-child(5)').remove();
+	
 	//reset the graph visibility to controllers
 	
 	$('.nav-conditions-filter input').each(function() {
 		var displayCode = $(this).val();
 		if($(this).is(':checked')) {
 			if(displayCode==='circ'){
-				$('.E9053, .36233, .4279').show();
+				$('.36233, .4279').show();
 			}else if(displayCode==='injury'){
 				$('.E8450, .E9970').show();
 			}else if(displayCode==='disease'){
@@ -181,7 +183,7 @@ var renderConditions = function() {
 			};
 		}else{
 			if(displayCode==='circ'){
-				$('.E9053, .36233, .4279').hide();
+				$('.36233, .4279').hide();
 			}else if(displayCode==='injury'){
 				$('.E8450, .E9970').hide();
 			}else if(displayCode==='disease'){
