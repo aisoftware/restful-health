@@ -28,7 +28,7 @@ import com.restfulhealth.mongoDB.MongoDB;
  */
 @Path("/patient")
 public class PatientService {
-	private String dbCollectionName = "test"; //patient is subset of person
+	private String dbCollectionName = "patient"; //patient is subset of person
 	
 	public PatientService(@Context ServletContext servletContext) {
 		if (ServiceUtil.mongoDBname == null) {
