@@ -83,7 +83,7 @@ public class LabResultTest {
 	@Test
 	public void labReportUpload() {
 		FormDataMultiPart fdmp = new FormDataMultiPart();
-		String pid = "ba75ec50-dbba-4671-8556-79c668a37c1d"; //for jing song (patient)
+		String pid = "32ef95b8-0cf2-4332-a655-dda8b1fd3442"; //{"family":"song22","loginName":"jingsong22","given":"jing22"}		
 		try {
 			Client client = Client.create();
 			WebResource uploadResource = client.resource(uri);			
@@ -109,7 +109,7 @@ public class LabResultTest {
 	@Test
 	public void getLabReportByID(){		
 		try {
-			String documentId =  "56a1f4d4-00ee-45e0-942f-2fca28d31636"; //song's reportID
+			String documentId = "858a33f4-6fdb-4f0c-b6a9-5c65597e0674"; //song22's reportID
 			Client client = Client.create();
 			WebResource clientResource = client.resource(uri+"labReport/"+documentId);
 			
@@ -132,7 +132,7 @@ public class LabResultTest {
 	@Test
 	public void getLabReportByPatientID(){		
 		try {
-			String pid = "ba75ec50-dbba-4671-8556-79c668a37c1d";; //song's patientID
+			String pid = "32ef95b8-0cf2-4332-a655-dda8b1fd3442";; //song's patientID
 			Client client = Client.create();
 			WebResource clientResource = client.resource(uri+"labReport/patient/"+pid);
 			
