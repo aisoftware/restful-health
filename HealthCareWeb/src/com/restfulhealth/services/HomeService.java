@@ -1,5 +1,8 @@
 package com.restfulhealth.services;
 
+import java.util.ArrayList;
+import java.util.regex.Pattern;
+
 import javax.servlet.ServletContext;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
@@ -9,9 +12,13 @@ import javax.ws.rs.FormParam;
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.Response;
 
+import com.mongodb.BasicDBObject;
+import com.mongodb.DBObject;
+
 @Path("/")
 public class HomeService {
-
+	private String dbCollectionName = "patient";
+	
 	public HomeService(@Context ServletContext servletContext) {
 		if (ServiceUtil.mongoDBname == null) {
 			ServiceUtil.init(servletContext);
@@ -22,10 +29,30 @@ public class HomeService {
 	@POST
 	@Path("/login")
 	public Response login(@FormParam("username") String username,
-			@FormParam("password") String password) {
-		System.out.println("username=" + username);
+			@FormParam("password") String password) throws Throwable{
+		try{
+		BasicDBObject query = new BasicDBObject();
+		Pattern regex = Pattern.compile("\"loginName\":\""+username +"\"",Pattern.CASE_INSENSITIVE );
+		query.put("PersonJSON",  regex);
+
+		ArrayList<DBObject> obj = ServiceUtil.mongo.query(dbCollectionName, query);
+		if(obj != null){
+			DBObject dbo = obj.get(0);
+			String patientJSON = dbo.toString();
+			if(patientJSON.indexOf("password:"+ password) == -1){				
+				return Response.status(200).entity("0").build();
+			}
+			else
+				return Response.status(200).entity("1").build();
+		}
+		else
+			return Response.status(200).entity("Not such username").build();
+		}
+		catch(Throwable t){
+			t.printStackTrace();			
+			throw t;
+		}
 		
-		return Response.status(200).entity(username).build();
 	}
 
 	@GET
