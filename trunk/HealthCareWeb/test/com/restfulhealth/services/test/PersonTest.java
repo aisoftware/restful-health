@@ -95,7 +95,6 @@ public class PersonTest {
 	public void getPatientByID(){		
 		try {
 			String uuid = "32ef95b8-0cf2-4332-a655-dda8b1fd3442"; //song
-//			String uuid =  "78fcfbc4-b7dc-4714-a446-1ebfd9ed58a9"; //song22
 			Client client = Client.create();
 			WebResource clientResource = client.resource(uri+"patient/"+uuid);
 			
