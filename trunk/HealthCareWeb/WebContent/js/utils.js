@@ -17,8 +17,8 @@ jQuery.fn.exists = function(){return this.length>0;};
                 $tabs.removeClass('active');
                 $this.addClass('active');
 
-                $('.span9').hide();
-                $('.span9.' + tab_class, container).show();
+                $('.span11').hide();
+                $('.span11.' + tab_class, container).show();
                 
                 //primary page initiation event loop YYEEAAA need to refactor lol this is a bad pattern
                 if (tab_class==='payers') {
