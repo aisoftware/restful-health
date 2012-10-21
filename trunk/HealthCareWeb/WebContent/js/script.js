@@ -25,11 +25,16 @@ var selectPatient = function(patientData) {
 	$('#patientMain').show();
 	currentPatient = patientData;
 	renderOverView();
+	$('#reset').click();
 };
 
 var initializePatientView = function() {
 	$('#patientBrowser').show();
 	$('#patientMain').hide();
+	$(".hidden").removeClass("hidden");
+	$('#patientWrapper').show();
+	$('#patientWrapper').html('<table class="table" id="patient-list"></table>');
+	loadPatients();
 };
 
 var initializeList = function() {
@@ -239,7 +244,6 @@ var renderPayer = function() {
 
 var renderPatients = function(data) {
 	var patients = data;
-	console.log(patients);
 	var patientArray = [];
 	for (var i=0;i<patients.length;i++) {
 		patientArray[i]=[];
@@ -250,7 +254,7 @@ var renderPatients = function(data) {
 		patientArray[i][4]=patients[i].personID;
 	}
 	
-	var patients = $("#patient-list").dataTable( {
+	var patientsTable = $("#patient-list").dataTable( {
 		"aaData": patientArray,
 		"aoColumns": [
 	           { "sTitle": "Family Name" },
