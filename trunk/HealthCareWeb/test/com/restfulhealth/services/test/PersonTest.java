@@ -91,6 +91,60 @@ public class PersonTest {
 		}
 	}
 	
+	@Test
+	public void getPatientByID(){		
+		try {
+//			String uuid = "ba75ec50-dbba-4671-8556-79c668a37c1d"; //song
+			String uuid =  "78fcfbc4-b7dc-4714-a446-1ebfd9ed58a9"; //song22
+//			String uuid = "66792a0d-c4ae-4468-8a38-2cb108a0e0c2";//binary song2
+			Client client = Client.create();
+			WebResource clientResource = client.resource(uri+"patient/"+uuid);
+			
+			ClientResponse getPatientResp = clientResource.get(ClientResponse.class);
+			
+			System.out.println("getPatientResp response :" + getPatientResp.getStatus());
+			String patientJSON =  getPatientResp.getEntity(String.class);
+			if(patientJSON != null)
+				System.out.println("Get patient by UUID :" + patientJSON);
+			else
+				System.out.println("get no patient data back");
+		
+			System.out.println(" .... \n");
+		}
+		catch(Throwable t){
+			t.printStackTrace();
+		}
+	}
+	
+	@Test
+	public void getPatientByName(){		
+		try {
+			String firstname="Jing";
+			String lastname = "Song";
+			
+			MultivaluedMap formData = new MultivaluedMapImpl();
+			  formData.add("firstname", firstname);
+			  formData.add("lastname", lastname);
+			  
+			Client client = Client.create();
+			WebResource clientResource = client.resource(uri+"patient/name");
+			
+			ClientResponse getPatientResp = clientResource.post(ClientResponse.class, formData);
+			
+			System.out.println("getPatientResp response :" + getPatientResp.getStatus());
+			String patientJSON =  getPatientResp.getEntity(String.class);
+			if(patientJSON != null)
+				System.out.println("Get patient by Name :" + patientJSON);
+			else
+				System.out.println("get no patient data back");
+		
+			System.out.println(" .... \n");
+		}
+		catch(Throwable t){
+			t.printStackTrace();
+		}
+	}
+	
 	private Person generatePerson() {
 		Person person = new Person();
 		person.setBirthDate(new Date());
@@ -156,9 +210,9 @@ public class PersonTest {
 		
 		HumanName name = new HumanName();
 		HashMap<NameType, String> nameSet = new HashMap<NameType, String>();
-		nameSet.put(NameType.family, "song");
-		nameSet.put(NameType.given, "jing");
-		nameSet.put(NameType.loginName, "jingsong");
+		nameSet.put(NameType.family, "song22");
+		nameSet.put(NameType.given, "jing22");
+		nameSet.put(NameType.loginName, "jingsong22");
 		name.setNameSet(nameSet);
 		name.setUse(NameUse.usual);
 		patient.setName(name);
@@ -173,7 +227,7 @@ public class PersonTest {
 		
 		Contact phone  = new Contact();
 		phone.setType(ContactType.phone);
-		phone.setValue("1-408-1234678");
+		phone.setValue("1-408-1234567");
 		contacts.add(phone);
 		patient.setContacts(contacts);
 		
