@@ -118,9 +118,32 @@ public class LabResultTest {
 			System.out.println("getLabReportResp response :" + getLabReportResp.getStatus());
 			String labJSON =  getLabReportResp.getEntity(String.class);
 			if(labJSON != null)
-				System.out.println("Get labReport by UUID :" + labJSON);
+				System.out.println("Get labReport by documentID :" + labJSON);
 			else
-				System.out.println("get no patlabient data back");
+				System.out.println("get no lab data back");
+		
+			System.out.println(" .... \n");
+		}
+		catch(Throwable t){
+			t.printStackTrace();
+		}
+	}
+	
+	@Test
+	public void getLabReportByPatientID(){		
+		try {
+			String pid = "ba75ec50-dbba-4671-8556-79c668a37c1d";; //song's patientID
+			Client client = Client.create();
+			WebResource clientResource = client.resource(uri+"labReport/patient/"+pid);
+			
+			ClientResponse getLabReportResp = clientResource.get(ClientResponse.class);
+			
+			System.out.println("getLabReportResp response :" + getLabReportResp.getStatus());
+			String labJSON =  getLabReportResp.getEntity(String.class);
+			if(labJSON != null)
+				System.out.println("Get labReport by patientID :" + labJSON);
+			else
+				System.out.println("get no lab data back");
 		
 			System.out.println(" .... \n");
 		}

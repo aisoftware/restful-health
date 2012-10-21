@@ -1,6 +1,7 @@
 package com.restfulhealth.services;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.UUID;
 import java.util.regex.Pattern;
 
@@ -38,7 +39,6 @@ public class PatientService {
 
 	@POST
 	@Path("/add")
-//	@Consumes(MediaType.APPLICATION_JSON)
 	public Response addPatient(String patientJson) throws Throwable{
 		if(patientJson == null || patientJson.isEmpty())
 			return null;
@@ -63,10 +63,35 @@ public class PatientService {
 	 * @return
 	 */
 	@GET
-	@Path("/patient/list")
+	@Path("/list")
 	public Response getPatientList() throws Throwable{
-		return Response.status(200)
-				.entity("Would have returned a full patient list.").build();
+		String patientJSON = "";
+		HashMap<String, String> patients = new HashMap<String, String>();
+		try{
+			ArrayList<DBObject> objs = ServiceUtil.mongo.query(dbCollectionName, null);
+			if(objs != null && objs.size() >0){
+				StringBuffer sb = new StringBuffer("[{ ");
+				for(int i=0; i< objs.size(); i++){
+					DBObject obj = objs.get(i);
+					Object pID = obj.get("personID");
+					sb.append("\"personID\":\""+ (String)pID +"\",");
+					Object personObj = obj.get("PersonJSON");
+					patientJSON = personObj.toString();
+					sb.append("\"PersonJSON\":" +patientJSON +"},");
+					if(i != objs.size()-1)
+						sb.append("{");
+						
+				}
+				String str = sb.toString();
+				patientJSON = str.substring(0, str.length()-1)+ "]";
+			}
+		}
+		catch(Throwable t){
+			t.printStackTrace();
+			throw t;
+		}
+		
+		return Response.status(200).entity(patientJSON).build();
 	}
 
 	/**

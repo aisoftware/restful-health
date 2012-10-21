@@ -68,6 +68,33 @@ public class LabService {
 		return Response.status(200).entity(labJSON).build();
 	}
 	
+	/**
+	 * Returns a full lab report
+	 * @param reportId
+	 * @return
+	 */
+	@GET
+	@Path("/patient/{patientId}")
+	public Response getLabByPatientID(@PathParam("patientId") String patientId) throws Throwable{	
+		String labJSON = "";
+		try{
+			BasicDBObject query = new BasicDBObject();
+			query.put("personID", patientId);
+			ArrayList<DBObject> obj = ServiceUtil.mongo.query(dbCollectionName, query);
+			if(obj != null && obj.size() >0){
+				DBObject dbo = obj.get(0);
+				Object labObj = dbo.get("labJSON");
+				labJSON = labObj.toString();
+			}
+		}
+		catch(Throwable t){
+			t.printStackTrace();
+			throw t;
+		}
+		return Response.status(200).entity(labJSON).build();
+	}
+	
+	
 	/* =====================================File upload & Download ============================================================== */
 
 	/**
