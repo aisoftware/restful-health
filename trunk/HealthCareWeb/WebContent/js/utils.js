@@ -25,6 +25,10 @@ jQuery.fn.exists = function(){return this.length>0;};
                 	renderPayer();
                 };
                 
+                if (tab_class==='lab-results') {
+                	renderLabs();
+                };
+                
                 return false;
 
            });
