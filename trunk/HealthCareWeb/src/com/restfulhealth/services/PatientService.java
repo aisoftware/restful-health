@@ -44,11 +44,9 @@ public class PatientService {
 			return null;
 		String psersonID = UUID.randomUUID().toString();
 		try{
-			BasicDBObject obj = new BasicDBObject();	
-			
+			BasicDBObject obj = new BasicDBObject();				
 			obj.put("personID", psersonID);
 			obj.put("PersonJSON", patientJson);
-//			obj.put("PersonJSON", patientJson.getBytes("UTF-8"));
 			ServiceUtil.mongo.put(dbCollectionName, obj);
 		}
 		catch(Throwable t){
@@ -113,9 +111,7 @@ public class PatientService {
 		String patientJSON = "";
 		try{
 			BasicDBObject query = new BasicDBObject();
-			//I treat: just do lastname for now, filter later
-//			Pattern regex = Pattern.compile(firstname,Pattern.CASE_INSENSITIVE );
-			
+			//I treat: just do lastname for now, filter later on firstname: "given":"jing"
 			Pattern regex = Pattern.compile("\"family\":\""+lastname +"\"",Pattern.CASE_INSENSITIVE );
 			query.put("PersonJSON",  regex);
 
