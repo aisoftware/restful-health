@@ -10,7 +10,7 @@ jQuery.fn.exists = function(){return this.length>0;};
             var $tabs = $('.nav-list li', container);
 
             $tabs.click(function() {
-
+            	temporaryElementResets();
                 var $this = $(this);
                 var tab_class = $this.children('a').html().toLowerCase().replace(' ', '-');
 
@@ -33,6 +33,10 @@ jQuery.fn.exists = function(){return this.length>0;};
                 	renderVitals();
                 };
                 
+                if (tab_class==='conditions') {
+                	renderConditions();
+                }
+                
                 return false;
 
            });
@@ -53,4 +57,12 @@ function getAge(dateString) {
         age--;
     }
     return age;
+}
+function translateDate(dateString) {
+	var date = new Date(dateString.substring(0,4),dateString.substring(4,6),dateString.substring(6,8));
+	
+	return date;
+}
+function temporaryElementResets() {
+	$('.nav-conditions-filter').hide();
 }

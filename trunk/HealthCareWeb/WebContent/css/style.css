@@ -82,7 +82,8 @@ body{
 	width: 90%;
 	margin-left: 5%;
 }
-#patient-list_length, #patient-list_info, #patient-list_paginate{
+/* AHAHAHAH TABLE HIDES */
+#patient-list_length, #patient-list_info, #patient-list_paginate, #conditions_info, #vital-signs_filter, #vital-signs_info{
 	display:none;
 }
 #patientWrapper{
@@ -94,4 +95,7 @@ body{
 }
 #patient-list tr:hover{
 	background:#DBF1FF;
+}
+#patientMain .nav-list label{
+	margin-left:20px;
 }

@@ -1,6 +1,7 @@
 //global variable go shoot yourself
 //DOM READY loop
 $(function() {
+	temporaryElementResets();
 	$(".hidden").removeClass("hidden");
 	loadPatients();
 	$('html').quickTabs();
@@ -23,6 +24,7 @@ $(function() {
 var selectPatient = function(patientData) {
 	$('#patientBrowser').hide();
 	$('#patientMain').show();
+	$('#patientNav').removeClass('active');
 	currentPatient = patientData;
 	renderOverView();
 	$('#reset').click();
@@ -32,6 +34,7 @@ var initializePatientView = function() {
 	$('#patientBrowser').show();
 	$('#patientMain').hide();
 	$(".hidden").removeClass("hidden");
+	$('#patientNav').addClass('active');
 	$('#patientWrapper').show();
 	$('#patientWrapper').html('<table class="table" id="patient-list"></table>');
 	loadPatients();
@@ -71,6 +74,36 @@ var retrievePatientName = function() {
 	};
 	return fullName;
 };
+var retrieveMedicationObject = function() {
+	var structure = currentPatient.component.structuredBody.component;
+	for (var i=0;i<structure.length;i++) {
+		if(structure[i].section!==undefined) {
+			if(structure[i].section.title==="Medications") {
+				return structure[i];
+			}
+		}
+	};
+};
+var retrieveEncountersObject = function() {
+	var structure = currentPatient.component.structuredBody.component;
+	for (var i=0;i<structure.length;i++) {
+		if(structure[i].section!==undefined) {
+			if(structure[i].section.title==="Encounters") {
+				return structure[i];
+			}
+		}
+	};
+};
+var retrieveConditionsObject = function() {
+	var structure = currentPatient.component.structuredBody.component;
+	for (var i=0;i<structure.length;i++) {
+		if(structure[i].section!==undefined) {
+			if(structure[i].section.title==="Problems List Section") {
+				return structure[i];
+			}
+		}
+	};
+};
 
 var retrievePayerObject = function() {
 	var structure = currentPatient.component.structuredBody.component;
@@ -101,6 +134,85 @@ var retrieveLabsObject = function() {
 			}
 		}
 	};
+};
+
+var parseConditions = function() {
+	var rawConditions = retrieveConditionsObject().section.entry;
+	var conditions = [];
+	
+	for (var i=0;i<rawConditions.length;i++) {
+		conditions[i]=[];
+		conditions[i][0]=translateDate(rawConditions[i].act.entryRelationship.observation.effectiveTime.low.value);
+		conditions[i][1]=rawConditions[i].act.entryRelationship.observation.value.displayName;
+		conditions[i][2]=rawConditions[i].act.entryRelationship.observation.value.code;
+	};
+	
+	return conditions;
+};
+
+var renderConditions = function() {
+	var conditionsArray = parseConditions();
+	$("#condition .datatable").html('<table cellpadding="0" cellspacing="0" border="0" class="display table" id="conditions"></table>');
+	var k = $("#conditions").dataTable( {
+        "aaData": conditionsArray,
+	       "aoColumns": [
+	           { "sTitle": "Date of Diagnosis" },
+	           { "sTitle": "Condition","sClass": "center"  },
+	           { "sTitle": "Reference Code","sClass": "center"  }
+	       ],
+	       "bPaginate": false,
+	       "fnRowCallback": function( nRow, aData, iDisplayIndex, iDisplayIndexFull ) {
+		       $('td:eq(0)', nRow).html(stringifyDate($('td:eq(0)', nRow).html()));
+		       $('td', nRow).addClass($('td:eq(2)', nRow).html().replace(".",""));
+		   }
+   });
+	
+	//reset the graph visibility to controllers
+	
+	$('.nav-conditions-filter input').each(function() {
+		var displayCode = $(this).val();
+		if($(this).is(':checked')) {
+			if(displayCode==='circ'){
+				$('.E9053, .36233, .4279').show();
+			}else if(displayCode==='injury'){
+				$('.E8450, .E9970').show();
+			}else if(displayCode==='disease'){
+				$('.E9053, .69281').show();
+			};
+		}else{
+			if(displayCode==='circ'){
+				$('.E9053, .36233, .4279').hide();
+			}else if(displayCode==='injury'){
+				$('.E8450, .E9970').hide();
+			}else if(displayCode==='disease'){
+				$('.E9053, .69281').hide();
+			}
+		};
+	});
+	
+	
+	$('.nav-conditions-filter').show();
+	//oh god this is a bad idea... remove map from here somehow and make it into a facade
+	$('.nav-conditions-filter input').click(function() {
+		var displayCode = $(this).val();
+		if($(this).is(':checked')) {
+			if(displayCode==='circ'){
+				$('.E9053, .36233, .4279').show();
+			}else if(displayCode==='injury'){
+				$('.E8450, .E9970').show();
+			}else if(displayCode==='disease'){
+				$('.E9053, .69281').show();
+			};
+		}else{
+			if(displayCode==='circ'){
+				$('.E9053, .36233, .4279').hide();
+			}else if(displayCode==='injury'){
+				$('.E8450, .E9970').hide();
+			}else if(displayCode==='disease'){
+				$('.E9053, .69281').hide();
+			};
+		};
+	});
 };
 
 var parseLabResults = function() {
@@ -450,7 +562,7 @@ var renderVitals = function() {
 		var iCol = $('td, th').index(this) % 3;
 		$('.activated').removeClass('activated');
 		if(iCol===1) {
-			$('#lab-result .graphTitle').html('Heart Beats Timeline<span class="grey"> (Click on a column to switch graphs)</span>');
+			$('#vital-sign .graphTitle').html('Heart Beats Timeline<span class="grey"> (Click on a column to switch graphs)</span>');
 			var graphArray = "Date,Heart Beat\n";
 			
 			for (var i=0;i<labsArray.length;i++) {
@@ -458,7 +570,7 @@ var renderVitals = function() {
 			};
 			h = new Dygraph(document.getElementById("graphvitalsdiv"), graphArray,{colors:["#0061AF"]});
 		}else if(iCol===2) {
-			$('#lab-result .graphTitle').html('Respiration Timeline<span class="grey"> (Click on a column to switch graphs)</span>');
+			$('#vital-sign .graphTitle').html('Respiration Timeline<span class="grey"> (Click on a column to switch graphs)</span>');
 			var graphArray = "Date,Respiration\n";
 			
 			for (var i=0;i<labsArray.length;i++) {
