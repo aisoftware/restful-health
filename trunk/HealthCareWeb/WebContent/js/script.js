@@ -88,6 +88,46 @@ var parseLabResults = function() {
 	return labResults;
 };
 
+var parseLabResultsWithRange = function() {
+	var labArray = retrieveLabsObject().section;
+	var labResults=[];
+	
+	if(labArray.entry.length!==undefined) {
+		for (var i=0;i<labArray.entry.length;i++) {
+			//parent in here
+			var drivEntry = labArray.entry[i];
+			labResults[i] = [];
+			for (var j=1;j<labArray.entry[i].organizer.component.length;j++) {
+				//timestamp in here
+				var observation = labArray.entry[i].organizer.component[j].observation;
+				labResults[i][0]=new Date(observation.effectiveTime.value.substring(0,4),observation.effectiveTime.value.substring(4,6),observation.effectiveTime.value.substring(6,8));
+					
+				if(observation.code.code=='#LYMPH') {
+					labResults[i][1] = {
+						high:observation.referenceRange.observationRange.value.high.value,
+						observed:observation.value['#text'],
+						low:observation.referenceRange.observationRange.value.low.value,
+						unit:observation.referenceRange.observationRange.value.high.unit
+					};
+				};
+				
+				if(observation.code.code=='#WBC') {
+					labResults[i][2] = {
+						high:observation.referenceRange.observationRange.value.high.value,
+						observed:observation.value['#text'],
+						low:observation.referenceRange.observationRange.value.low.value,
+						unit:observation.referenceRange.observationRange.value.high.unit
+					};
+				};
+			};
+		};
+	}else{
+		//sometimes the entry is an object instead of array fix here later
+	}
+	
+	return labResults;
+};
+
 var parseVitalSigns = function() {
 	var vitalsArray = retrieveVitalsObject().section;
 	if(vitalsArray.entry.length!==undefined) {
@@ -159,7 +199,7 @@ var renderPayer = function() {
 
 var renderLabs = function() {
 	var labsArray = parseLabResults();
-	
+	var unitlabsArray = parseLabResultsWithRange();
 	$("#lab-result .hero-unit.datatable").html('<table cellpadding="0" cellspacing="0" border="0" class="display table" id="lab-results"></table');
 	var labsTables = $("#lab-results").dataTable( {
         "aaData": labsArray,
@@ -185,41 +225,42 @@ var renderLabs = function() {
 		var iCol = $('td, th').index(this) % 3;
 		$('td:nth-child('+(iCol+1)+'),th:nth-child('+(iCol+1)+')').removeClass("highlighted");
 	});
+	
+	//TODO what if there is no units or high or low values, catch all the null exceptions man
 	$('#lab-results td, #lab-results th').click(function(){
 		var iCol = $('td, th').index(this) % 3;
+		$('.activated').removeClass('activated');
 		if(iCol===1) {
 			$('#lab-result .graphTitle').html('Lymph Lab Results Timeline<span class="grey"> (Click on a column to switch graphs)</span>');
-			var graphArray = "Date,Lymph Count\n";
+			var graphArray = "Date,High,Lymph Count,Low\n";
 			
-			for (var i=0;i<labsArray.length;i++) {
-				graphArray = graphArray+sanitizeDate(labsArray[i][0])+","+labsArray[i][1]+"\n"
-			};
-			console.log(graphArray);
-			g = new Dygraph(document.getElementById("graphdiv"), graphArray);
+			for (var i=0;i<unitlabsArray.length;i++) {
+				graphArray = graphArray+sanitizeDate(unitlabsArray[i][0])+","+unitlabsArray[i][1].high+','+unitlabsArray[i][1].observed+','+unitlabsArray[i][1].low+"\n";			};
+			g = new Dygraph(document.getElementById("graphdiv"), graphArray,{colors:["#AF0000","#0061AF","#AF0000"]});
 		}else if(iCol===2) {
 			$('#lab-result .graphTitle').html('WBC Lab Results Timeline<span class="grey"> (Click on a column to switch graphs)</span>');
-			var graphArray = "Date,WBC\n";
+			var graphArray = "Date,High,WBC,Low\n";
 			
-			for (var i=0;i<labsArray.length;i++) {
-				graphArray = graphArray+sanitizeDate(labsArray[i][0])+","+labsArray[i][2]+"\n"
+			for (var i=0;i<unitlabsArray.length;i++) {
+				graphArray = graphArray+sanitizeDate(unitlabsArray[i][0])+","+unitlabsArray[i][2].high+','+unitlabsArray[i][2].observed+','+unitlabsArray[i][2].low+"\n";
 			};
-			console.log(graphArray);
-			g = new Dygraph(document.getElementById("graphdiv"), graphArray);
+			g = new Dygraph(document.getElementById("graphdiv"), graphArray,{colors:["#AF0000","#0061AF","#AF0000"]});
+		}
+		if(iCol===1 || iCol===2){
+			$('td:nth-child('+(iCol+1)+'),th:nth-child('+(iCol+1)+')').addClass("activated");
 		}
 	});
 	
-	var graphArray = "Date,Lymph Count\n";
+	var graphArray = "Date,High,Lymph Count,Low\n";
 	
-	for (var i=0;i<labsArray.length;i++) {
-		graphArray = graphArray+sanitizeDate(labsArray[i][0])+","+labsArray[i][1]+"\n"
+	for (var i=0;i<unitlabsArray.length;i++) {
+		graphArray = graphArray+sanitizeDate(unitlabsArray[i][0])+","+unitlabsArray[i][1].high+','+unitlabsArray[i][1].observed+','+unitlabsArray[i][1].low+"\n"
 	};
-	console.log(graphArray);
-	g = new Dygraph(document.getElementById("graphdiv"), graphArray);
-	
-	//oh god heres some hover binds
-	
-	
+	g = new Dygraph(document.getElementById("graphdiv"), graphArray,{colors:["#AF0000","#0061AF","#AF0000"]});
+	$('td:nth-child(2),th:nth-child(2)').addClass("activated");
 };
+
+
 
 var parsePayers = function() {
 	var payers = [];

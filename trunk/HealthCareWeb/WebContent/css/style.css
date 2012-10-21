@@ -62,6 +62,9 @@ body{
 .highlighted{
 	background:#DBF1FF;
 }
+.activated{
+	background:#DBF1FF;
+}
 #lab-results th:nth-child(3),#lab-results td:nth-child(3),#lab-results th:nth-child(2),#lab-results td:nth-child(2){
 	cursor:pointer;
 }
