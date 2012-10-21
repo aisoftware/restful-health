@@ -892,12 +892,8 @@ i[class^="icon-"]{opacity:0.5;vertical-align:-2px;}
 	position: fixed;
 	left: 20px;
 	top: 55px;
-	width: 300px;
+	width: 20%;
 }
 .navbar-inverse .brand{
 	color:#FFF;
-}
-.row-fluid .span9 {
-	width: 74.46808510638297%;
-	margin-left:0;
 }
