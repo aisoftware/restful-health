@@ -84,9 +84,9 @@ public class PatientService {
 			query.put("personID", id);
 			ArrayList<DBObject> obj = ServiceUtil.mongo.query(dbCollectionName, query);
 			if(obj != null && obj.size() >0){
-				DBObject dbo = obj.get(0);
-				
-				patientJSON = dbo.toString();
+				DBObject dbo = obj.get(0);	
+				Object personObj = dbo.get("PersonJSON");
+				patientJSON = personObj.toString();
 			}
 		}
 		catch(Throwable t){
@@ -118,7 +118,8 @@ public class PatientService {
 			ArrayList<DBObject> obj = ServiceUtil.mongo.query(dbCollectionName, query);
 			if(obj != null && obj.size() >0){
 				DBObject dbo = obj.get(0);
-				patientJSON = dbo.toString();
+				Object personObj = dbo.get("PersonJSON");
+				patientJSON = personObj.toString();
 			}
 		}
 		catch(Throwable t){
