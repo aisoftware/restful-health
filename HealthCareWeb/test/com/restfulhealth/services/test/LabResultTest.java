@@ -83,11 +83,12 @@ public class LabResultTest {
 	@Test
 	public void labReportUpload() {
 		FormDataMultiPart fdmp = new FormDataMultiPart();
-		String pid = "32ef95b8-0cf2-4332-a655-dda8b1fd3442"; //{"family":"song22","loginName":"jingsong22","given":"jing22"}		
+//		String pid = "c25654d2-6b87-48af-86e1-ac96e161e302"; //{"family":"simpson","loginName":"homer","given":"jing22"}		
+		String pid = "79726790-97a9-4537-8f90-2c60c8463e30"; //jing song
 		try {
 			Client client = Client.create();
 			WebResource uploadResource = client.resource(uri);			
-			fdmp.bodyPart(new FileDataBodyPart("file", new File("/Users/JingSong/HealthCare/data/test-sample.xml")));
+			fdmp.bodyPart(new FileDataBodyPart("file", new File("/Users/Cause/Healthcare/HealthCareWeb/test/test-sample.xml")));
 			ClientResponse cr = uploadResource.path("labReport/upload").type(MediaType.MULTIPART_FORM_DATA_TYPE).header("pid", pid).post(ClientResponse.class, fdmp);
 			fdmp.close();
 			System.out.println("labReportUpload_status="+cr.getStatus());
@@ -132,7 +133,7 @@ public class LabResultTest {
 	@Test
 	public void getLabReportByPatientID(){		
 		try {
-			String pid = "32ef95b8-0cf2-4332-a655-dda8b1fd3442";; //song's patientID
+			String pid = "c25654d2-6b87-48af-86e1-ac96e161e302"; //homer's patientID
 			Client client = Client.create();
 			WebResource clientResource = client.resource(uri+"labReport/patient/"+pid);
 			

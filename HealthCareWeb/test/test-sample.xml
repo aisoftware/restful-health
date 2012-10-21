@@ -27,9 +27,9 @@
             <telecom value="tel:+1 415-123-9988" use="HP"/>
             <patient>
                 <name use="ASGN">
-                    <given>Homer</given>
+                    <given>Jing</given>
                     <given>J</given>
-                    <family>Simpson</family>
+                    <family>Song</family>
                 </name>
                 <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1" codeSystemName="AdministrativeGender" displayName="Male"/>
                 <birthTime value="19750731"/>
