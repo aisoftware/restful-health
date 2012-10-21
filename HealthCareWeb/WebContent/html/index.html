@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="/healthcare/css/style.css">
 	<script src="/healthcare/js/jquery.min.js" type="text/javascript"></script>
 	<script src="/healthcare/js/jquery.dataTables.min.js" type="text/javascript"></script>
+	<script src="/healthcare/js/test.js" type="text/javascript"></script>
 	<script src="/healthcare/js/bootstrap.js" type="text/javascript"></script>
 	<script src="/healthcare/js/utils.js" type="text/javascript"></script>
 	<script src="/healthcare/js/script.js" type="text/javascript"></script>
@@ -35,156 +36,119 @@
     </div>
 
     <div class="container">
-		<div class="row-fluid row">
-		<div class="span3">
-		  <div class="well sidebar-nav-fixed">
-		    <ul class="nav nav-list">
+		<div class="well sidebar-nav-fixed">
+		  <ul class="nav nav-list">
 		
-		      <li class="nav-header">Sidebar</li>
-		      <li class="active"><a href="#">Link</a></li>
-		      <li><a href="#">Link</a></li>
-		      <li><a href="#">Link</a></li>
-		      <li><a href="#">Link</a></li>
-		      <li class="nav-header">Sidebar</li>
-		
-		      <li><a href="#">Link</a></li>
-		      <li><a href="#">Link</a></li>
-		      <li><a href="#">Link</a></li>
-		      <li><a href="#">Link</a></li>
-		      <li><a href="#">Link</a></li>
-		      <li><a href="#">Link</a></li>
-		
-		      <li class="nav-header">Sidebar</li>
-		      <li><a href="#">Link</a></li>
-		      <li><a href="#">Link</a></li>
-		      <li><a href="#">Link</a></li>
-		    </ul>
-		  </div><!--/.well -->
-		</div><!--/span-->
-		
-		<div class="span9 span-fixed-sidebar">
-		  <div class="hero-unit">
-		    <h1>Hello, world!</h1>
-		    <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-		    <p><a class="btn btn-primary btn-large">Learn more »</a></p>
-		  </div>
-		  <div class="row-fluid">
-		
-		    <div class="span4">
-		      <h2>Heading</h2>
-		      <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-		      <p><a class="btn" href="#">View details »</a></p>
-		    </div><!--/span-->
-		  <div class="span4">
-		    <h2>Heading</h2>
-		
-		    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-		    <p><a class="btn" href="#">View details »</a></p>
-		  </div><!--/span-->
-		  <div class="span4">
-		    <h2>Heading</h2>
-		    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-		    <p><a class="btn" href="#">View details »</a></p>
-		
-		  </div><!--/span-->
-		</div><!--/row-->
-		<div class="row-fluid">
-		  <div class="span4">
-		    <h2>Heading</h2>
-		    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-		    <p><a class="btn" href="#">View details »</a></p>
-		
-		  </div><!--/span-->
-		  <div class="span4">
-		    <h2>Heading</h2>
-		    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-		    <p><a class="btn" href="#">View details »</a></p>
-		  </div><!--/span-->
-		  <div class="span4">
-		
-		    <h2>Heading</h2>
-		    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-		    <p><a class="btn" href="#">View details »</a></p>
-		  </div><!--/span-->
-		</div><!--/row-->
-		<div class="row-fluid">
-		  <div class="span4">
-		    <h2>Heading</h2>
-		    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-		    <p><a class="btn" href="#">View details »</a></p>
-		
-		  </div><!--/span-->
-		  <div class="span4">
-		    <h2>Heading</h2>
-		    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-		    <p><a class="btn" href="#">View details »</a></p>
-		  </div><!--/span-->
-		  <div class="span4">
-		
-		    <h2>Heading</h2>
-		    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-		    <p><a class="btn" href="#">View details »</a></p>
-		  </div><!--/span-->
-		</div><!--/row-->
-		<div class="row-fluid">
-		  <div class="span4">
-		    <h2>Heading</h2>
-		    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-		    <p><a class="btn" href="#">View details »</a></p>
-		
-		  </div><!--/span-->
-		  <div class="span4">
-		    <h2>Heading</h2>
-		    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-		    <p><a class="btn" href="#">View details »</a></p>
-		  </div><!--/span-->
-		  <div class="span4">
-		
-		    <h2>Heading</h2>
-		    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-		    <p><a class="btn" href="#">View details »</a></p>
-		  </div><!--/span-->
-		</div><!--/row-->
-		<div class="row-fluid">
-		  <div class="span4">
-		    <h2>Heading</h2>
-		    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-		    <p><a class="btn" href="#">View details »</a></p>
-		
-		  </div><!--/span-->
-		  <div class="span4">
-		    <h2>Heading</h2>
-		    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-		    <p><a class="btn" href="#">View details »</a></p>
-		  </div><!--/span-->
-		  <div class="span4">
-		
-		    <h2>Heading</h2>
-		    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-		    <p><a class="btn" href="#">View details »</a></p>
-		  </div><!--/span-->
-		</div><!--/row-->
-		<div class="row-fluid">
-		  <div class="span4">
-		    <h2>Heading</h2>
-		    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-		    <p><a class="btn" href="#">View details »</a></p>
-		
-		  </div><!--/span-->
-		  <div class="span4">
-		    <h2>Heading</h2>
-		    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-		    <p><a class="btn" href="#">View details »</a></p>
-		  </div><!--/span-->
-		  <div class="span4">
-		
-		    <h2>Heading</h2>
-		    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-		    <p><a class="btn" href="#">View details »</a></p>
-		  </div><!--/span-->
-		</div><!--/row-->
-		
-		</div><!--/span-->
+		    <li class="nav-header" id="pName">Patient Name</li>
+		    <li class="active"><a href="#">Patient Overview</a></li>
+		    <li><a href="#">Payers</a></li>
+		    <li><a href="#">Vitals</a></li>
+		    <li><a href="#">Allergies</a></li>		
+		    <li><a href="#">Medication</a></li>
+		    <li><a href="#">Conditions</a></li>
+		    <li><a href="#">Labs</a></li>
+		  </ul>
+		</div><!--/.well -->
+		<div class="row row-fluid main">
+			<div id="overview" class="patient-overview span9 span-fixed-sidebar active">
+				<div class="hero-unit">
+					<h2>Patient Information</h2>
+					<div class="row-fluid">
+						<div class="span4 labelfield">
+							<label class="control-label">First Name:</label>
+							<div id ="fname">
+							</div>
+						</div>
+						<div class="span4 labelfield">
+							<label class="control-label">Middle Initial:</label>
+							<div id ="mname">
+							</div>
+						</div>
+						<div class="span4 labelfield">
+							<label class="control-label">Last Name:</label>
+							<div id ="lname">
+							</div>
+						</div>
+					</div>
+					<div class="row-fluid">
+						<div class="span4 labelfield">
+							<label class="control-label">Patient ID:</label>
+							<div id = "pid">
+							</div>
+						</div>
+						<div class="span4 labelfield">
+							<label class="control-label">Ext:</label>
+							<div id = "pidext">
+							</div>
+						</div>
+					</div>
+					<div class="row-fluid">
+						<div class="span4 labelfield">
+							<label class="control-label">Birthday:</label>
+							<div id = "bday">
+							</div>
+						</div>
+						<div class="span4 labelfield">
+							<label class="control-label">Age:</label>
+							<div id = "age">
+							</div>
+						</div>
+					</div>
+					<div class="row-fluid">
+						<div class="labelfield">
+							<label class="control-label">Gender:</label>
+							<div id = "gender">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="hero-unit">
+					<h2>Contact Information</h2>
+					<div class="row-fluid">
+						<div class="span4 labelfield">
+							<label class="control-label">Work Phone:</label>
+							<div id = "wp">
+							</div>
+						</div>
+						<div class="span4 labelfield">
+							<label class="control-label">Home Phone:</label>
+							<div id = "hp">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="hero-unit">
+					<h2>Address</h2>
+					<div class="row-fluid">
+						<div class="span4 labelfield">
+							<label class="control-label">City:</label>
+							<div id = "addcity">
+							</div>
+						</div>
+						<div class="span4 labelfield">
+							<label class="control-label">State:</label>
+							<div id = "addstate">
+							</div>
+						</div>
+						<div class="span4 labelfield">
+							<label class="control-label">Zip:</label>
+							<div id = "addzip">
+							</div>
+						</div>
+					</div>
+					<div class="row-fluid">
+						<div class="span8 labelfield">
+							<label class="control-label">Street Address:</label>
+							<div id = "addstreet">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div id="payer" class="payers span9 span-fixed-sidebar">
+				<table cellpadding="0" cellspacing="0" border="0" class="display table" id="payers"></table>
+			</div>
 		</div>
 	</div>
 	</body>
