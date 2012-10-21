@@ -39526,7 +39526,7 @@
                                     </text>
                                     <statusCode code="completed"/>
                                     <effectiveTime value="201204140945-0800"/>
-                                    <value xsi:type="PQ" value="65.0" unit="/min"/>
+                                    <value xsi:type="PQ" value="67.0" unit="/min"/>
                                 </observation>
                             </component>
                             <component>
@@ -39541,7 +39541,7 @@
                                     </text>
                                     <statusCode code="completed"/>
                                     <effectiveTime value="201204140945-0800"/>
-                                    <value xsi:type="PQ" value="99.0" unit="/min"/>
+                                    <value xsi:type="PQ" value="97.0" unit="/min"/>
                                 </observation>
                             </component>
                             <component>
@@ -39722,7 +39722,7 @@
                                     </text>
                                     <statusCode code="completed"/>
                                     <effectiveTime value="201204210945-0800"/>
-                                    <value xsi:type="PQ" value="99.0" unit="/min"/>
+                                    <value xsi:type="PQ" value="98.0" unit="/min"/>
                                 </observation>
                             </component>
                             <component>
@@ -39888,7 +39888,7 @@
                                     </text>
                                     <statusCode code="completed"/>
                                     <effectiveTime value="201204280945-0800"/>
-                                    <value xsi:type="PQ" value="65.0" unit="/min"/>
+                                    <value xsi:type="PQ" value="66.0" unit="/min"/>
                                 </observation>
                             </component>
                             <component>
@@ -39903,7 +39903,7 @@
                                     </text>
                                     <statusCode code="completed"/>
                                     <effectiveTime value="201204280945-0800"/>
-                                    <value xsi:type="PQ" value="99.0" unit="/min"/>
+                                    <value xsi:type="PQ" value="94.0" unit="/min"/>
                                 </observation>
                             </component>
                             <component>
@@ -39934,6 +39934,1092 @@
                                     </text>
                                     <statusCode code="completed"/>
                                     <effectiveTime value="201204280945-0800"/>
+                                    <value xsi:type="PQ" value="21" unit=".5"/>
+                                </observation>
+                            </component>
+                        </organizer>
+                    </entry>
+                    <entry  xmlns="urn:hl7-org:v3" xmlns:voc="urn:hl7-org:v3/voc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:axolotl="urn:axolotl-com:pdo">
+                        <organizer classCode="BATTERY" moodCode="EVN">
+                            <templateId root="2.16.840.1.113883.10.20.1.35"/>
+                            <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.1"/>
+                            <templateId root="2.16.840.1.113883.10.20.1.32"/>
+                            <id root="5e6b080a-03a9-42b4-8815-9a472620bf33"/>
+                            <code code="46680005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Vital signs"/>
+                            <statusCode code="completed"/>
+                            <effectiveTime value="201205050945-0800"/>
+                            <component>
+                                <procedure classCode="PROC" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.1.29"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.19"/>
+                                    <templateId root="2.16.840.1.113883.3.88.11.83.17"/>
+                                    <id root="219d8535-5206-41cf-9bf8-db22e85a414e"/>
+                                    <code nullFlavor="NI">
+                                        <originalText>Vital Signs<reference value="#Battery_8c4a7c9e10efd5dce2a6f7"/>
+                                        </originalText>
+                                    </code>
+                                    <text>Vital Signs<reference value="#Battery_8c4a7c9e10efd5dce2a6f7"/>
+                                    </text>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime value="201205050945-0800"/>
+                                    <priorityCode nullFlavor="NI"/>
+                                    <participant typeCode="RESP" contextControlCode="OP">
+                                        <participantRole>
+                                            <playingEntity>
+                                                <name>
+                                                    <given>Doctor</given>
+                                                    <family>Doom</family>
+                                                </name>
+                                            </playingEntity>
+                                        </participantRole>
+                                    </participant>
+                                    <participant typeCode="ORG" contextControlCode="OP">
+                                        <participantRole>
+                                            <playingEntity>
+                                                <name>AOMC</name>
+                                            </playingEntity>
+                                        </participantRole>
+                                    </participant>
+                                </procedure>
+                            </component>
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
+                                    <templateId root="2.16.840.1.113883.3.88.11.83.14"/>
+                                    <id root="5cc76264-72e8-4fc9-bca8-1b3d87fbddc0"/>
+                                    <code code="8302-2" codeSystem="2.16.840.1.113883.6.1" displayName="BODY HEIGHT (MEASURED)"/>
+                                    <text>BODY HEIGHT (MEASURED)<reference value="#Observation_8a4048a5078f6b1c58943f"/>
+                                    </text>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime value="201205050945-0800"/>
+                                    <value xsi:type="PQ" value="70.0" unit="[in_us]"/>
+                                </observation>
+                            </component>
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
+                                    <templateId root="2.16.840.1.113883.3.88.11.83.14"/>
+                                    <id root="ce24389d-6af5-4f4f-98fe-db4924422d3b"/>
+                                    <code code="3141-9" codeSystem="2.16.840.1.113883.6.1" displayName="BODY WEIGHT (MEASURED)"/>
+                                    <text>BODY WEIGHT (MEASURED)<reference value="#Observation_814f5b8cee3a5aa7386407"/>
+                                    </text>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime value="201205050945-0800"/>
+                                    <value xsi:type="PQ" value="150.0" unit="[lb_av]"/>
+                                </observation>
+                            </component>
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
+                                    <templateId root="2.16.840.1.113883.3.88.11.83.14"/>
+                                    <id root="535068e4-fbc7-4f3b-896b-352f939afcdf"/>
+                                    <code code="8310-5" codeSystem="2.16.840.1.113883.6.1" displayName="BODY TEMPERATURE"/>
+                                    <text>BODY TEMPERATURE<reference value="#Observation_084750bae68e1ef6b5b826"/>
+                                    </text>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime value="201205050945-0800"/>
+                                    <value xsi:type="PQ" value="98" unit=".5"/>
+                                </observation>
+                            </component>
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
+                                    <templateId root="2.16.840.1.113883.3.88.11.83.14"/>
+                                    <id root="fa3bccf1-32a4-453e-b509-5e983c056438"/>
+                                    <code code="8480-6" codeSystem="2.16.840.1.113883.6.1" displayName="INTRAVASCULAR SYSTOLIC"/>
+                                    <text>INTRAVASCULAR SYSTOLIC<reference value="#Observation_75431bbd78c5b13e07d252"/>
+                                    </text>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime value="201205050945-0800"/>
+                                    <value xsi:type="PQ" value="120.0" unit="mm[Hg]"/>
+                                </observation>
+                            </component>
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
+                                    <templateId root="2.16.840.1.113883.3.88.11.83.14"/>
+                                    <id root="132b8d59-073c-456a-b3be-b0f54ae95a75"/>
+                                    <code code="8462-4" codeSystem="2.16.840.1.113883.6.1" displayName="INTRAVASCULAR DIASTOLIC"/>
+                                    <text>INTRAVASCULAR DIASTOLIC<reference value="#Observation_cf4d5c9d1f06845f71476a"/>
+                                    </text>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime value="201205050945-0800"/>
+                                    <value xsi:type="PQ" value="60.0" unit="mm[Hg]"/>
+                                </observation>
+                            </component>
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
+                                    <templateId root="2.16.840.1.113883.3.88.11.83.14"/>
+                                    <id root="4f697a6b-9088-47bf-bd12-90081803a99c"/>
+                                    <code code="8867-4" codeSystem="2.16.840.1.113883.6.1" displayName="HEART BEAT"/>
+                                    <text>HEART BEAT<reference value="#Observation_dd4020994140f937a500e0"/>
+                                    </text>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime value="201205050945-0800"/>
+                                    <value xsi:type="PQ" value="69.0" unit="/min"/>
+                                </observation>
+                            </component>
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
+                                    <templateId root="2.16.840.1.113883.3.88.11.83.14"/>
+                                    <id root="54f6f81e-0463-43f0-bcab-80d5eb50962b"/>
+                                    <code code="9279-1" codeSystem="2.16.840.1.113883.6.1" displayName="RESPIRATION RATE"/>
+                                    <text>RESPIRATION RATE<reference value="#Observation_2b4837b509d775ca8f900b"/>
+                                    </text>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime value="201205050945-0800"/>
+                                    <value xsi:type="PQ" value="95.0" unit="/min"/>
+                                </observation>
+                            </component>
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
+                                    <templateId root="2.16.840.1.113883.3.88.11.83.14"/>
+                                    <id root="1cb49668-87db-42dd-b86b-db548153e3ab"/>
+                                    <code nullFlavor="NI">
+                                        <originalText>ELY-PEFR^PEAK EXPIRATION FLOW RATE^L</originalText>
+                                    </code>
+                                    <text>ELY-PEFR^PEAK EXPIRATION FLOW RATE^L</text>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime value="201205050945-0800"/>
+                                    <value xsi:type="PQ" value="10" unit="0"/>
+                                </observation>
+                            </component>
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
+                                    <templateId root="2.16.840.1.113883.3.88.11.83.14"/>
+                                    <id root="eaa2b910-8f6f-4a05-957a-642100ab6d18"/>
+                                    <code code="41909-3" codeSystem="2.16.840.1.113883.6.1" displayName="BODY MASS INDEX"/>
+                                    <text>BODY MASS INDEX<reference value="#Observation_5b485eb6e5d67588df6585"/>
+                                    </text>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime value="201205050945-0800"/>
+                                    <value xsi:type="PQ" value="21" unit=".5"/>
+                                </observation>
+                            </component>
+                        </organizer>
+                    </entry>
+                    <entry  xmlns="urn:hl7-org:v3" xmlns:voc="urn:hl7-org:v3/voc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:axolotl="urn:axolotl-com:pdo">
+                        <organizer classCode="BATTERY" moodCode="EVN">
+                            <templateId root="2.16.840.1.113883.10.20.1.35"/>
+                            <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.1"/>
+                            <templateId root="2.16.840.1.113883.10.20.1.32"/>
+                            <id root="5e6b080a-03a9-42b4-8815-9a472620bf33"/>
+                            <code code="46680005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Vital signs"/>
+                            <statusCode code="completed"/>
+                            <effectiveTime value="201205120945-0800"/>
+                            <component>
+                                <procedure classCode="PROC" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.1.29"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.19"/>
+                                    <templateId root="2.16.840.1.113883.3.88.11.83.17"/>
+                                    <id root="219d8535-5206-41cf-9bf8-db22e85a414e"/>
+                                    <code nullFlavor="NI">
+                                        <originalText>Vital Signs<reference value="#Battery_8c4a7c9e10efd5dce2a6f7"/>
+                                        </originalText>
+                                    </code>
+                                    <text>Vital Signs<reference value="#Battery_8c4a7c9e10efd5dce2a6f7"/>
+                                    </text>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime value="201205120945-0800"/>
+                                    <priorityCode nullFlavor="NI"/>
+                                    <participant typeCode="RESP" contextControlCode="OP">
+                                        <participantRole>
+                                            <playingEntity>
+                                                <name>
+                                                    <given>Doctor</given>
+                                                    <family>Doom</family>
+                                                </name>
+                                            </playingEntity>
+                                        </participantRole>
+                                    </participant>
+                                    <participant typeCode="ORG" contextControlCode="OP">
+                                        <participantRole>
+                                            <playingEntity>
+                                                <name>AOMC</name>
+                                            </playingEntity>
+                                        </participantRole>
+                                    </participant>
+                                </procedure>
+                            </component>
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
+                                    <templateId root="2.16.840.1.113883.3.88.11.83.14"/>
+                                    <id root="5cc76264-72e8-4fc9-bca8-1b3d87fbddc0"/>
+                                    <code code="8302-2" codeSystem="2.16.840.1.113883.6.1" displayName="BODY HEIGHT (MEASURED)"/>
+                                    <text>BODY HEIGHT (MEASURED)<reference value="#Observation_8a4048a5078f6b1c58943f"/>
+                                    </text>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime value="201205120945-0800"/>
+                                    <value xsi:type="PQ" value="70.0" unit="[in_us]"/>
+                                </observation>
+                            </component>
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
+                                    <templateId root="2.16.840.1.113883.3.88.11.83.14"/>
+                                    <id root="ce24389d-6af5-4f4f-98fe-db4924422d3b"/>
+                                    <code code="3141-9" codeSystem="2.16.840.1.113883.6.1" displayName="BODY WEIGHT (MEASURED)"/>
+                                    <text>BODY WEIGHT (MEASURED)<reference value="#Observation_814f5b8cee3a5aa7386407"/>
+                                    </text>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime value="201205120945-0800"/>
+                                    <value xsi:type="PQ" value="150.0" unit="[lb_av]"/>
+                                </observation>
+                            </component>
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
+                                    <templateId root="2.16.840.1.113883.3.88.11.83.14"/>
+                                    <id root="535068e4-fbc7-4f3b-896b-352f939afcdf"/>
+                                    <code code="8310-5" codeSystem="2.16.840.1.113883.6.1" displayName="BODY TEMPERATURE"/>
+                                    <text>BODY TEMPERATURE<reference value="#Observation_084750bae68e1ef6b5b826"/>
+                                    </text>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime value="201205120945-0800"/>
+                                    <value xsi:type="PQ" value="98" unit=".5"/>
+                                </observation>
+                            </component>
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
+                                    <templateId root="2.16.840.1.113883.3.88.11.83.14"/>
+                                    <id root="fa3bccf1-32a4-453e-b509-5e983c056438"/>
+                                    <code code="8480-6" codeSystem="2.16.840.1.113883.6.1" displayName="INTRAVASCULAR SYSTOLIC"/>
+                                    <text>INTRAVASCULAR SYSTOLIC<reference value="#Observation_75431bbd78c5b13e07d252"/>
+                                    </text>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime value="201205120945-0800"/>
+                                    <value xsi:type="PQ" value="120.0" unit="mm[Hg]"/>
+                                </observation>
+                            </component>
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
+                                    <templateId root="2.16.840.1.113883.3.88.11.83.14"/>
+                                    <id root="132b8d59-073c-456a-b3be-b0f54ae95a75"/>
+                                    <code code="8462-4" codeSystem="2.16.840.1.113883.6.1" displayName="INTRAVASCULAR DIASTOLIC"/>
+                                    <text>INTRAVASCULAR DIASTOLIC<reference value="#Observation_cf4d5c9d1f06845f71476a"/>
+                                    </text>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime value="201205120945-0800"/>
+                                    <value xsi:type="PQ" value="60.0" unit="mm[Hg]"/>
+                                </observation>
+                            </component>
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
+                                    <templateId root="2.16.840.1.113883.3.88.11.83.14"/>
+                                    <id root="4f697a6b-9088-47bf-bd12-90081803a99c"/>
+                                    <code code="8867-4" codeSystem="2.16.840.1.113883.6.1" displayName="HEART BEAT"/>
+                                    <text>HEART BEAT<reference value="#Observation_dd4020994140f937a500e0"/>
+                                    </text>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime value="201205120945-0800"/>
+                                    <value xsi:type="PQ" value="70.0" unit="/min"/>
+                                </observation>
+                            </component>
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
+                                    <templateId root="2.16.840.1.113883.3.88.11.83.14"/>
+                                    <id root="54f6f81e-0463-43f0-bcab-80d5eb50962b"/>
+                                    <code code="9279-1" codeSystem="2.16.840.1.113883.6.1" displayName="RESPIRATION RATE"/>
+                                    <text>RESPIRATION RATE<reference value="#Observation_2b4837b509d775ca8f900b"/>
+                                    </text>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime value="201205120945-0800"/>
+                                    <value xsi:type="PQ" value="98.0" unit="/min"/>
+                                </observation>
+                            </component>
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
+                                    <templateId root="2.16.840.1.113883.3.88.11.83.14"/>
+                                    <id root="1cb49668-87db-42dd-b86b-db548153e3ab"/>
+                                    <code nullFlavor="NI">
+                                        <originalText>ELY-PEFR^PEAK EXPIRATION FLOW RATE^L</originalText>
+                                    </code>
+                                    <text>ELY-PEFR^PEAK EXPIRATION FLOW RATE^L</text>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime value="201205120945-0800"/>
+                                    <value xsi:type="PQ" value="10" unit="0"/>
+                                </observation>
+                            </component>
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
+                                    <templateId root="2.16.840.1.113883.3.88.11.83.14"/>
+                                    <id root="eaa2b910-8f6f-4a05-957a-642100ab6d18"/>
+                                    <code code="41909-3" codeSystem="2.16.840.1.113883.6.1" displayName="BODY MASS INDEX"/>
+                                    <text>BODY MASS INDEX<reference value="#Observation_5b485eb6e5d67588df6585"/>
+                                    </text>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime value="201205120945-0800"/>
+                                    <value xsi:type="PQ" value="21" unit=".5"/>
+                                </observation>
+                            </component>
+                        </organizer>
+                    </entry>
+                    <entry  xmlns="urn:hl7-org:v3" xmlns:voc="urn:hl7-org:v3/voc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:axolotl="urn:axolotl-com:pdo">
+                        <organizer classCode="BATTERY" moodCode="EVN">
+                            <templateId root="2.16.840.1.113883.10.20.1.35"/>
+                            <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.1"/>
+                            <templateId root="2.16.840.1.113883.10.20.1.32"/>
+                            <id root="5e6b080a-03a9-42b4-8815-9a472620bf33"/>
+                            <code code="46680005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Vital signs"/>
+                            <statusCode code="completed"/>
+                            <effectiveTime value="201205190945-0800"/>
+                            <component>
+                                <procedure classCode="PROC" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.1.29"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.19"/>
+                                    <templateId root="2.16.840.1.113883.3.88.11.83.17"/>
+                                    <id root="219d8535-5206-41cf-9bf8-db22e85a414e"/>
+                                    <code nullFlavor="NI">
+                                        <originalText>Vital Signs<reference value="#Battery_8c4a7c9e10efd5dce2a6f7"/>
+                                        </originalText>
+                                    </code>
+                                    <text>Vital Signs<reference value="#Battery_8c4a7c9e10efd5dce2a6f7"/>
+                                    </text>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime value="201205190945-0800"/>
+                                    <priorityCode nullFlavor="NI"/>
+                                    <participant typeCode="RESP" contextControlCode="OP">
+                                        <participantRole>
+                                            <playingEntity>
+                                                <name>
+                                                    <given>Doctor</given>
+                                                    <family>Doom</family>
+                                                </name>
+                                            </playingEntity>
+                                        </participantRole>
+                                    </participant>
+                                    <participant typeCode="ORG" contextControlCode="OP">
+                                        <participantRole>
+                                            <playingEntity>
+                                                <name>AOMC</name>
+                                            </playingEntity>
+                                        </participantRole>
+                                    </participant>
+                                </procedure>
+                            </component>
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
+                                    <templateId root="2.16.840.1.113883.3.88.11.83.14"/>
+                                    <id root="5cc76264-72e8-4fc9-bca8-1b3d87fbddc0"/>
+                                    <code code="8302-2" codeSystem="2.16.840.1.113883.6.1" displayName="BODY HEIGHT (MEASURED)"/>
+                                    <text>BODY HEIGHT (MEASURED)<reference value="#Observation_8a4048a5078f6b1c58943f"/>
+                                    </text>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime value="201205190945-0800"/>
+                                    <value xsi:type="PQ" value="70.0" unit="[in_us]"/>
+                                </observation>
+                            </component>
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
+                                    <templateId root="2.16.840.1.113883.3.88.11.83.14"/>
+                                    <id root="ce24389d-6af5-4f4f-98fe-db4924422d3b"/>
+                                    <code code="3141-9" codeSystem="2.16.840.1.113883.6.1" displayName="BODY WEIGHT (MEASURED)"/>
+                                    <text>BODY WEIGHT (MEASURED)<reference value="#Observation_814f5b8cee3a5aa7386407"/>
+                                    </text>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime value="201205190945-0800"/>
+                                    <value xsi:type="PQ" value="150.0" unit="[lb_av]"/>
+                                </observation>
+                            </component>
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
+                                    <templateId root="2.16.840.1.113883.3.88.11.83.14"/>
+                                    <id root="535068e4-fbc7-4f3b-896b-352f939afcdf"/>
+                                    <code code="8310-5" codeSystem="2.16.840.1.113883.6.1" displayName="BODY TEMPERATURE"/>
+                                    <text>BODY TEMPERATURE<reference value="#Observation_084750bae68e1ef6b5b826"/>
+                                    </text>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime value="201205190945-0800"/>
+                                    <value xsi:type="PQ" value="98" unit=".5"/>
+                                </observation>
+                            </component>
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
+                                    <templateId root="2.16.840.1.113883.3.88.11.83.14"/>
+                                    <id root="fa3bccf1-32a4-453e-b509-5e983c056438"/>
+                                    <code code="8480-6" codeSystem="2.16.840.1.113883.6.1" displayName="INTRAVASCULAR SYSTOLIC"/>
+                                    <text>INTRAVASCULAR SYSTOLIC<reference value="#Observation_75431bbd78c5b13e07d252"/>
+                                    </text>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime value="201205190945-0800"/>
+                                    <value xsi:type="PQ" value="120.0" unit="mm[Hg]"/>
+                                </observation>
+                            </component>
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
+                                    <templateId root="2.16.840.1.113883.3.88.11.83.14"/>
+                                    <id root="132b8d59-073c-456a-b3be-b0f54ae95a75"/>
+                                    <code code="8462-4" codeSystem="2.16.840.1.113883.6.1" displayName="INTRAVASCULAR DIASTOLIC"/>
+                                    <text>INTRAVASCULAR DIASTOLIC<reference value="#Observation_cf4d5c9d1f06845f71476a"/>
+                                    </text>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime value="201205190945-0800"/>
+                                    <value xsi:type="PQ" value="60.0" unit="mm[Hg]"/>
+                                </observation>
+                            </component>
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
+                                    <templateId root="2.16.840.1.113883.3.88.11.83.14"/>
+                                    <id root="4f697a6b-9088-47bf-bd12-90081803a99c"/>
+                                    <code code="8867-4" codeSystem="2.16.840.1.113883.6.1" displayName="HEART BEAT"/>
+                                    <text>HEART BEAT<reference value="#Observation_dd4020994140f937a500e0"/>
+                                    </text>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime value="201205190945-0800"/>
+                                    <value xsi:type="PQ" value="62.0" unit="/min"/>
+                                </observation>
+                            </component>
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
+                                    <templateId root="2.16.840.1.113883.3.88.11.83.14"/>
+                                    <id root="54f6f81e-0463-43f0-bcab-80d5eb50962b"/>
+                                    <code code="9279-1" codeSystem="2.16.840.1.113883.6.1" displayName="RESPIRATION RATE"/>
+                                    <text>RESPIRATION RATE<reference value="#Observation_2b4837b509d775ca8f900b"/>
+                                    </text>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime value="201205190945-0800"/>
+                                    <value xsi:type="PQ" value="95.0" unit="/min"/>
+                                </observation>
+                            </component>
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
+                                    <templateId root="2.16.840.1.113883.3.88.11.83.14"/>
+                                    <id root="1cb49668-87db-42dd-b86b-db548153e3ab"/>
+                                    <code nullFlavor="NI">
+                                        <originalText>ELY-PEFR^PEAK EXPIRATION FLOW RATE^L</originalText>
+                                    </code>
+                                    <text>ELY-PEFR^PEAK EXPIRATION FLOW RATE^L</text>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime value="201205190945-0800"/>
+                                    <value xsi:type="PQ" value="10" unit="0"/>
+                                </observation>
+                            </component>
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
+                                    <templateId root="2.16.840.1.113883.3.88.11.83.14"/>
+                                    <id root="eaa2b910-8f6f-4a05-957a-642100ab6d18"/>
+                                    <code code="41909-3" codeSystem="2.16.840.1.113883.6.1" displayName="BODY MASS INDEX"/>
+                                    <text>BODY MASS INDEX<reference value="#Observation_5b485eb6e5d67588df6585"/>
+                                    </text>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime value="201205190945-0800"/>
+                                    <value xsi:type="PQ" value="21" unit=".5"/>
+                                </observation>
+                            </component>
+                        </organizer>
+                    </entry>
+                    <entry  xmlns="urn:hl7-org:v3" xmlns:voc="urn:hl7-org:v3/voc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:axolotl="urn:axolotl-com:pdo">
+                        <organizer classCode="BATTERY" moodCode="EVN">
+                            <templateId root="2.16.840.1.113883.10.20.1.35"/>
+                            <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.1"/>
+                            <templateId root="2.16.840.1.113883.10.20.1.32"/>
+                            <id root="5e6b080a-03a9-42b4-8815-9a472620bf33"/>
+                            <code code="46680005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Vital signs"/>
+                            <statusCode code="completed"/>
+                            <effectiveTime value="201205260945-0800"/>
+                            <component>
+                                <procedure classCode="PROC" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.1.29"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.19"/>
+                                    <templateId root="2.16.840.1.113883.3.88.11.83.17"/>
+                                    <id root="219d8535-5206-41cf-9bf8-db22e85a414e"/>
+                                    <code nullFlavor="NI">
+                                        <originalText>Vital Signs<reference value="#Battery_8c4a7c9e10efd5dce2a6f7"/>
+                                        </originalText>
+                                    </code>
+                                    <text>Vital Signs<reference value="#Battery_8c4a7c9e10efd5dce2a6f7"/>
+                                    </text>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime value="201205260945-0800"/>
+                                    <priorityCode nullFlavor="NI"/>
+                                    <participant typeCode="RESP" contextControlCode="OP">
+                                        <participantRole>
+                                            <playingEntity>
+                                                <name>
+                                                    <given>Doctor</given>
+                                                    <family>Doom</family>
+                                                </name>
+                                            </playingEntity>
+                                        </participantRole>
+                                    </participant>
+                                    <participant typeCode="ORG" contextControlCode="OP">
+                                        <participantRole>
+                                            <playingEntity>
+                                                <name>AOMC</name>
+                                            </playingEntity>
+                                        </participantRole>
+                                    </participant>
+                                </procedure>
+                            </component>
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
+                                    <templateId root="2.16.840.1.113883.3.88.11.83.14"/>
+                                    <id root="5cc76264-72e8-4fc9-bca8-1b3d87fbddc0"/>
+                                    <code code="8302-2" codeSystem="2.16.840.1.113883.6.1" displayName="BODY HEIGHT (MEASURED)"/>
+                                    <text>BODY HEIGHT (MEASURED)<reference value="#Observation_8a4048a5078f6b1c58943f"/>
+                                    </text>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime value="201205260945-0800"/>
+                                    <value xsi:type="PQ" value="70.0" unit="[in_us]"/>
+                                </observation>
+                            </component>
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
+                                    <templateId root="2.16.840.1.113883.3.88.11.83.14"/>
+                                    <id root="ce24389d-6af5-4f4f-98fe-db4924422d3b"/>
+                                    <code code="3141-9" codeSystem="2.16.840.1.113883.6.1" displayName="BODY WEIGHT (MEASURED)"/>
+                                    <text>BODY WEIGHT (MEASURED)<reference value="#Observation_814f5b8cee3a5aa7386407"/>
+                                    </text>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime value="201205260945-0800"/>
+                                    <value xsi:type="PQ" value="150.0" unit="[lb_av]"/>
+                                </observation>
+                            </component>
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
+                                    <templateId root="2.16.840.1.113883.3.88.11.83.14"/>
+                                    <id root="535068e4-fbc7-4f3b-896b-352f939afcdf"/>
+                                    <code code="8310-5" codeSystem="2.16.840.1.113883.6.1" displayName="BODY TEMPERATURE"/>
+                                    <text>BODY TEMPERATURE<reference value="#Observation_084750bae68e1ef6b5b826"/>
+                                    </text>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime value="201205260945-0800"/>
+                                    <value xsi:type="PQ" value="98" unit=".5"/>
+                                </observation>
+                            </component>
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
+                                    <templateId root="2.16.840.1.113883.3.88.11.83.14"/>
+                                    <id root="fa3bccf1-32a4-453e-b509-5e983c056438"/>
+                                    <code code="8480-6" codeSystem="2.16.840.1.113883.6.1" displayName="INTRAVASCULAR SYSTOLIC"/>
+                                    <text>INTRAVASCULAR SYSTOLIC<reference value="#Observation_75431bbd78c5b13e07d252"/>
+                                    </text>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime value="201205260945-0800"/>
+                                    <value xsi:type="PQ" value="120.0" unit="mm[Hg]"/>
+                                </observation>
+                            </component>
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
+                                    <templateId root="2.16.840.1.113883.3.88.11.83.14"/>
+                                    <id root="132b8d59-073c-456a-b3be-b0f54ae95a75"/>
+                                    <code code="8462-4" codeSystem="2.16.840.1.113883.6.1" displayName="INTRAVASCULAR DIASTOLIC"/>
+                                    <text>INTRAVASCULAR DIASTOLIC<reference value="#Observation_cf4d5c9d1f06845f71476a"/>
+                                    </text>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime value="201205260945-0800"/>
+                                    <value xsi:type="PQ" value="60.0" unit="mm[Hg]"/>
+                                </observation>
+                            </component>
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
+                                    <templateId root="2.16.840.1.113883.3.88.11.83.14"/>
+                                    <id root="4f697a6b-9088-47bf-bd12-90081803a99c"/>
+                                    <code code="8867-4" codeSystem="2.16.840.1.113883.6.1" displayName="HEART BEAT"/>
+                                    <text>HEART BEAT<reference value="#Observation_dd4020994140f937a500e0"/>
+                                    </text>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime value="201205260945-0800"/>
+                                    <value xsi:type="PQ" value="63.0" unit="/min"/>
+                                </observation>
+                            </component>
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
+                                    <templateId root="2.16.840.1.113883.3.88.11.83.14"/>
+                                    <id root="54f6f81e-0463-43f0-bcab-80d5eb50962b"/>
+                                    <code code="9279-1" codeSystem="2.16.840.1.113883.6.1" displayName="RESPIRATION RATE"/>
+                                    <text>RESPIRATION RATE<reference value="#Observation_2b4837b509d775ca8f900b"/>
+                                    </text>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime value="201205260945-0800"/>
+                                    <value xsi:type="PQ" value="96.0" unit="/min"/>
+                                </observation>
+                            </component>
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
+                                    <templateId root="2.16.840.1.113883.3.88.11.83.14"/>
+                                    <id root="1cb49668-87db-42dd-b86b-db548153e3ab"/>
+                                    <code nullFlavor="NI">
+                                        <originalText>ELY-PEFR^PEAK EXPIRATION FLOW RATE^L</originalText>
+                                    </code>
+                                    <text>ELY-PEFR^PEAK EXPIRATION FLOW RATE^L</text>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime value="201205260945-0800"/>
+                                    <value xsi:type="PQ" value="10" unit="0"/>
+                                </observation>
+                            </component>
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
+                                    <templateId root="2.16.840.1.113883.3.88.11.83.14"/>
+                                    <id root="eaa2b910-8f6f-4a05-957a-642100ab6d18"/>
+                                    <code code="41909-3" codeSystem="2.16.840.1.113883.6.1" displayName="BODY MASS INDEX"/>
+                                    <text>BODY MASS INDEX<reference value="#Observation_5b485eb6e5d67588df6585"/>
+                                    </text>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime value="201205260945-0800"/>
+                                    <value xsi:type="PQ" value="21" unit=".5"/>
+                                </observation>
+                            </component>
+                        </organizer>
+                    </entry>
+                    <entry  xmlns="urn:hl7-org:v3" xmlns:voc="urn:hl7-org:v3/voc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:axolotl="urn:axolotl-com:pdo">
+                        <organizer classCode="BATTERY" moodCode="EVN">
+                            <templateId root="2.16.840.1.113883.10.20.1.35"/>
+                            <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.1"/>
+                            <templateId root="2.16.840.1.113883.10.20.1.32"/>
+                            <id root="5e6b080a-03a9-42b4-8815-9a472620bf33"/>
+                            <code code="46680005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Vital signs"/>
+                            <statusCode code="completed"/>
+                            <effectiveTime value="201206020945-0800"/>
+                            <component>
+                                <procedure classCode="PROC" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.1.29"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.19"/>
+                                    <templateId root="2.16.840.1.113883.3.88.11.83.17"/>
+                                    <id root="219d8535-5206-41cf-9bf8-db22e85a414e"/>
+                                    <code nullFlavor="NI">
+                                        <originalText>Vital Signs<reference value="#Battery_8c4a7c9e10efd5dce2a6f7"/>
+                                        </originalText>
+                                    </code>
+                                    <text>Vital Signs<reference value="#Battery_8c4a7c9e10efd5dce2a6f7"/>
+                                    </text>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime value="201206020945-0800"/>
+                                    <priorityCode nullFlavor="NI"/>
+                                    <participant typeCode="RESP" contextControlCode="OP">
+                                        <participantRole>
+                                            <playingEntity>
+                                                <name>
+                                                    <given>Doctor</given>
+                                                    <family>Doom</family>
+                                                </name>
+                                            </playingEntity>
+                                        </participantRole>
+                                    </participant>
+                                    <participant typeCode="ORG" contextControlCode="OP">
+                                        <participantRole>
+                                            <playingEntity>
+                                                <name>AOMC</name>
+                                            </playingEntity>
+                                        </participantRole>
+                                    </participant>
+                                </procedure>
+                            </component>
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
+                                    <templateId root="2.16.840.1.113883.3.88.11.83.14"/>
+                                    <id root="5cc76264-72e8-4fc9-bca8-1b3d87fbddc0"/>
+                                    <code code="8302-2" codeSystem="2.16.840.1.113883.6.1" displayName="BODY HEIGHT (MEASURED)"/>
+                                    <text>BODY HEIGHT (MEASURED)<reference value="#Observation_8a4048a5078f6b1c58943f"/>
+                                    </text>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime value="201206020945-0800"/>
+                                    <value xsi:type="PQ" value="70.0" unit="[in_us]"/>
+                                </observation>
+                            </component>
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
+                                    <templateId root="2.16.840.1.113883.3.88.11.83.14"/>
+                                    <id root="ce24389d-6af5-4f4f-98fe-db4924422d3b"/>
+                                    <code code="3141-9" codeSystem="2.16.840.1.113883.6.1" displayName="BODY WEIGHT (MEASURED)"/>
+                                    <text>BODY WEIGHT (MEASURED)<reference value="#Observation_814f5b8cee3a5aa7386407"/>
+                                    </text>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime value="201206020945-0800"/>
+                                    <value xsi:type="PQ" value="150.0" unit="[lb_av]"/>
+                                </observation>
+                            </component>
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
+                                    <templateId root="2.16.840.1.113883.3.88.11.83.14"/>
+                                    <id root="535068e4-fbc7-4f3b-896b-352f939afcdf"/>
+                                    <code code="8310-5" codeSystem="2.16.840.1.113883.6.1" displayName="BODY TEMPERATURE"/>
+                                    <text>BODY TEMPERATURE<reference value="#Observation_084750bae68e1ef6b5b826"/>
+                                    </text>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime value="201206020945-0800"/>
+                                    <value xsi:type="PQ" value="98" unit=".5"/>
+                                </observation>
+                            </component>
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
+                                    <templateId root="2.16.840.1.113883.3.88.11.83.14"/>
+                                    <id root="fa3bccf1-32a4-453e-b509-5e983c056438"/>
+                                    <code code="8480-6" codeSystem="2.16.840.1.113883.6.1" displayName="INTRAVASCULAR SYSTOLIC"/>
+                                    <text>INTRAVASCULAR SYSTOLIC<reference value="#Observation_75431bbd78c5b13e07d252"/>
+                                    </text>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime value="201206020945-0800"/>
+                                    <value xsi:type="PQ" value="120.0" unit="mm[Hg]"/>
+                                </observation>
+                            </component>
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
+                                    <templateId root="2.16.840.1.113883.3.88.11.83.14"/>
+                                    <id root="132b8d59-073c-456a-b3be-b0f54ae95a75"/>
+                                    <code code="8462-4" codeSystem="2.16.840.1.113883.6.1" displayName="INTRAVASCULAR DIASTOLIC"/>
+                                    <text>INTRAVASCULAR DIASTOLIC<reference value="#Observation_cf4d5c9d1f06845f71476a"/>
+                                    </text>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime value="201206020945-0800"/>
+                                    <value xsi:type="PQ" value="60.0" unit="mm[Hg]"/>
+                                </observation>
+                            </component>
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
+                                    <templateId root="2.16.840.1.113883.3.88.11.83.14"/>
+                                    <id root="4f697a6b-9088-47bf-bd12-90081803a99c"/>
+                                    <code code="8867-4" codeSystem="2.16.840.1.113883.6.1" displayName="HEART BEAT"/>
+                                    <text>HEART BEAT<reference value="#Observation_dd4020994140f937a500e0"/>
+                                    </text>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime value="201206020945-0800"/>
+                                    <value xsi:type="PQ" value="61.0" unit="/min"/>
+                                </observation>
+                            </component>
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
+                                    <templateId root="2.16.840.1.113883.3.88.11.83.14"/>
+                                    <id root="54f6f81e-0463-43f0-bcab-80d5eb50962b"/>
+                                    <code code="9279-1" codeSystem="2.16.840.1.113883.6.1" displayName="RESPIRATION RATE"/>
+                                    <text>RESPIRATION RATE<reference value="#Observation_2b4837b509d775ca8f900b"/>
+                                    </text>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime value="201206020945-0800"/>
+                                    <value xsi:type="PQ" value="92.0" unit="/min"/>
+                                </observation>
+                            </component>
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
+                                    <templateId root="2.16.840.1.113883.3.88.11.83.14"/>
+                                    <id root="1cb49668-87db-42dd-b86b-db548153e3ab"/>
+                                    <code nullFlavor="NI">
+                                        <originalText>ELY-PEFR^PEAK EXPIRATION FLOW RATE^L</originalText>
+                                    </code>
+                                    <text>ELY-PEFR^PEAK EXPIRATION FLOW RATE^L</text>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime value="201206020945-0800"/>
+                                    <value xsi:type="PQ" value="10" unit="0"/>
+                                </observation>
+                            </component>
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
+                                    <templateId root="2.16.840.1.113883.3.88.11.83.14"/>
+                                    <id root="eaa2b910-8f6f-4a05-957a-642100ab6d18"/>
+                                    <code code="41909-3" codeSystem="2.16.840.1.113883.6.1" displayName="BODY MASS INDEX"/>
+                                    <text>BODY MASS INDEX<reference value="#Observation_5b485eb6e5d67588df6585"/>
+                                    </text>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime value="201206020945-0800"/>
+                                    <value xsi:type="PQ" value="21" unit=".5"/>
+                                </observation>
+                            </component>
+                        </organizer>
+                    </entry>
+                    <entry  xmlns="urn:hl7-org:v3" xmlns:voc="urn:hl7-org:v3/voc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:axolotl="urn:axolotl-com:pdo">
+                        <organizer classCode="BATTERY" moodCode="EVN">
+                            <templateId root="2.16.840.1.113883.10.20.1.35"/>
+                            <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.1"/>
+                            <templateId root="2.16.840.1.113883.10.20.1.32"/>
+                            <id root="5e6b080a-03a9-42b4-8815-9a472620bf33"/>
+                            <code code="46680005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Vital signs"/>
+                            <statusCode code="completed"/>
+                            <effectiveTime value="201206090945-0800"/>
+                            <component>
+                                <procedure classCode="PROC" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.1.29"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.19"/>
+                                    <templateId root="2.16.840.1.113883.3.88.11.83.17"/>
+                                    <id root="219d8535-5206-41cf-9bf8-db22e85a414e"/>
+                                    <code nullFlavor="NI">
+                                        <originalText>Vital Signs<reference value="#Battery_8c4a7c9e10efd5dce2a6f7"/>
+                                        </originalText>
+                                    </code>
+                                    <text>Vital Signs<reference value="#Battery_8c4a7c9e10efd5dce2a6f7"/>
+                                    </text>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime value="201206090945-0800"/>
+                                    <priorityCode nullFlavor="NI"/>
+                                    <participant typeCode="RESP" contextControlCode="OP">
+                                        <participantRole>
+                                            <playingEntity>
+                                                <name>
+                                                    <given>Doctor</given>
+                                                    <family>Doom</family>
+                                                </name>
+                                            </playingEntity>
+                                        </participantRole>
+                                    </participant>
+                                    <participant typeCode="ORG" contextControlCode="OP">
+                                        <participantRole>
+                                            <playingEntity>
+                                                <name>AOMC</name>
+                                            </playingEntity>
+                                        </participantRole>
+                                    </participant>
+                                </procedure>
+                            </component>
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
+                                    <templateId root="2.16.840.1.113883.3.88.11.83.14"/>
+                                    <id root="5cc76264-72e8-4fc9-bca8-1b3d87fbddc0"/>
+                                    <code code="8302-2" codeSystem="2.16.840.1.113883.6.1" displayName="BODY HEIGHT (MEASURED)"/>
+                                    <text>BODY HEIGHT (MEASURED)<reference value="#Observation_8a4048a5078f6b1c58943f"/>
+                                    </text>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime value="201206090945-0800"/>
+                                    <value xsi:type="PQ" value="70.0" unit="[in_us]"/>
+                                </observation>
+                            </component>
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
+                                    <templateId root="2.16.840.1.113883.3.88.11.83.14"/>
+                                    <id root="ce24389d-6af5-4f4f-98fe-db4924422d3b"/>
+                                    <code code="3141-9" codeSystem="2.16.840.1.113883.6.1" displayName="BODY WEIGHT (MEASURED)"/>
+                                    <text>BODY WEIGHT (MEASURED)<reference value="#Observation_814f5b8cee3a5aa7386407"/>
+                                    </text>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime value="201206090945-0800"/>
+                                    <value xsi:type="PQ" value="150.0" unit="[lb_av]"/>
+                                </observation>
+                            </component>
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
+                                    <templateId root="2.16.840.1.113883.3.88.11.83.14"/>
+                                    <id root="535068e4-fbc7-4f3b-896b-352f939afcdf"/>
+                                    <code code="8310-5" codeSystem="2.16.840.1.113883.6.1" displayName="BODY TEMPERATURE"/>
+                                    <text>BODY TEMPERATURE<reference value="#Observation_084750bae68e1ef6b5b826"/>
+                                    </text>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime value="201206090945-0800"/>
+                                    <value xsi:type="PQ" value="98" unit=".5"/>
+                                </observation>
+                            </component>
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
+                                    <templateId root="2.16.840.1.113883.3.88.11.83.14"/>
+                                    <id root="fa3bccf1-32a4-453e-b509-5e983c056438"/>
+                                    <code code="8480-6" codeSystem="2.16.840.1.113883.6.1" displayName="INTRAVASCULAR SYSTOLIC"/>
+                                    <text>INTRAVASCULAR SYSTOLIC<reference value="#Observation_75431bbd78c5b13e07d252"/>
+                                    </text>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime value="201206090945-0800"/>
+                                    <value xsi:type="PQ" value="120.0" unit="mm[Hg]"/>
+                                </observation>
+                            </component>
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
+                                    <templateId root="2.16.840.1.113883.3.88.11.83.14"/>
+                                    <id root="132b8d59-073c-456a-b3be-b0f54ae95a75"/>
+                                    <code code="8462-4" codeSystem="2.16.840.1.113883.6.1" displayName="INTRAVASCULAR DIASTOLIC"/>
+                                    <text>INTRAVASCULAR DIASTOLIC<reference value="#Observation_cf4d5c9d1f06845f71476a"/>
+                                    </text>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime value="201206090945-0800"/>
+                                    <value xsi:type="PQ" value="60.0" unit="mm[Hg]"/>
+                                </observation>
+                            </component>
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
+                                    <templateId root="2.16.840.1.113883.3.88.11.83.14"/>
+                                    <id root="4f697a6b-9088-47bf-bd12-90081803a99c"/>
+                                    <code code="8867-4" codeSystem="2.16.840.1.113883.6.1" displayName="HEART BEAT"/>
+                                    <text>HEART BEAT<reference value="#Observation_dd4020994140f937a500e0"/>
+                                    </text>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime value="201206090945-0800"/>
+                                    <value xsi:type="PQ" value="62.0" unit="/min"/>
+                                </observation>
+                            </component>
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
+                                    <templateId root="2.16.840.1.113883.3.88.11.83.14"/>
+                                    <id root="54f6f81e-0463-43f0-bcab-80d5eb50962b"/>
+                                    <code code="9279-1" codeSystem="2.16.840.1.113883.6.1" displayName="RESPIRATION RATE"/>
+                                    <text>RESPIRATION RATE<reference value="#Observation_2b4837b509d775ca8f900b"/>
+                                    </text>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime value="201206090945-0800"/>
+                                    <value xsi:type="PQ" value="91.0" unit="/min"/>
+                                </observation>
+                            </component>
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
+                                    <templateId root="2.16.840.1.113883.3.88.11.83.14"/>
+                                    <id root="1cb49668-87db-42dd-b86b-db548153e3ab"/>
+                                    <code nullFlavor="NI">
+                                        <originalText>ELY-PEFR^PEAK EXPIRATION FLOW RATE^L</originalText>
+                                    </code>
+                                    <text>ELY-PEFR^PEAK EXPIRATION FLOW RATE^L</text>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime value="201206090945-0800"/>
+                                    <value xsi:type="PQ" value="10" unit="0"/>
+                                </observation>
+                            </component>
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.2"/>
+                                    <templateId root="2.16.840.1.113883.3.88.11.83.14"/>
+                                    <id root="eaa2b910-8f6f-4a05-957a-642100ab6d18"/>
+                                    <code code="41909-3" codeSystem="2.16.840.1.113883.6.1" displayName="BODY MASS INDEX"/>
+                                    <text>BODY MASS INDEX<reference value="#Observation_5b485eb6e5d67588df6585"/>
+                                    </text>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime value="201206090945-0800"/>
                                     <value xsi:type="PQ" value="21" unit=".5"/>
                                 </observation>
                             </component>
