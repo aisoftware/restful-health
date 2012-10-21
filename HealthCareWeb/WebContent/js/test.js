@@ -385,6 +385,6359 @@ var currentPatient = {
         }
       ]
     }},
+    {"structuredBody": {"component":     [
+      {"section":       {
+        "templateId":         [
+          {"root": "2.16.840.1.113883.10.20.1.2"},
+          {"root": "2.16.840.1.113883.3.88.11.83.102"},
+          {"root": "1.3.6.1.4.1.19376.1.5.3.1.3.13"}
+        ],
+        "code":         {
+          "code": "48765-2",
+          "codeSystem": "2.16.840.1.113883.6.1",
+          "codeSystemName": "LOINC",
+          "displayName": "Allergies, adverse reactions,alerts"
+        },
+        "title": "Allergies, Adverse Reactions, Alerts",
+        "text": {"table":         {
+          "thead": {"tr": {"th":           [
+            "Allergen",
+            "Reaction",
+            "Severity",
+            "Start Date",
+            "End Date",
+            "Status"
+          ]}},
+          "tbody": {"tr":           [
+            {"td":             [
+              {"content":               {
+                "ID": "Allergen_2640da886dba39b4b732fa",
+                "#text": "Peanut's\n                                            butter"
+              }},
+              {"content":               [
+                                {
+                  "ID": "Reaction_7f4e4dbb3bc2c87c7981d3",
+                  "#text": "Skin\n                                            Rashes/Hives"
+                },
+                                {
+                  "ID": "Reaction_d148b994a03c784ea208d2",
+                  "#text": "High\n                                            fever"
+                }
+              ]},
+              "No Information",
+              "Jan 6 2012",
+              "No Information",
+              "active"
+            ]},
+            {"td":             [
+              {"content":               {
+                "ID": "Allergen_6f4eff91ee9b3a099a7b79",
+                "#text": "pine\n                                            cones"
+              }},
+              {"content":               [
+                                {
+                  "ID": "Reaction_87449d92e782ff9b955506",
+                  "#text": "Skin\n                                            Rashes/Hives"
+                },
+                                {
+                  "ID": "Reaction_74464faeb201b1a317ddcd",
+                  "#text": "Asthma/Shortness of Breath"
+                },
+                                {
+                  "ID": "Reaction_0b4761ab9fb5bbfb33583c",
+                  "#text": "Nausea/Vomiting/Diarrhea"
+                }
+              ]},
+              "No Information",
+              "Jan 4 2012",
+              "No Information",
+              "active"
+            ]}
+          ]}
+        }},
+        "entry":         [
+          {"act":           {
+            "classCode": "ACT",
+            "moodCode": "EVN",
+            "templateId":             [
+              {"root": "2.16.840.1.113883.10.20.1.27"},
+              {"root": "2.16.840.1.113883.3.88.11.83.6"},
+              {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.5.1"},
+              {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.5.3"}
+            ],
+            "id": {"nullFlavor": "NI"},
+            "code": {"nullFlavor": "NA"},
+            "statusCode": {"code": "active"},
+            "effectiveTime": {"low": {"value": "20120106"}},
+            "entryRelationship":             [
+                            {
+                "typeCode": "SUBJ",
+                "inversionInd": "false",
+                "observation":                 {
+                  "classCode": "OBS",
+                  "moodCode": "EVN",
+                  "templateId":                   [
+                    {"root": "2.16.840.1.113883.10.20.1.28"},
+                    {"root": "2.16.840.1.113883.10.20.1.18"},
+                    {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.5"},
+                    {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.6"}
+                  ],
+                  "id": {"root": "5f4a9a9a-5696-4f0d-941b-c0c94aae8691"},
+                  "code":                   {
+                    "code": "420134006",
+                    "codeSystem": "2.16.840.1.113883.6.96",
+                    "codeSystemName": "SNOMED_CT",
+                    "codeSystemVersion": "20081218",
+                    "displayName": "Propensity to adverse reactions"
+                  },
+                  "statusCode": {"code": "completed"},
+                  "effectiveTime": {"low": {"value": "20120106"}},
+                  "value":                   {
+                    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "nullFlavor": "NI",
+                    "xsi:type": "CD"
+                  },
+                  "participant":                   {
+                    "typeCode": "CSM",
+                    "contextControlCode": "OP",
+                    "participantRole":                     {
+                      "classCode": "MANU",
+                      "playingEntity":                       {
+                        "classCode": "MMAT",
+                        "code":                         {
+                          "nullFlavor": "NI",
+                          "originalText":                           {
+                            "#text": "Peanut butter\n                                                  ",
+                            "reference": {"value": "#Allergen_2640da886dba39b4b732fa"}
+                          }
+                        },
+                        "name": "Peanut butter"
+                      }
+                    }
+                  },
+                  "entryRelationship":                   [
+                                        {
+                      "typeCode": "REFR",
+                      "observation":                       {
+                        "classCode": "OBS",
+                        "moodCode": "EVN",
+                        "id": {"nullFlavor": "NI"},
+                        "code": {"nullFlavor": "NI"},
+                        "informant": {"assignedEntity":                         {
+                          "id": {"nullFlavor": "NI"},
+                          "addr":                           {
+                            "streetAddressLine": "800 El Camino\n                                                  Real",
+                            "city": "Mountain View",
+                            "state": "CA",
+                            "postalCode": "94040"
+                          },
+                          "telecom": {"nullFlavor": "NI"},
+                          "assignedPerson": {"name":                           {
+                            "given": "Test",
+                            "family": "Userone"
+                          }},
+                          "representedOrganization":                           {
+                            "id": {"nullFlavor": "NI"},
+                            "name": "Test One Workgroup",
+                            "telecom": {"nullFlavor": "NI"},
+                            "addr": {"nullFlavor": "NI"}
+                          }
+                        }}
+                      }
+                    },
+                                        {
+                      "typeCode": "MFST",
+                      "inversionInd": "true",
+                      "observation":                       {
+                        "classCode": "OBS",
+                        "moodCode": "EVN",
+                        "templateId":                         [
+                          {"root": "2.16.840.1.113883.10.20.1.54"},
+                          {"root": "2.16.840.1.113883.10.20.1.28"}
+                        ],
+                        "id": {"root": "11601ab8-37f4-4117-ad1a-894a251bc27c"},
+                        "code": {"nullFlavor": "NI"},
+                        "text":                         {
+                          "#text": "Skin rashes / Hives\n                                                ",
+                          "reference": {"value": "#Reaction_7f4e4dbb3bc2c87c7981d3"}
+                        },
+                        "statusCode": {"code": "completed"},
+                        "effectiveTime": {"low": {"nullFlavor": "UNK"}}
+                      }
+                    },
+                                        {
+                      "typeCode": "MFST",
+                      "inversionInd": "true",
+                      "observation":                       {
+                        "classCode": "OBS",
+                        "moodCode": "EVN",
+                        "templateId":                         [
+                          {"root": "2.16.840.1.113883.10.20.1.54"},
+                          {"root": "2.16.840.1.113883.10.20.1.28"}
+                        ],
+                        "id": {"root": "a8ed603c-570b-4e0c-a703-d4594de1f780"},
+                        "code": {"nullFlavor": "NI"},
+                        "text":                         {
+                          "#text": "High fever\n                                                ",
+                          "reference": {"value": "#Reaction_d148b994a03c784ea208d2"}
+                        },
+                        "statusCode": {"code": "completed"},
+                        "effectiveTime": {"low": {"nullFlavor": "UNK"}}
+                      }
+                    }
+                  ]
+                }
+              },
+                            {
+                "typeCode": "REFR",
+                "observation":                 {
+                  "classCode": "OBS",
+                  "moodCode": "EVN",
+                  "code":                   {
+                    "code": "33999-4",
+                    "codeSystem": "2.16.840.1.113883.6.1",
+                    "displayName": "Status"
+                  },
+                  "statusCode": {"code": "completed"},
+                  "value":                   {
+                    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "code": "55561003",
+                    "xsi:type": "CD",
+                    "codeSystem": "2.16.840.1.113883.6.96",
+                    "codeSystemName": "SNOMED CT",
+                    "displayName": "Active"
+                  }
+                }
+              }
+            ]
+          }},
+          {"act":           {
+            "classCode": "ACT",
+            "moodCode": "EVN",
+            "templateId":             [
+              {"root": "2.16.840.1.113883.10.20.1.27"},
+              {"root": "2.16.840.1.113883.3.88.11.83.6"},
+              {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.5.1"},
+              {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.5.3"}
+            ],
+            "id": {"nullFlavor": "NI"},
+            "code": {"nullFlavor": "NA"},
+            "statusCode": {"code": "active"},
+            "effectiveTime": {"low": {"value": "20120104"}},
+            "entryRelationship":             [
+                            {
+                "typeCode": "SUBJ",
+                "inversionInd": "false",
+                "observation":                 {
+                  "classCode": "OBS",
+                  "moodCode": "EVN",
+                  "templateId":                   [
+                    {"root": "2.16.840.1.113883.10.20.1.28"},
+                    {"root": "2.16.840.1.113883.10.20.1.18"},
+                    {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.5"},
+                    {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.6"}
+                  ],
+                  "id": {"root": "1ab310ad-4fc6-43b7-81fd-339a97b2c5d2"},
+                  "code":                   {
+                    "code": "420134006",
+                    "codeSystem": "2.16.840.1.113883.6.96",
+                    "codeSystemName": "SNOMED_CT",
+                    "codeSystemVersion": "20081218",
+                    "displayName": "Propensity to adverse reactions"
+                  },
+                  "statusCode": {"code": "completed"},
+                  "effectiveTime": {"low": {"value": "20120104"}},
+                  "value":                   {
+                    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "nullFlavor": "NI",
+                    "xsi:type": "CD"
+                  },
+                  "participant":                   {
+                    "typeCode": "CSM",
+                    "contextControlCode": "OP",
+                    "participantRole":                     {
+                      "classCode": "MANU",
+                      "playingEntity":                       {
+                        "classCode": "MMAT",
+                        "code":                         {
+                          "nullFlavor": "NI",
+                          "originalText":                           {
+                            "#text": "pine cones\n                                                  ",
+                            "reference": {"value": "#Allergen_6f4eff91ee9b3a099a7b79"}
+                          }
+                        },
+                        "name": "pine cones"
+                      }
+                    }
+                  },
+                  "entryRelationship":                   [
+                                        {
+                      "typeCode": "REFR",
+                      "observation":                       {
+                        "classCode": "OBS",
+                        "moodCode": "EVN",
+                        "id": {"nullFlavor": "NI"},
+                        "code": {"nullFlavor": "NI"},
+                        "informant": {"assignedEntity":                         {
+                          "id": {"nullFlavor": "NI"},
+                          "addr":                           {
+                            "streetAddressLine": "800 El Camino\n                                                  Real",
+                            "city": "Mountain View",
+                            "state": "CA",
+                            "postalCode": "94040"
+                          },
+                          "telecom": {"nullFlavor": "NI"},
+                          "assignedPerson": {"name":                           {
+                            "given": "Test",
+                            "family": "Userone"
+                          }},
+                          "representedOrganization":                           {
+                            "id": {"nullFlavor": "NI"},
+                            "name": "Test One Workgroup",
+                            "telecom": {"nullFlavor": "NI"},
+                            "addr": {"nullFlavor": "NI"}
+                          }
+                        }}
+                      }
+                    },
+                                        {
+                      "typeCode": "MFST",
+                      "inversionInd": "true",
+                      "observation":                       {
+                        "classCode": "OBS",
+                        "moodCode": "EVN",
+                        "templateId":                         [
+                          {"root": "2.16.840.1.113883.10.20.1.54"},
+                          {"root": "2.16.840.1.113883.10.20.1.28"}
+                        ],
+                        "id": {"root": "6de9453a-2e80-419b-9909-b59b7a6561d0"},
+                        "code": {"nullFlavor": "NI"},
+                        "text":                         {
+                          "#text": "Skin Rashes/Hives\n                                                ",
+                          "reference": {"value": "#Reaction_87449d92e782ff9b955506"}
+                        },
+                        "statusCode": {"code": "completed"},
+                        "effectiveTime": {"low": {"nullFlavor": "UNK"}}
+                      }
+                    },
+                                        {
+                      "typeCode": "MFST",
+                      "inversionInd": "true",
+                      "observation":                       {
+                        "classCode": "OBS",
+                        "moodCode": "EVN",
+                        "templateId":                         [
+                          {"root": "2.16.840.1.113883.10.20.1.54"},
+                          {"root": "2.16.840.1.113883.10.20.1.28"}
+                        ],
+                        "id": {"root": "0a4a624e-5b00-4010-9eb6-9ea35e025757"},
+                        "code": {"nullFlavor": "NI"},
+                        "text":                         {
+                          "#text": "Asthma/Shortness of Breath\n                                                ",
+                          "reference": {"value": "#Reaction_74464faeb201b1a317ddcd"}
+                        },
+                        "statusCode": {"code": "completed"},
+                        "effectiveTime": {"low": {"nullFlavor": "UNK"}}
+                      }
+                    },
+                                        {
+                      "typeCode": "MFST",
+                      "inversionInd": "true",
+                      "observation":                       {
+                        "classCode": "OBS",
+                        "moodCode": "EVN",
+                        "templateId":                         [
+                          {"root": "2.16.840.1.113883.10.20.1.54"},
+                          {"root": "2.16.840.1.113883.10.20.1.28"}
+                        ],
+                        "id": {"root": "8ed6c11e-9bd5-4bed-8949-f4440a27d7f9"},
+                        "code": {"nullFlavor": "NI"},
+                        "text":                         {
+                          "#text": "Nausea/Vomiting/Diarrhea\n                                                ",
+                          "reference": {"value": "#Reaction_0b4761ab9fb5bbfb33583c"}
+                        },
+                        "statusCode": {"code": "completed"},
+                        "effectiveTime": {"low": {"nullFlavor": "UNK"}}
+                      }
+                    }
+                  ]
+                }
+              },
+                            {
+                "typeCode": "REFR",
+                "observation":                 {
+                  "classCode": "OBS",
+                  "moodCode": "EVN",
+                  "code":                   {
+                    "code": "33999-4",
+                    "codeSystem": "2.16.840.1.113883.6.1",
+                    "displayName": "Status"
+                  },
+                  "statusCode": {"code": "completed"},
+                  "value":                   {
+                    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "code": "55561003",
+                    "xsi:type": "CD",
+                    "codeSystem": "2.16.840.1.113883.6.96",
+                    "codeSystemName": "SNOMED CT",
+                    "displayName": "Active"
+                  }
+                }
+              }
+            ]
+          }}
+        ]
+      }},
+      {"section":       {
+        "templateId":         [
+          {"root": "2.16.840.1.113883.10.20.1.6"},
+          {"root": "1.3.6.1.4.1.19376.1.5.3.1.3.23"},
+          {"root": "2.16.840.1.113883.3.88.11.83.117"}
+        ],
+        "id": {"root": "8559f277-e78c-4118-974e-7dc124c9544f"},
+        "code":         {
+          "code": "11369-6",
+          "codeSystem": "2.16.840.1.113883.6.1",
+          "codeSystemName": "LOINC",
+          "displayName": "History of immunizations"
+        },
+        "title": "Immunizations",
+        "text": {"table":         {
+          "thead": {"tr": {"th":           [
+            "Immunization",
+            "Date",
+            "Rejected Reason"
+          ]}},
+          "tbody": {"tr":           [
+            {"td":             [
+                            {
+                "ID": "Immunization_e94a459cacf0b5de710cdf",
+                "#text": "Hepatitis A\n                                        Vaccine"
+              },
+              "Feb 8 2012",
+              "Not Applicable"
+            ]},
+            {"td":             [
+                            {
+                "ID": "Immunization_0c4582b58e12d465085bc3",
+                "#text": "Tetanus-Diphtheria\n                                        Toxoids Td"
+              },
+              "Feb 8 2012",
+              "Not Applicable"
+            ]}
+          ]}
+        }},
+        "entry":         [
+          {"substanceAdministration":           {
+            "classCode": "SBADM",
+            "moodCode": "EVN",
+            "negationInd": "false",
+            "templateId":             [
+              {"root": "2.16.840.1.113883.3.88.11.83.13"},
+              {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.12"},
+              {"root": "2.16.840.1.113883.10.20.1.24"}
+            ],
+            "id": {"root": "1aee0a18-6b21-46e8-8e33-cfdae86b0273"},
+            "code":             {
+              "code": "IMMUNIZ",
+              "codeSystem": "2.16.840.1.113883.5.4",
+              "codeSystemName": "ActCode",
+              "codeSystemVersion": "139",
+              "displayName": "Immunization"
+            },
+            "statusCode": {"code": "completed"},
+            "effectiveTime":             {
+              "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+              "xsi:type": "IVL_TS",
+              "value": "201202081354-0800"
+            },
+            "routeCode":             {
+              "code": "C38299",
+              "codeSystem": "2.16.840.1.113883.3.26.1.1",
+              "codeSystemName": "National Cancer Institute (NCI) Thesaurus",
+              "displayName": "SUBCUTANEOUS"
+            },
+            "consumable": {"manufacturedProduct":             {
+              "classCode": "MANU",
+              "templateId":               [
+                {"root": "2.16.840.1.113883.10.20.1.53"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.7.2"}
+              ],
+              "manufacturedMaterial":               {
+                "code":                 {
+                  "nullFlavor": "UNK",
+                  "originalText": {"reference": {"value": "#Immunization_e94a459cacf0b5de710cdf"}},
+                  "translation":                   {
+                    "code": "17100008001840",
+                    "codeSystem": "2.16.840.1.113883.6.68",
+                    "codeSystemName": "Medispan GPI",
+                    "displayName": "Hepatitis A Vaccine",
+                    "originalText": "Hepatitis A Vaccine Inj Susp 1440 EL\n                                                  Unit/ML 0.25 ml"
+                  }
+                },
+                "lotNumberText": "V245"
+              }
+            }},
+            "entryRelationship":             {
+              "typeCode": "REFR",
+              "observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "id": {"nullFlavor": "NI"},
+                "code": {"nullFlavor": "NI"},
+                "informant": {"assignedEntity":                 {
+                  "id": {"nullFlavor": "NI"},
+                  "addr": {"nullFlavor": "NI"},
+                  "telecom": {"nullFlavor": "NI"},
+                  "assignedPerson": {"name": "Test Userone"},
+                  "representedOrganization":                   {
+                    "id": {"nullFlavor": "NI"},
+                    "name": "Test One Workgroup",
+                    "telecom": {"nullFlavor": "NI"},
+                    "addr": {"nullFlavor": "NI"}
+                  }
+                }}
+              }
+            }
+          }},
+          {"substanceAdministration":           {
+            "classCode": "SBADM",
+            "moodCode": "EVN",
+            "negationInd": "false",
+            "templateId":             [
+              {"root": "2.16.840.1.113883.3.88.11.83.13"},
+              {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.12"},
+              {"root": "2.16.840.1.113883.10.20.1.24"}
+            ],
+            "id": {"root": "8599ce20-0b19-4cb4-b2ec-56a4003da412"},
+            "code":             {
+              "code": "IMMUNIZ",
+              "codeSystem": "2.16.840.1.113883.5.4",
+              "codeSystemName": "ActCode",
+              "codeSystemVersion": "139",
+              "displayName": "Immunization"
+            },
+            "statusCode": {"code": "completed"},
+            "effectiveTime":             {
+              "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+              "xsi:type": "IVL_TS",
+              "value": "201202081356-0800"
+            },
+            "routeCode":             {
+              "code": "C38299",
+              "codeSystem": "2.16.840.1.113883.3.26.1.1",
+              "codeSystemName": "National Cancer Institute (NCI) Thesaurus",
+              "displayName": "SUBCUTANEOUS"
+            },
+            "consumable": {"manufacturedProduct":             {
+              "classCode": "MANU",
+              "templateId":               [
+                {"root": "2.16.840.1.113883.10.20.1.53"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.7.2"}
+              ],
+              "manufacturedMaterial":               {
+                "code":                 {
+                  "nullFlavor": "UNK",
+                  "originalText": {"reference": {"value": "#Immunization_0c4582b58e12d465085bc3"}},
+                  "translation":                   {
+                    "code": "18990002201805",
+                    "codeSystem": "2.16.840.1.113883.6.68",
+                    "codeSystemName": "Medispan GPI",
+                    "displayName": "Tetanus-Diphtheria Toxoids Td",
+                    "originalText": "Tetanus-Diphtheria Toxoids (Td) Inj\n                                                  2-2 LF/0.5ML 0.25 ml"
+                  }
+                },
+                "lotNumberText": "CBF324"
+              }
+            }},
+            "entryRelationship":             {
+              "typeCode": "REFR",
+              "observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "id": {"nullFlavor": "NI"},
+                "code": {"nullFlavor": "NI"},
+                "informant": {"assignedEntity":                 {
+                  "id": {"nullFlavor": "NI"},
+                  "addr": {"nullFlavor": "NI"},
+                  "telecom": {"nullFlavor": "NI"},
+                  "assignedPerson": {"name": "Test Userone"},
+                  "representedOrganization":                   {
+                    "id": {"nullFlavor": "NI"},
+                    "name": "Test One Workgroup",
+                    "telecom": {"nullFlavor": "NI"},
+                    "addr": {"nullFlavor": "NI"}
+                  }
+                }}
+              }
+            }
+          }}
+        ]
+      }},
+      {"section":       {
+        "templateId":         [
+          {"root": "2.16.840.1.113883.10.20.1.8"},
+          {"root": "2.16.840.1.113883.3.88.11.83.112"},
+          {"root": "1.3.6.1.4.1.19376.1.5.3.1.3.19"}
+        ],
+        "id": {"root": "38a1494d-fa60-4c7e-b68e-b6362a80a727"},
+        "code":         {
+          "code": "10160-0",
+          "codeSystem": "2.16.840.1.113883.6.1",
+          "codeSystemName": "LOINC",
+          "displayName": "History of medication use"
+        },
+        "title": "Medications",
+        "text": {"table":         {
+          "thead": {"tr": {"th":           [
+            "Original Text",
+            "Start Date",
+            "End Date",
+            "Status"
+          ]}},
+          "tbody": {"tr": {"td":           [
+                        {
+              "ID": "Medtext_7a44678a563bad14f51f1d",
+              "#text": "Naproxen Sodium Cap 220\n                                        MG"
+            },
+            "Feb 8 2012",
+            "No Information",
+            "Active"
+          ]}}
+        }},
+        "entry":         {
+          "typeCode": "DRIV",
+          "substanceAdministration":           {
+            "classCode": "SBADM",
+            "moodCode": "EVN",
+            "templateId":             [
+              {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.7"},
+              {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.7.1"},
+              {"root": "2.16.840.1.113883.3.88.11.83.8"},
+              {"root": "2.16.840.1.113883.10.20.1.24"}
+            ],
+            "id": {"root": "0e500114-b8b3-4727-81ca-af05ca35ed02"},
+            "text": "1 CAPSULE EVERY 12 HOURS AS NEEDED",
+            "statusCode": {"code": "completed"},
+            "effectiveTime":             {
+              "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+              "xsi:type": "IVL_TS",
+              "low": {"value": "20120208"}
+            },
+            "consumable": {"manufacturedProduct":             {
+              "classCode": "MANU",
+              "templateId":               [
+                {"root": "2.16.840.1.113883.10.20.1.53"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.7.2"},
+                {"root": "2.16.840.1.113883.3.88.11.83.8.2"}
+              ],
+              "manufacturedMaterial":               {
+                "code":                 {
+                  "nullFlavor": "NI",
+                  "originalText":                   {
+                    "#text": "Naproxen Sodium Cap 220 MG",
+                    "reference": {"value": "#Medtext_7a44678a563bad14f51f1d"}
+                  }
+                },
+                "name": "Aleve"
+              }
+            }},
+            "entryRelationship":             [
+                            {
+                "typeCode": "REFR",
+                "observation":                 {
+                  "classCode": "OBS",
+                  "moodCode": "EVN",
+                  "templateId":                   [
+                    {"root": "2.16.840.1.113883.10.20.1.47"},
+                    {"root": "2.16.840.1.113883.10.20.1.57"}
+                  ],
+                  "code":                   {
+                    "code": "33999-4",
+                    "codeSystem": "2.16.840.1.113883.6.1",
+                    "codeSystemName": "LOINC",
+                    "displayName": "Status"
+                  },
+                  "statusCode": {"code": "completed"},
+                  "value":                   {
+                    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "code": "55561003",
+                    "xsi:type": "CD",
+                    "codeSystem": "2.16.840.1.113883.6.96",
+                    "codeSystemName": "SNOMED CT",
+                    "displayName": "Active"
+                  }
+                }
+              },
+                            {
+                "typeCode": "REFR",
+                "supply":                 {
+                  "classCode": "SPLY",
+                  "moodCode": "INT",
+                  "author":                   {
+                    "time": {"nullFlavor": "NI"},
+                    "assignedAuthor":                     {
+                      "classCode": "ASSIGNED",
+                      "id":                       {
+                        "root": "1.3.6.1.4.1.29148",
+                        "extension": "JJALGHPBIMA"
+                      },
+                      "addr": {"nullFlavor": "NI"},
+                      "telecom": {"nullFlavor": "NI"},
+                      "assignedPerson": {"name":                       {
+                        "given": "Test",
+                        "family": "Userone"
+                      }}
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }},
+      {"section":       {
+        "templateId":         [
+          {"root": "2.16.840.1.113883.3.88.11.83.101"},
+          {"root": "2.16.840.1.113883.10.20.1.9"},
+          {"root": "1.3.6.1.4.1.19376.1.5.3.1.1.5.3.7"}
+        ],
+        "id": {"nullFlavor": "NI"},
+        "code":         {
+          "code": "48768-6",
+          "codeSystem": "2.16.840.1.113883.6.1",
+          "codeSystemName": "LOINC",
+          "displayName": "Payment sources"
+        },
+        "title": "Payers Section",
+        "text": {"table":         {
+          "thead": {"tr": {"th":           [
+            "Payer",
+            "Plan Name",
+            "Group ID",
+            "Member ID",
+            "Coverage Start Date",
+            "Coverage End Date"
+          ]}},
+          "tbody": {"tr": {"td":           [
+            "Green Cross of Vermont",
+            "PTO",
+            "FLY-A380",
+            "ABC-9876543210",
+            "Jan 1 2011",
+            "Mar 31 2013"
+          ]}}
+        }},
+        "entry": {"act":         {
+          "classCode": "ACT",
+          "moodCode": "DEF",
+          "templateId":           [
+            {"root": "2.16.840.1.113883.10.20.1.20"},
+            {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.17"}
+          ],
+          "id": {"root": "08830337-9f76-49d1-86ed-e097dc8ebef7"},
+          "code":           {
+            "code": "48768-6",
+            "codeSystem": "2.16.840.1.113883.6.1",
+            "codeSystemName": "LOINC",
+            "displayName": "Payment sources"
+          },
+          "statusCode": {"code": "completed"},
+          "entryRelationship":           {
+            "typeCode": "COMP",
+            "act":             {
+              "classCode": "ACT",
+              "moodCode": "EVN",
+              "templateId":               [
+                {"root": "2.16.840.1.113883.10.20.1.26"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.18"}
+              ],
+              "id": {"extension": "FLY-A380"},
+              "code": {"nullFlavor": "NI"},
+              "statusCode": {"code": "completed"},
+              "performer":               {
+                "typeCode": "PRF",
+                "assignedEntity":                 {
+                  "id": {"root": "1f7d5c1c-d231-49ca-9795-f8a6de40b2ee"},
+                  "code":                   {
+                    "code": "PAYOR",
+                    "codeSystem": "2.16.840.1.113883.5.110",
+                    "codeSystemName": "RoleClass"
+                  },
+                  "addr": {"nullFlavor": "NI"},
+                  "telecom": {"nullFlavor": "NI"},
+                  "representedOrganization":                   {
+                    "name": "Green Cross of Vermont",
+                    "telecom": {"nullFlavor": "NI"},
+                    "addr": {"nullFlavor": "NI"}
+                  }
+                }
+              },
+              "participant":               {
+                "typeCode": "COV",
+                "contextControlCode": "OP",
+                "time":                 {
+                  "low": {"value": "20110101"},
+                  "high": {"value": "20130331"}
+                },
+                "participantRole":                 {
+                  "classCode": "PAT",
+                  "id": {"extension": "ABC-9876543210"},
+                  "code":                   {
+                    "code": "PAT",
+                    "codeSystem": "2.16.840.1.113883.5.110",
+                    "codeSystemName": "RoleClass"
+                  },
+                  "addr":                   {
+                    "streetAddressLine": "100 Main\n                                                  Street",
+                    "city": "Crystal Creek",
+                    "state": "CA",
+                    "postalCode": "94100"
+                  },
+                  "playingEntity": {"name":                   {
+                    "use": "L",
+                    "given": "Five",
+                    "family": "PatientFive"
+                  }}
+                }
+              },
+              "entryRelationship":               {
+                "typeCode": "REFR",
+                "act":                 {
+                  "classCode": "ACT",
+                  "moodCode": "DEF",
+                  "id": {"root": "b24706f0-2cfb-4124-97ae-ef9a3aaa50fc"},
+                  "code": {"nullFlavor": "NA"},
+                  "text":                   {
+                    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "xsi:type": "ST",
+                    "#text": "PTO"
+                  }
+                }
+              }
+            }
+          }
+        }}
+      }},
+      {"section":       {
+        "templateId":         [
+          {"root": "2.16.840.1.113883.3.88.11.83.103"},
+          {"root": "1.3.6.1.4.1.19376.1.5.3.1.3.6"},
+          {"root": "2.16.840.1.113883.10.20.1.11"}
+        ],
+        "id": {"nullFlavor": "NI"},
+        "code":         {
+          "code": "11450-4",
+          "codeSystem": "2.16.840.1.113883.6.1",
+          "codeSystemName": "LOINC",
+          "displayName": "Problem list"
+        },
+        "title": "Problems List Section",
+        "text": {"table":         {
+          "thead": {"tr": {"th":           [
+            "Condition",
+            "Start Date",
+            "End Date",
+            "Status"
+          ]}},
+          "tbody": {"tr":           [
+            {"td":             [
+                            {
+                "ID": "Condition_774b0c845a543f0962d087",
+                "#text": "CHRONIC SINUSITIS"
+              },
+              "Feb 3 2012",
+              "No Information",
+              "Active"
+            ]},
+            {"td":             [
+                            {
+                "ID": "Condition_b3489887c8d5dc4b9aa274",
+                "#text": "Influenza with\n                                        pneumonia"
+              },
+              "Jan 13 2010",
+              "No Information",
+              "Active"
+            ]}
+          ]}
+        }},
+        "entry":         [
+          {"act":           {
+            "classCode": "ACT",
+            "moodCode": "EVN",
+            "templateId":             [
+              {"root": "2.16.840.1.113883.10.20.1.27"},
+              {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.5.1"},
+              {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.5.2"},
+              {"root": "2.16.840.1.113883.3.88.11.83.7"}
+            ],
+            "id": {"nullFlavor": "NI"},
+            "code": {"nullFlavor": "NA"},
+            "statusCode": {"code": "active"},
+            "effectiveTime": {"low": {"nullFlavor": "NI"}},
+            "performer":             {
+              "typeCode": "PRF",
+              "assignedEntity":               {
+                "id":                 {
+                  "root": "1.3.6.1.4.1.29148",
+                  "extension": "JJALGHPBIMA"
+                },
+                "addr":                 {
+                  "streetAddressLine": "800 El Camino Real",
+                  "city": "Mountain View",
+                  "state": "CA",
+                  "postalCode": "94040"
+                },
+                "telecom":                 [
+                  {"value": "562 555-1213"},
+                  {"value": "562-555-1212"}
+                ],
+                "assignedPerson": {"name":                 {
+                  "given": "Test",
+                  "family": "Userone"
+                }},
+                "representedOrganization":                 {
+                  "name": "Test One Workgroup",
+                  "telecom": {"nullFlavor": "NI"},
+                  "addr": {"nullFlavor": "NI"}
+                }
+              }
+            },
+            "entryRelationship":             {
+              "typeCode": "SUBJ",
+              "inversionInd": "false",
+              "observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.28"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.5"}
+                ],
+                "id": {"root": "af49be0f-3df8-448c-97b2-3efa041df794"},
+                "code":                 {
+                  "code": "282291009",
+                  "codeSystem": "2.16.840.1.113883.6.96",
+                  "codeSystemName": "SNOMED CT",
+                  "codeSystemVersion": "20081218",
+                  "displayName": "Diagnosis"
+                },
+                "text": {"reference": {"value": "#Condition_774b0c845a543f0962d087"}},
+                "statusCode": {"code": "completed"},
+                "effectiveTime":                 {
+                  "low": {"value": "20120203"},
+                  "high": {"nullFlavor": "NI"}
+                },
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "nullFlavor": "UNK",
+                  "xsi:type": "CD",
+                  "translation":                   {
+                    "code": "473",
+                    "codeSystem": "2.16.840.1.113883.6.103",
+                    "codeSystemName": "ICD9-CM",
+                    "displayName": "CHRONIC SINUSITIS"
+                  }
+                },
+                "entryRelationship":                 {
+                  "typeCode": "REFR",
+                  "observation":                   {
+                    "classCode": "OBS",
+                    "moodCode": "EVN",
+                    "templateId": {"root": "2.16.840.1.113883.10.20.1.50"},
+                    "code":                     {
+                      "code": "33999-4",
+                      "codeSystem": "2.16.840.1.113883.6.1",
+                      "codeSystemName": "LOINC",
+                      "displayName": "Status"
+                    },
+                    "statusCode": {"code": "completed"},
+                    "value":                     {
+                      "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                      "code": "55561003",
+                      "xsi:type": "CD",
+                      "codeSystem": "2.16.840.1.113883.6.96",
+                      "codeSystemName": "SNOMED CT",
+                      "codeSystemVersion": "20091109",
+                      "displayName": "Active"
+                    }
+                  }
+                }
+              }
+            }
+          }},
+          {"act":           {
+            "classCode": "ACT",
+            "moodCode": "EVN",
+            "templateId":             [
+              {"root": "2.16.840.1.113883.10.20.1.27"},
+              {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.5.1"},
+              {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.5.2"},
+              {"root": "2.16.840.1.113883.3.88.11.83.7"}
+            ],
+            "id": {"nullFlavor": "NI"},
+            "code": {"nullFlavor": "NA"},
+            "statusCode": {"code": "active"},
+            "effectiveTime": {"low": {"nullFlavor": "NI"}},
+            "performer":             {
+              "typeCode": "PRF",
+              "assignedEntity":               {
+                "id":                 {
+                  "root": "1.3.6.1.4.1.29148",
+                  "extension": "JJALGHPBIMA"
+                },
+                "addr":                 {
+                  "streetAddressLine": "800 El Camino Real",
+                  "city": "Mountain View",
+                  "state": "CA",
+                  "postalCode": "94040"
+                },
+                "telecom":                 [
+                  {"value": "562 555-1213"},
+                  {"value": "562-555-1212"}
+                ],
+                "assignedPerson": {"name":                 {
+                  "given": "Test",
+                  "family": "Userone"
+                }},
+                "representedOrganization":                 {
+                  "name": "Test One Workgroup",
+                  "telecom": {"nullFlavor": "NI"},
+                  "addr": {"nullFlavor": "NI"}
+                }
+              }
+            },
+            "entryRelationship":             {
+              "typeCode": "SUBJ",
+              "inversionInd": "false",
+              "observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.28"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.5"}
+                ],
+                "id": {"root": "0fb8be60-c9c1-40c6-81a3-d9c4ee734ba2"},
+                "code":                 {
+                  "code": "282291009",
+                  "codeSystem": "2.16.840.1.113883.6.96",
+                  "codeSystemName": "SNOMED CT",
+                  "codeSystemVersion": "20081218",
+                  "displayName": "Diagnosis"
+                },
+                "text": {"reference": {"value": "#Condition_b3489887c8d5dc4b9aa274"}},
+                "statusCode": {"code": "completed"},
+                "effectiveTime":                 {
+                  "low": {"value": "20100113"},
+                  "high": {"nullFlavor": "NI"}
+                },
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "nullFlavor": "UNK",
+                  "xsi:type": "CD",
+                  "translation":                   {
+                    "code": "487.0",
+                    "codeSystem": "2.16.840.1.113883.6.103",
+                    "codeSystemName": "ICD9-CM",
+                    "displayName": "Influenza with pneumonia"
+                  }
+                },
+                "entryRelationship":                 {
+                  "typeCode": "REFR",
+                  "observation":                   {
+                    "classCode": "OBS",
+                    "moodCode": "EVN",
+                    "templateId": {"root": "2.16.840.1.113883.10.20.1.50"},
+                    "code":                     {
+                      "code": "33999-4",
+                      "codeSystem": "2.16.840.1.113883.6.1",
+                      "codeSystemName": "LOINC",
+                      "displayName": "Status"
+                    },
+                    "statusCode": {"code": "completed"},
+                    "value":                     {
+                      "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                      "code": "55561003",
+                      "xsi:type": "CD",
+                      "codeSystem": "2.16.840.1.113883.6.96",
+                      "codeSystemName": "SNOMED CT",
+                      "codeSystemVersion": "20091109",
+                      "displayName": "Active"
+                    }
+                  }
+                }
+              }
+            }
+          }}
+        ]
+      }},
+      {"section":       {
+        "templateId":         [
+          {"root": "2.16.840.1.113883.10.20.1.14"},
+          {"root": "1.3.6.1.4.1.19376.1.5.3.1.3.28"},
+          {"root": "2.16.840.1.113883.3.88.11.83.122"}
+        ],
+        "code":         {
+          "code": "30954-2",
+          "codeSystem": "2.16.840.1.113883.6.1",
+          "codeSystemName": "LOINC",
+          "displayName": "Relevant diagnostic tests and/or laboratory data"
+        },
+        "title": "Results",
+        "text": {"table":         [
+                    {
+            "caption":             {
+              "ID": "Battery_ff4c85a463899a7622d047",
+              "styleCode": "bold",
+              "#text": "CBC"
+            },
+            "thead": {"tr": {"th":             [
+              "Observation",
+              "Value",
+              "Reference Range",
+              "Units",
+              "Interpretation",
+              "Notes",
+              "Date"
+            ]}},
+            "tbody": {"tr":             [
+              {"td":               [
+                {"content":                 {
+                  "ID": "Observation_404818997794231c691ea9",
+                  "#text": "LEUKOCYTES"
+                }},
+                {"content":                 {
+                  "ID": "ObservationValue_0142159542842b3bcd4f45",
+                  "#text": "8.30\n                                            THOUSAND"
+                }},
+                "4.80 - 10.80",
+                "No Information",
+                "No Information",
+                "No Information",
+                "Feb 14 2000 9:45 AM"
+              ]},
+              {"td":               [
+                {"content":                 {
+                  "ID": "Observation_0c42c08db8a9aefa74bbc2",
+                  "#text": "HEMOGLOBIN"
+                }},
+                {"content":                 {
+                  "ID": "ObservationValue_334bd49f1b80aa9b6ed433",
+                  "#text": "14.6\n                                            G/dl"
+                }},
+                "14.0 - 18.0",
+                "No Information",
+                "No Information",
+                "No Information",
+                "Feb 14 2000 9:45 AM"
+              ]},
+              {"td":               [
+                {"content":                 {
+                  "ID": "Observation_f64d9f8e16e53cc5a66cc5",
+                  "#text": "HEMATOCRIT"
+                }},
+                {"content":                 {
+                  "ID": "ObservationValue_f64b2bb3f013ad9dada4f0",
+                  "#text": "44.3\n                                            PERCENT"
+                }},
+                "42.0 - 54.0",
+                "No Information",
+                "No Information",
+                "No Information",
+                "Feb 14 2000 9:45 AM"
+              ]},
+              {"td":               [
+                {"content":                 {
+                  "ID": "Observation_104ae290687b24b2dde4f0",
+                  "#text": "PLATELETS"
+                }},
+                {"content":                 {
+                  "ID": "ObservationValue_034a20af654fe166202ed3",
+                  "#text": "135\n                                            THOUSAND"
+                }},
+                "130 - 400",
+                "No Information",
+                "Normal",
+                "No Information",
+                "Feb 14 2000 9:45 AM"
+              ]},
+              {"td":               [
+                {"content":                 {
+                  "ID": "Observation_28456190cb4f9bb1020213",
+                  "#text": "ERYTHROCYTES"
+                }},
+                {"content":                 {
+                  "ID": "ObservationValue_dc44c5997614770cd787f5",
+                  "#text": "4.79\n                                            MILLION"
+                }},
+                "4.70 - 6.10",
+                "No Information",
+                "No Information",
+                "No Information",
+                "Feb 14 2000 9:45 AM"
+              ]},
+              {"td":               [
+                {"content":                 {
+                  "ID": "Observation_0c42b4af90dbd7c37b2bd3",
+                  "#text": "ERYTHROCYTE\n                                            MEAN CORPUSCULAR V"
+                }},
+                {"content":                 {
+                  "ID": "ObservationValue_0442669b661b59783d66a5",
+                  "#text": "92.4\n                                            fl"
+                }},
+                "83.0 - 99.0",
+                "No Information",
+                "No Information",
+                "No Information",
+                "Feb 14 2000 9:45 AM"
+              ]},
+              {"td":               [
+                {"content":                 {
+                  "ID": "Observation_e840fdb5651235da65c937",
+                  "#text": "ERYTHROCYTE\n                                            MEAN CORPUSCULAR H"
+                }},
+                {"content":                 {
+                  "ID": "ObservationValue_4045c8afdc793c9fbed5a2",
+                  "#text": "30.5\n                                            pg"
+                }},
+                "27.0 - 32.0",
+                "No Information",
+                "No Information",
+                "No Information",
+                "Feb 14 2000 9:45 AM"
+              ]},
+              {"td":               [
+                {"content":                 {
+                  "ID": "Observation_9f487c9b34850b9b3d8f85",
+                  "#text": "ERYTHROCYTE\n                                            MEAN CORPUSCULAR H"
+                }},
+                {"content":                 {
+                  "ID": "ObservationValue_3242e4ba105ed5a42c0fe2",
+                  "#text": "33.0\n                                            G/dl"
+                }},
+                "32.0 - 37.0",
+                "No Information",
+                "No Information",
+                "No Information",
+                "Feb 14 2000 9:45 AM"
+              ]},
+              {"td":               [
+                {"content":                 {
+                  "ID": "Observation_1f4798a3d28212eaddebe5",
+                  "#text": "ERYTHROCYTE\n                                            SIZE DISTRIBUTION"
+                }},
+                {"content":                 {
+                  "ID": "ObservationValue_5949588e279b0490d350a5",
+                  "#text": "14\n                                            PERCENT"
+                }},
+                "11.5 - 14.5",
+                "No Information",
+                "Normal",
+                "No Information",
+                "Feb 14 2000 9:45 AM"
+              ]},
+              {"td":               [
+                {"content":                 {
+                  "ID": "Observation_f34e20afcf6d55757bb2f3",
+                  "#text": "NEUTROPHILS"
+                }},
+                {"content":                 {
+                  "ID": "ObservationValue_d5487bacc899189d62db20",
+                  "#text": "69\n                                            PERCENT"
+                }},
+                "40.0 - 74.0",
+                "No Information",
+                "Normal",
+                "No Information",
+                "Feb 14 2000 9:45 AM"
+              ]},
+              {"td":               [
+                {"content":                 {
+                  "ID": "Observation_374acb8ffbf648877df75e",
+                  "#text": "LYMPHOCYTES"
+                }},
+                {"content":                 {
+                  "ID": "ObservationValue_6f41c59e4e2aa4c8383ec6",
+                  "#text": "20\n                                            PERCENT"
+                }},
+                "19.0 - 48.0",
+                "No Information",
+                "Normal",
+                "No Information",
+                "Feb 14 2000 9:45 AM"
+              ]},
+              {"td":               [
+                {"content":                 {
+                  "ID": "Observation_aa46e7bf7aea65f24a59be",
+                  "#text": "MONOCYTES"
+                }},
+                {"content":                 {
+                  "ID": "ObservationValue_86472697e574bfaa63272e",
+                  "#text": "8.5\n                                            PERCENT"
+                }},
+                "3.5 - 9.0",
+                "No Information",
+                "Normal",
+                "No Information",
+                "Feb 14 2000 9:45 AM"
+              ]},
+              {"td":               [
+                {"content":                 {
+                  "ID": "Observation_ce4cb6bc8c8a572b8978f3",
+                  "#text": "EOSINOPHILS"
+                }},
+                {"content":                 {
+                  "ID": "ObservationValue_3d48e9821f28e5ca175cfd",
+                  "#text": "0.6\n                                            PERCENT"
+                }},
+                "0.0 - 7.0",
+                "No Information",
+                "No Information",
+                "No Information",
+                "Feb 14 2000 9:45 AM"
+              ]},
+              {"td":               [
+                {"content":                 {
+                  "ID": "Observation_034861b05b40f57c49f26f",
+                  "#text": "BASOPHILS"
+                }},
+                {"content":                 {
+                  "ID": "ObservationValue_3e452a9f685552178f6612",
+                  "#text": "0.8\n                                            PERCENT"
+                }},
+                "0.0 - 1.5",
+                "No Information",
+                "No Information",
+                "No Information",
+                "Feb 14 2000 9:45 AM"
+              ]},
+              {"td":               [
+                {"content":                 {
+                  "ID": "Observation_c84ce3b9ec997fedc75091",
+                  "#text": "LGE\n                                            UNST.CELL"
+                }},
+                {"content":                 {
+                  "ID": "ObservationValue_8641b88c2aa88007c7ec1a",
+                  "#text": "0.8\n                                            PERCENT"
+                }},
+                "0.0 - 4.0",
+                "No Information",
+                "No Information",
+                "No Information",
+                "Feb 14 2000 9:45 AM"
+              ]},
+              {"td":               [
+                {"content":                 {
+                  "ID": "Observation_394890b2681d3e4ebf2c40",
+                  "#text": "NEUTROPHILS/100 LEUKOCYTES"
+                }},
+                {"content":                 {
+                  "ID": "ObservationValue_6340f486c25c1cc8d4cc96",
+                  "#text": "6.72\n                                            THOUSAND"
+                }},
+                "1.90 - 8.00",
+                "No Information",
+                "No Information",
+                "No Information",
+                "Feb 14 2000 9:45 AM"
+              ]},
+              {"td":               [
+                {"content":                 {
+                  "ID": "Observation_5c421d893067b0dbcef6d5",
+                  "#text": "LYMPHOCYTES/100 LEUKOCYTES"
+                }},
+                {"content":                 {
+                  "ID": "ObservationValue_2b4233883ca7bf3da94be9",
+                  "#text": "1.3\n                                            THOUSAND"
+                }},
+                "0.90 - 5.20",
+                "No Information",
+                "Normal",
+                "No Information",
+                "Feb 14 2000 9:45 AM"
+              ]},
+              {"td":               [
+                {"content":                 {
+                  "ID": "Observation_464815b50ba334d74f53ed",
+                  "#text": "MONOCYTES/100 LEUKOCYTES"
+                }},
+                {"content":                 {
+                  "ID": "ObservationValue_5442dc93f78c1b730a6c3c",
+                  "#text": "0.77\n                                            THOUSAND"
+                }},
+                "0.16 - 1.00",
+                "No Information",
+                "No Information",
+                "No Information",
+                "Feb 14 2000 9:45 AM"
+              ]},
+              {"td":               [
+                {"content":                 {
+                  "ID": "Observation_2344b0bbd713dd9e19a4d6",
+                  "#text": "EOS\n                                            ABS"
+                }},
+                {"content":                 {
+                  "ID": "ObservationValue_314cb5b68df72e8e596911",
+                  "#text": "0.05\n                                            THOUSAND"
+                }},
+                "0.00 - 0.80",
+                "No Information",
+                "No Information",
+                "No Information",
+                "Feb 14 2000 9:45 AM"
+              ]},
+              {"td":               [
+                {"content":                 {
+                  "ID": "Observation_654b6796f77b0c4cddccf1",
+                  "#text": "BASOPHILS/100 LEUKOCYTES"
+                }},
+                {"content":                 {
+                  "ID": "ObservationValue_8c4d619d6d7790d15dee66",
+                  "#text": "0.07\n                                            THOUSAND"
+                }},
+                "0.00 - 0.20",
+                "No Information",
+                "No Information",
+                "No Information",
+                "Feb 14 2000 9:45 AM"
+              ]},
+              {"td":               [
+                {"content":                 {
+                  "ID": "Observation_d645ca95c8e742ae831137",
+                  "#text": "LUC\n                                            ABS"
+                }},
+                {"content":                 {
+                  "ID": "ObservationValue_664cf3a358da29fa27b252",
+                  "#text": "0.07\n                                            THOUSAND"
+                }},
+                "0.00 - 0.40",
+                "No Information",
+                "No Information",
+                "No Information",
+                "Feb 14 2000 9:45 AM"
+              ]},
+              {"td":               [
+                {"content":                 {
+                  "ID": "Observation_a44ca1ac37961198664b42",
+                  "#text": "NEUTROPHILS\n                                            BAND FORM/100 LEUK"
+                }},
+                {"content":                 {
+                  "ID": "ObservationValue_c54896b101ccf8b9905dce",
+                  "#text": "7\n                                            PERCENT"
+                }},
+                "0 - 8",
+                "No Information",
+                "Normal",
+                "No Information",
+                "Feb 14 2000 9:45 AM"
+              ]},
+              {"td":               [
+                {"content":                 {
+                  "ID": "Observation_fb4789b9d8673a6eb8bba2",
+                  "#text": "NEUTROPHILS\n                                            SEGMENTED/100 LEUK"
+                }},
+                {"content":                 {
+                  "ID": "ObservationValue_3840e1bdd15242a0e6547b",
+                  "#text": "71\n                                            PERCENT"
+                }},
+                "40 - 74",
+                "No Information",
+                "No Information",
+                "No Information",
+                "Feb 14 2000 9:45 AM"
+              ]},
+              {"td":               [
+                {"content":                 {
+                  "ID": "Observation_e14253ab3d26a2753383a8",
+                  "#text": "LYMPHOCYTES/100 LEUKOCYTES"
+                }},
+                {"content":                 {
+                  "ID": "ObservationValue_b541bdbcc81c603a548c40",
+                  "#text": "23\n                                            PERCENT"
+                }},
+                "19 - 48",
+                "No Information",
+                "Normal",
+                "No Information",
+                "Feb 14 2000 9:45 AM"
+              ]},
+              {"td":               [
+                {"content":                 {
+                  "ID": "Observation_6d44689bc5255c3052510f",
+                  "#text": "MONOCYTES/100 LEUKOCYTES"
+                }},
+                {"content":                 {
+                  "ID": "ObservationValue_ae4bcc8660126bdd646841",
+                  "#text": "9\n                                            PERCENT"
+                }},
+                "4 - 9",
+                "No Information",
+                "No Information",
+                "No Information",
+                "Feb 14 2000 9:45 AM"
+              ]},
+              {"td":               [
+                {"content":                 {
+                  "ID": "Observation_51439a971316897e0dad20",
+                  "#text": "EOSINOPHILS/100 LEUKOCYTES"
+                }},
+                {"content":                 {
+                  "ID": "ObservationValue_b9440694986413e927cdba",
+                  "#text": "3\n                                            PERCENT"
+                }},
+                "0 - 7",
+                "No Information",
+                "No Information",
+                "No Information",
+                "Feb 14 2000 9:45 AM"
+              ]},
+              {"td":               [
+                {"content":                 {
+                  "ID": "Observation_2840ea8afdcf90287a98bc",
+                  "#text": "BASOPHILS/100 LEUKOCYTES"
+                }},
+                {"content":                 {
+                  "ID": "ObservationValue_3a4919a2cde1dad130c325",
+                  "#text": "0\n                                            PERCENT"
+                }},
+                "0 - 2",
+                "No Information",
+                "No Information",
+                "No Information",
+                "Feb 14 2000 9:45 AM"
+              ]},
+              {"td":               [
+                {"content":                 {
+                  "ID": "Observation_2d42f0805129e705e2b568",
+                  "#text": "METAMYELOCYTES/100 LEUKOCYTES"
+                }},
+                {"content":                 {
+                  "ID": "ObservationValue_6045e88b92338ae6e7cb59",
+                  "#text": "0\n                                            PERCENT"
+                }},
+                "0 - 1",
+                "No Information",
+                "No Information",
+                "No Information",
+                "Feb 14 2000 9:45 AM"
+              ]},
+              {"td":               [
+                {"content":                 {
+                  "ID": "Observation_654c81bbb5b1563511d1da",
+                  "#text": "MYELOCYTES/100 LEUKOCYTES"
+                }},
+                {"content":                 {
+                  "ID": "ObservationValue_ff4512937ceae47a944870",
+                  "#text": "0\n                                            PERCENT"
+                }},
+                "0 - 1",
+                "No Information",
+                "No Information",
+                "No Information",
+                "Feb 14 2000 9:45 AM"
+              ]},
+              {"td":               [
+                {"content":                 {
+                  "ID": "Observation_6e41b89d1dfb03873ae233",
+                  "#text": "PROMYELOCYTES/100 LEUKOCYTES"
+                }},
+                {"content":                 {
+                  "ID": "ObservationValue_664aa189cfdb05dc8968a8",
+                  "#text": "0\n                                            PERCENT"
+                }},
+                "0 - 0",
+                "No Information",
+                "No Information",
+                "No Information",
+                "Feb 14 2000 9:45 AM"
+              ]},
+              {"td":               [
+                {"content":                 {
+                  "ID": "Observation_3a4bb59a8ff2a8b81d31bb",
+                  "#text": "BLASTS/100\n                                            LEUKOCYTES"
+                }},
+                {"content":                 {
+                  "ID": "ObservationValue_d74aea953c943e74bf65cc",
+                  "#text": "0\n                                            PERCENT"
+                }},
+                "0 - 0",
+                "No Information",
+                "No Information",
+                "No Information",
+                "Feb 14 2000 9:45 AM"
+              ]},
+              {"td":               [
+                {"content":                 {
+                  "ID": "Observation_3b483bb30edf586cf15381",
+                  "#text": "PLATELET\n                                            (EST)"
+                }},
+                {"content":                 {
+                  "ID": "ObservationValue_e74cf7a1a26ee1ba19dd48",
+                  "#text": "10-12\n                                            PER_OIF"
+                }},
+                "7 - 20",
+                "No Information",
+                "No Information",
+                "PLATELET COUNT CONSISTENT WITH SLIDE REVIEW ESPLT EACH\n                                        PLATELET PER OIL IMMERSION FIELD REPRESENTS APPROXIMATELY\n                                        TWENTY THOUSAND PLATELETS PER CUBIC MILLIMETER.",
+                "Feb 14 2000 9:45 AM"
+              ]}
+            ]}
+          },
+                    {
+            "caption":             {
+              "ID": "Battery_7b4f39819a1fd492652f3e",
+              "styleCode": "bold",
+              "#text": "UA\n                                COMPLETE"
+            },
+            "thead": {"tr": {"th":             [
+              "Observation",
+              "Value",
+              "Reference Range",
+              "Units",
+              "Interpretation",
+              "Notes",
+              "Date"
+            ]}},
+            "tbody": {"tr":             [
+              {"td":               [
+                {"content":                 {
+                  "ID": "Observation_e249d1b57c1f1aac99db9c",
+                  "#text": "COLOR"
+                }},
+                {"content":                 {
+                  "ID": "ObservationValue_93448d9200f8a365826742",
+                  "#text": "YELLOW"
+                }},
+                "YELLOW-STRAW",
+                "No Information",
+                "No Information",
+                "URINE SAVED - CALL LAB WITHIN 24HR IF FURTHER WORKUP\n                                        REQUIRED",
+                "Feb 14 2000 9:45 AM"
+              ]},
+              {"td":               [
+                {"content":                 {
+                  "ID": "Observation_89486eb6654566430be78e",
+                  "#text": "APPEARANCE"
+                }},
+                {"content":                 {
+                  "ID": "ObservationValue_384a4f85db16d2b7eee7a4",
+                  "#text": "CLEAR"
+                }},
+                "CLEAR",
+                "No Information",
+                "No Information",
+                "No Information",
+                "Feb 14 2000 9:45 AM"
+              ]},
+              {"td":               [
+                {"content":                 {
+                  "ID": "Observation_6e4abdb41dc023ef4a9edf",
+                  "#text": "SPECIFIC\n                                            GRAVITY"
+                }},
+                {"content":                 {
+                  "ID": "ObservationValue_1a4f59b6e649526757aacd",
+                  "#text": "1.016\n                                            ION.CONC"
+                }},
+                "1.003 - 1.030",
+                "No Information",
+                "No Information",
+                "No Information",
+                "Feb 14 2000 9:45 AM"
+              ]},
+              {"td":               [
+                {"content":                 {
+                  "ID": "Observation_27479db0e0764ee9e61c3a",
+                  "#text": "PH"
+                }},
+                {"content":                 {
+                  "ID": "ObservationValue_e341bc93f7b5185bd03a89",
+                  "#text": "6.5"
+                }},
+                "6.0 - 8.0",
+                "No Information",
+                "Normal",
+                "No Information",
+                "Feb 14 2000 9:45 AM"
+              ]},
+              {"td":               [
+                {"content":                 {
+                  "ID": "Observation_4a444b9a5ad05460dea293",
+                  "#text": "GLUCOSE"
+                }},
+                {"content":                 {
+                  "ID": "ObservationValue_474836a37994e78e0d9766",
+                  "#text": "NORMAL\n                                            MG/DL"
+                }},
+                "NORMAL",
+                "No Information",
+                "No Information",
+                "No Information",
+                "Feb 14 2000 9:45 AM"
+              ]},
+              {"td":               [
+                {"content":                 {
+                  "ID": "Observation_cc4a43a2330ea3858c6bf0",
+                  "#text": "BILIRUBIN"
+                }},
+                {"content":                 {
+                  "ID": "ObservationValue_1045d19a3b13b9c93e34a4",
+                  "#text": "NEGATIVE MG/DL"
+                }},
+                "NEGATIVE",
+                "No Information",
+                "No Information",
+                "No Information",
+                "Feb 14 2000 9:45 AM"
+              ]},
+              {"td":               [
+                {"content":                 {
+                  "ID": "Observation_95477db123490311300c4d",
+                  "#text": "KETONES"
+                }},
+                {"content":                 {
+                  "ID": "ObservationValue_e846849aceab62c7b35724",
+                  "#text": "NEGATIVE MG/DL"
+                }},
+                "NEGATIVE",
+                "No Information",
+                "No Information",
+                "No Information",
+                "Feb 14 2000 9:45 AM"
+              ]},
+              {"td":               [
+                {"content":                 {
+                  "ID": "Observation_ed406e92734a9525460ee3",
+                  "#text": "HEMOGLOBIN"
+                }},
+                {"content":                 {
+                  "ID": "ObservationValue_fa43f0bfbd6d9c711175de",
+                  "#text": "NEGATIVE"
+                }},
+                "NEGATIVE",
+                "No Information",
+                "No Information",
+                "No Information",
+                "Feb 14 2000 9:45 AM"
+              ]},
+              {"td":               [
+                {"content":                 {
+                  "ID": "Observation_ca40a6b637ddd5523f3eac",
+                  "#text": "PROTEIN.TOTAL"
+                }},
+                {"content":                 {
+                  "ID": "ObservationValue_d14c7bb600dcd70dbc88e6",
+                  "#text": "100\n                                            MG/DL"
+                }},
+                "NEGATIVE",
+                "No Information",
+                "No Information",
+                "No Information",
+                "Feb 14 2000 9:45 AM"
+              ]},
+              {"td":               [
+                {"content":                 {
+                  "ID": "Observation_934782bdef412195b700bf",
+                  "#text": "UROBILINOGEN"
+                }},
+                {"content":                 {
+                  "ID": "ObservationValue_d348b38cceb08cb2e955cc",
+                  "#text": "NORMAL\n                                            MG/DL"
+                }},
+                "NORMAL",
+                "No Information",
+                "No Information",
+                "No Information",
+                "Feb 14 2000 9:45 AM"
+              ]},
+              {"td":               [
+                {"content":                 {
+                  "ID": "Observation_754b0e8a3d05608b8a7a96",
+                  "#text": "NITRITE"
+                }},
+                {"content":                 {
+                  "ID": "ObservationValue_9d4196a9bb236eeb22afc8",
+                  "#text": "NEGATIVE MG/DL"
+                }},
+                "NEGATIVE",
+                "No Information",
+                "No Information",
+                "No Information",
+                "Feb 14 2000 9:45 AM"
+              ]},
+              {"td":               [
+                {"content":                 {
+                  "ID": "Observation_c94633ae757bcc6ea48919",
+                  "#text": "LEUKOCYTE\n                                            ESTERASE"
+                }},
+                {"content":                 {
+                  "ID": "ObservationValue_24440493ff7bd1ffbb5b42",
+                  "#text": "NORMAL"
+                }},
+                "NORMAL",
+                "No Information",
+                "No Information",
+                "No Information",
+                "Feb 14 2000 9:45 AM"
+              ]},
+              {"td":               [
+                {"content":                 {
+                  "ID": "Observation_f9443f9b532fe72f2cb1e5",
+                  "#text": "ASCORBATE"
+                }},
+                {"content":                 {
+                  "ID": "ObservationValue_04433c82b0cabfef0608b5",
+                  "#text": "NEGATIVE MG/DL"
+                }},
+                "NEGATIVE",
+                "No Information",
+                "No Information",
+                "UAASC ELEVATED ASCORBIC ACID LEVELS CAN INTERFERE WITH TEST\n                                        AND PRODUCE FALSELY LOWER RESULTS FOR BLOOD, BILIRUBIN,\n                                        NITRITE AND GLUCOSE",
+                "Feb 14 2000 9:45 AM"
+              ]},
+              {"td":               [
+                {"content":                 {
+                  "ID": "Observation_e1413f8b295dd830ac254f",
+                  "#text": "ERYTHROCYTES"
+                }},
+                {"content":                 {
+                  "ID": "ObservationValue_e2406c9ede7ef86ff4f544",
+                  "#text": "0-2\n                                            /HPF"
+                }},
+                "0-2-NONE SEEN",
+                "No Information",
+                "No Information",
+                "No Information",
+                "Feb 14 2000 9:45 AM"
+              ]},
+              {"td":               [
+                {"content":                 {
+                  "ID": "Observation_094f8ca6caa1e46daeb4c2",
+                  "#text": "LEUKOCYTES"
+                }},
+                {"content":                 {
+                  "ID": "ObservationValue_fd4c55ab72e4a10b6ed0a2",
+                  "#text": "NONE\n                                            SEEN /HPF"
+                }},
+                "NONESEEN-0-5",
+                "No Information",
+                "Normal",
+                "No Information",
+                "Feb 14 2000 9:45 AM"
+              ]},
+              {"td":               [
+                {"content":                 {
+                  "ID": "Observation_c04c76b4559a12a677919d",
+                  "#text": "BACTERIA"
+                }},
+                {"content":                 {
+                  "ID": "ObservationValue_d74bddb69e7e785506fa75",
+                  "#text": "NONE\n                                            SEEN"
+                }},
+                "NONESEEN-TRACE",
+                "No Information",
+                "No Information",
+                "No Information",
+                "Feb 14 2000 9:45 AM"
+              ]},
+              {"td":               [
+                {"content":                 {
+                  "ID": "Observation_b0485ca581bbf61a63fe2b",
+                  "#text": "EPITHELIAL\n                                            CELLS"
+                }},
+                {"content":                 {
+                  "ID": "ObservationValue_694ddab7ca4e4d5b0c17ad",
+                  "#text": "6-10\n                                            /HPF"
+                }},
+                "0-5-6-10",
+                "No Information",
+                "No Information",
+                "No Information",
+                "Feb 14 2000 9:45 AM"
+              ]}
+            ]}
+          }
+        ]},
+        "entry":         [
+          {"organizer":           {
+            "classCode": "BATTERY",
+            "moodCode": "EVN",
+            "templateId": {"root": "2.16.840.1.113883.10.20.1.32"},
+            "id": {"root": "1b97829b-283c-4992-8ebc-455476c8abfa"},
+            "code":             {
+              "code": "CBC",
+              "codeSystemName": "L",
+              "displayName": "CBC",
+              "translation": {"code": "LAB"}
+            },
+            "statusCode": {"code": "completed"},
+            "component":             [
+              {"procedure":               {
+                "classCode": "PROC",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.29"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.19"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.17"}
+                ],
+                "id": {"root": "bdb79fc9-46f8-41aa-a961-21565f77d9e9"},
+                "code":                 {
+                  "nullFlavor": "NI",
+                  "originalText":                   {
+                    "#text": "CBC",
+                    "reference": {"value": "#Battery_ff4c85a463899a7622d047"}
+                  }
+                },
+                "text":                 {
+                  "#text": "CBC",
+                  "reference": {"value": "#Battery_ff4c85a463899a7622d047"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"low": {"value": "200002140945-0800"}},
+                "priorityCode":                 {
+                  "code": "S",
+                  "codeSystem": "2.16.840.1.113883.3.88.12.80.71",
+                  "codeSystemName": "Order Priority",
+                  "displayName": "Stat"
+                },
+                "participant":                 [
+                                    {
+                    "typeCode": "RESP",
+                    "contextControlCode": "OP",
+                    "participantRole":                     {
+                      "addr": {"nullFlavor": "NI"},
+                      "playingEntity": {"name":                       {
+                        "given": "Doctor",
+                        "family": "Doom"
+                      }}
+                    }
+                  },
+                                    {
+                    "typeCode": "ORG",
+                    "contextControlCode": "OP",
+                    "participantRole":                     {
+                      "addr": {"nullFlavor": "NI"},
+                      "telecom": {"nullFlavor": "NI"},
+                      "playingEntity": {"name": "UniLab"}
+                    }
+                  }
+                ]
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.15.1"}
+                ],
+                "id": {"root": "4746bfba-c0fa-420e-b84d-cfa441901f41"},
+                "code":                 {
+                  "code": "6690-2",
+                  "codeSystem": "2.16.840.1.113883.6.1",
+                  "displayName": "LEUKOCYTES",
+                  "translation":                   {
+                    "code": "#WBC",
+                    "codeSystemName": "L",
+                    "displayName": "WBC"
+                  }
+                },
+                "text":                 {
+                  "#text": "LEUKOCYTES",
+                  "reference": {"value": "#Observation_404818997794231c691ea9"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "200002140945-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "ED",
+                  "#text": "8.30 THOUSAND",
+                  "reference": {"value": "#ObservationValue_0142159542842b3bcd4f45"}
+                },
+                "referenceRange": {"observationRange": {"value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "IVL_PQ",
+                  "low":                   {
+                    "value": "4.80",
+                    "unit": "THOUSAND"
+                  },
+                  "high":                   {
+                    "value": "10.80",
+                    "unit": "THOUSAND"
+                  }
+                }}}
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.15.1"}
+                ],
+                "id": {"root": "bd5798de-fbd4-477e-a12c-2b464567c91f"},
+                "code":                 {
+                  "code": "718-7",
+                  "codeSystem": "2.16.840.1.113883.6.1",
+                  "displayName": "HEMOGLOBIN",
+                  "translation":                   {
+                    "code": "#HGB",
+                    "codeSystemName": "L",
+                    "displayName": "HGB"
+                  }
+                },
+                "text":                 {
+                  "#text": "HEMOGLOBIN",
+                  "reference": {"value": "#Observation_0c42c08db8a9aefa74bbc2"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "200002140945-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "ED",
+                  "#text": "14.6 G/dl",
+                  "reference": {"value": "#ObservationValue_334bd49f1b80aa9b6ed433"}
+                },
+                "referenceRange": {"observationRange": {"value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "IVL_PQ",
+                  "low":                   {
+                    "value": "14.0",
+                    "unit": "G/dl"
+                  },
+                  "high":                   {
+                    "value": "18.0",
+                    "unit": "G/dl"
+                  }
+                }}}
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.15.1"}
+                ],
+                "id": {"root": "03b4eb64-6ba3-4c3b-b818-8e36eca98616"},
+                "code":                 {
+                  "code": "4544-3",
+                  "codeSystem": "2.16.840.1.113883.6.1",
+                  "displayName": "HEMATOCRIT",
+                  "translation":                   {
+                    "code": "#HCT",
+                    "codeSystemName": "L",
+                    "displayName": "HCT"
+                  }
+                },
+                "text":                 {
+                  "#text": "HEMATOCRIT",
+                  "reference": {"value": "#Observation_f64d9f8e16e53cc5a66cc5"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "200002140945-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "ED",
+                  "#text": "44.3 PERCENT",
+                  "reference": {"value": "#ObservationValue_f64b2bb3f013ad9dada4f0"}
+                },
+                "referenceRange": {"observationRange": {"value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "IVL_PQ",
+                  "low":                   {
+                    "value": "42.0",
+                    "unit": "PERCENT"
+                  },
+                  "high":                   {
+                    "value": "54.0",
+                    "unit": "PERCENT"
+                  }
+                }}}
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.15.1"}
+                ],
+                "id": {"root": "cdeaf30c-8951-4af3-a747-f65cb4120aca"},
+                "code":                 {
+                  "code": "777-3",
+                  "codeSystem": "2.16.840.1.113883.6.1",
+                  "displayName": "PLATELETS",
+                  "translation":                   {
+                    "code": "#PLT",
+                    "codeSystemName": "L",
+                    "displayName": "PLATELETS"
+                  }
+                },
+                "text":                 {
+                  "#text": "PLATELETS",
+                  "reference": {"value": "#Observation_104ae290687b24b2dde4f0"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "200002140945-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "ED",
+                  "#text": "135 THOUSAND",
+                  "reference": {"value": "#ObservationValue_034a20af654fe166202ed3"}
+                },
+                "interpretationCode":                 {
+                  "code": "N",
+                  "codeSystem": "2.16.840.1.113883.5.83",
+                  "codeSystemName": "Observation Interpretation",
+                  "displayName": "Normal"
+                },
+                "referenceRange": {"observationRange": {"value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "IVL_PQ",
+                  "low":                   {
+                    "value": "130",
+                    "unit": "THOUSAND"
+                  },
+                  "high":                   {
+                    "value": "400",
+                    "unit": "THOUSAND"
+                  }
+                }}}
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.15.1"}
+                ],
+                "id": {"root": "3aa233bc-3acb-4a31-923a-ec4729dcafe0"},
+                "code":                 {
+                  "code": "789-8",
+                  "codeSystem": "2.16.840.1.113883.6.1",
+                  "displayName": "ERYTHROCYTES",
+                  "translation":                   {
+                    "code": "#RBC",
+                    "codeSystemName": "L",
+                    "displayName": "RBC"
+                  }
+                },
+                "text":                 {
+                  "#text": "ERYTHROCYTES",
+                  "reference": {"value": "#Observation_28456190cb4f9bb1020213"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "200002140945-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "ED",
+                  "#text": "4.79 MILLION",
+                  "reference": {"value": "#ObservationValue_dc44c5997614770cd787f5"}
+                },
+                "referenceRange": {"observationRange": {"value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "IVL_PQ",
+                  "low":                   {
+                    "value": "4.70",
+                    "unit": "MILLION"
+                  },
+                  "high":                   {
+                    "value": "6.10",
+                    "unit": "MILLION"
+                  }
+                }}}
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.15.1"}
+                ],
+                "id": {"root": "3d600e7b-f170-43ae-8f71-d1e8b8dc68f0"},
+                "code":                 {
+                  "code": "787-2",
+                  "codeSystem": "2.16.840.1.113883.6.1",
+                  "displayName": "ERYTHROCYTE MEAN CORPUSCULAR V",
+                  "translation":                   {
+                    "code": "#MCV",
+                    "codeSystemName": "L",
+                    "displayName": "MCV"
+                  }
+                },
+                "text":                 {
+                  "#text": "ERYTHROCYTE MEAN CORPUSCULAR V",
+                  "reference": {"value": "#Observation_0c42b4af90dbd7c37b2bd3"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "200002140945-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "ED",
+                  "#text": "92.4 fl",
+                  "reference": {"value": "#ObservationValue_0442669b661b59783d66a5"}
+                },
+                "referenceRange": {"observationRange": {"value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "IVL_PQ",
+                  "low":                   {
+                    "value": "83.0",
+                    "unit": "fl"
+                  },
+                  "high":                   {
+                    "value": "99.0",
+                    "unit": "fl"
+                  }
+                }}}
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.15.1"}
+                ],
+                "id": {"root": "61446b4d-755c-4309-8526-40ffdc4e6b24"},
+                "code":                 {
+                  "code": "785-6",
+                  "codeSystem": "2.16.840.1.113883.6.1",
+                  "displayName": "ERYTHROCYTE MEAN CORPUSCULAR H",
+                  "translation":                   {
+                    "code": "#MCH",
+                    "codeSystemName": "L",
+                    "displayName": "MCH"
+                  }
+                },
+                "text":                 {
+                  "#text": "ERYTHROCYTE MEAN CORPUSCULAR H",
+                  "reference": {"value": "#Observation_e840fdb5651235da65c937"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "200002140945-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "ED",
+                  "#text": "30.5 pg",
+                  "reference": {"value": "#ObservationValue_4045c8afdc793c9fbed5a2"}
+                },
+                "referenceRange": {"observationRange": {"value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "IVL_PQ",
+                  "low":                   {
+                    "value": "27.0",
+                    "unit": "pg"
+                  },
+                  "high":                   {
+                    "value": "32.0",
+                    "unit": "pg"
+                  }
+                }}}
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.15.1"}
+                ],
+                "id": {"root": "2e8389ff-3f00-4e32-abe8-f6bf572508fa"},
+                "code":                 {
+                  "code": "786-4",
+                  "codeSystem": "2.16.840.1.113883.6.1",
+                  "displayName": "ERYTHROCYTE MEAN CORPUSCULAR H",
+                  "translation":                   {
+                    "code": "#MCHC",
+                    "codeSystemName": "L",
+                    "displayName": "MCHC"
+                  }
+                },
+                "text":                 {
+                  "#text": "ERYTHROCYTE MEAN CORPUSCULAR H",
+                  "reference": {"value": "#Observation_9f487c9b34850b9b3d8f85"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "200002140945-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "ED",
+                  "#text": "33.0 G/dl",
+                  "reference": {"value": "#ObservationValue_3242e4ba105ed5a42c0fe2"}
+                },
+                "referenceRange": {"observationRange": {"value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "IVL_PQ",
+                  "low":                   {
+                    "value": "32.0",
+                    "unit": "G/dl"
+                  },
+                  "high":                   {
+                    "value": "37.0",
+                    "unit": "G/dl"
+                  }
+                }}}
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.15.1"}
+                ],
+                "id": {"root": "1cd38d8a-590d-4687-9256-2353626d45c7"},
+                "code":                 {
+                  "code": "788-0",
+                  "codeSystem": "2.16.840.1.113883.6.1",
+                  "displayName": "ERYTHROCYTE SIZE DISTRIBUTION",
+                  "translation":                   {
+                    "code": "#RDW",
+                    "codeSystemName": "L",
+                    "displayName": "RDW"
+                  }
+                },
+                "text":                 {
+                  "#text": "ERYTHROCYTE SIZE DISTRIBUTION",
+                  "reference": {"value": "#Observation_1f4798a3d28212eaddebe5"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "200002140945-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "ED",
+                  "#text": "14 PERCENT",
+                  "reference": {"value": "#ObservationValue_5949588e279b0490d350a5"}
+                },
+                "interpretationCode":                 {
+                  "code": "N",
+                  "codeSystem": "2.16.840.1.113883.5.83",
+                  "codeSystemName": "Observation Interpretation",
+                  "displayName": "Normal"
+                },
+                "referenceRange": {"observationRange": {"value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "IVL_PQ",
+                  "low":                   {
+                    "value": "11.5",
+                    "unit": "PERCENT"
+                  },
+                  "high":                   {
+                    "value": "14.5",
+                    "unit": "PERCENT"
+                  }
+                }}}
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.15.1"}
+                ],
+                "id": {"root": "ad36b8fa-0505-47d4-b7ed-71d9b823b8b5"},
+                "code":                 {
+                  "code": "751-8",
+                  "codeSystem": "2.16.840.1.113883.6.1",
+                  "displayName": "NEUTROPHILS",
+                  "translation":                   {
+                    "code": "#NEUT",
+                    "codeSystemName": "L",
+                    "displayName": "NEUT"
+                  }
+                },
+                "text":                 {
+                  "#text": "NEUTROPHILS",
+                  "reference": {"value": "#Observation_f34e20afcf6d55757bb2f3"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "200002140945-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "ED",
+                  "#text": "69 PERCENT",
+                  "reference": {"value": "#ObservationValue_d5487bacc899189d62db20"}
+                },
+                "interpretationCode":                 {
+                  "code": "N",
+                  "codeSystem": "2.16.840.1.113883.5.83",
+                  "codeSystemName": "Observation Interpretation",
+                  "displayName": "Normal"
+                },
+                "referenceRange": {"observationRange": {"value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "IVL_PQ",
+                  "low":                   {
+                    "value": "40.0",
+                    "unit": "PERCENT"
+                  },
+                  "high":                   {
+                    "value": "74.0",
+                    "unit": "PERCENT"
+                  }
+                }}}
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.15.1"}
+                ],
+                "id": {"root": "94c618ec-ae9c-47df-95fa-aee7ce6fbdbc"},
+                "code":                 {
+                  "code": "731-0",
+                  "codeSystem": "2.16.840.1.113883.6.1",
+                  "displayName": "LYMPHOCYTES",
+                  "translation":                   {
+                    "code": "#LYMPH",
+                    "codeSystemName": "L",
+                    "displayName": "LYMPH"
+                  }
+                },
+                "text":                 {
+                  "#text": "LYMPHOCYTES",
+                  "reference": {"value": "#Observation_374acb8ffbf648877df75e"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "200002140945-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "ED",
+                  "#text": "20 PERCENT",
+                  "reference": {"value": "#ObservationValue_6f41c59e4e2aa4c8383ec6"}
+                },
+                "interpretationCode":                 {
+                  "code": "N",
+                  "codeSystem": "2.16.840.1.113883.5.83",
+                  "codeSystemName": "Observation Interpretation",
+                  "displayName": "Normal"
+                },
+                "referenceRange": {"observationRange": {"value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "IVL_PQ",
+                  "low":                   {
+                    "value": "19.0",
+                    "unit": "PERCENT"
+                  },
+                  "high":                   {
+                    "value": "48.0",
+                    "unit": "PERCENT"
+                  }
+                }}}
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.15.1"}
+                ],
+                "id": {"root": "ad1127a5-27dc-4e1a-b019-f5bbe2b3df55"},
+                "code":                 {
+                  "code": "742-7",
+                  "codeSystem": "2.16.840.1.113883.6.1",
+                  "displayName": "MONOCYTES",
+                  "translation":                   {
+                    "code": "#MONO",
+                    "codeSystemName": "L",
+                    "displayName": "MONO"
+                  }
+                },
+                "text":                 {
+                  "#text": "MONOCYTES",
+                  "reference": {"value": "#Observation_aa46e7bf7aea65f24a59be"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "200002140945-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "ED",
+                  "#text": "8.5 PERCENT",
+                  "reference": {"value": "#ObservationValue_86472697e574bfaa63272e"}
+                },
+                "interpretationCode":                 {
+                  "code": "N",
+                  "codeSystem": "2.16.840.1.113883.5.83",
+                  "codeSystemName": "Observation Interpretation",
+                  "displayName": "Normal"
+                },
+                "referenceRange": {"observationRange": {"value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "IVL_PQ",
+                  "low":                   {
+                    "value": "3.5",
+                    "unit": "PERCENT"
+                  },
+                  "high":                   {
+                    "value": "9.0",
+                    "unit": "PERCENT"
+                  }
+                }}}
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.15.1"}
+                ],
+                "id": {"root": "b2b04955-e9d9-4fb2-94e2-c3b60c0b04f2"},
+                "code":                 {
+                  "code": "711-2",
+                  "codeSystem": "2.16.840.1.113883.6.1",
+                  "displayName": "EOSINOPHILS",
+                  "translation":                   {
+                    "code": "#EOS",
+                    "codeSystemName": "L",
+                    "displayName": "EOS"
+                  }
+                },
+                "text":                 {
+                  "#text": "EOSINOPHILS",
+                  "reference": {"value": "#Observation_ce4cb6bc8c8a572b8978f3"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "200002140945-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "ED",
+                  "#text": "0.6 PERCENT",
+                  "reference": {"value": "#ObservationValue_3d48e9821f28e5ca175cfd"}
+                },
+                "referenceRange": {"observationRange": {"value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "IVL_PQ",
+                  "low":                   {
+                    "value": "0.0",
+                    "unit": "PERCENT"
+                  },
+                  "high":                   {
+                    "value": "7.0",
+                    "unit": "PERCENT"
+                  }
+                }}}
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.15.1"}
+                ],
+                "id": {"root": "cd2918d6-8537-4504-8129-b6ffccf7a908"},
+                "code":                 {
+                  "code": "704-7",
+                  "codeSystem": "2.16.840.1.113883.6.1",
+                  "displayName": "BASOPHILS",
+                  "translation":                   {
+                    "code": "#BASO",
+                    "codeSystemName": "L",
+                    "displayName": "BASO"
+                  }
+                },
+                "text":                 {
+                  "#text": "BASOPHILS",
+                  "reference": {"value": "#Observation_034861b05b40f57c49f26f"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "200002140945-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "ED",
+                  "#text": "0.8 PERCENT",
+                  "reference": {"value": "#ObservationValue_3e452a9f685552178f6612"}
+                },
+                "referenceRange": {"observationRange": {"value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "IVL_PQ",
+                  "low":                   {
+                    "value": "0.0",
+                    "unit": "PERCENT"
+                  },
+                  "high":                   {
+                    "value": "1.5",
+                    "unit": "PERCENT"
+                  }
+                }}}
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.15.1"}
+                ],
+                "id": {"root": "f20ee1b9-2e8d-4f3d-9c87-756188c40b4d"},
+                "code":                 {
+                  "code": "#LUC",
+                  "codeSystemName": "L",
+                  "displayName": "LGE UNST.CELL"
+                },
+                "text":                 {
+                  "#text": "LGE UNST.CELL",
+                  "reference": {"value": "#Observation_c84ce3b9ec997fedc75091"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "200002140945-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "ED",
+                  "#text": "0.8 PERCENT",
+                  "reference": {"value": "#ObservationValue_8641b88c2aa88007c7ec1a"}
+                },
+                "referenceRange": {"observationRange": {"value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "IVL_PQ",
+                  "low":                   {
+                    "value": "0.0",
+                    "unit": "PERCENT"
+                  },
+                  "high":                   {
+                    "value": "4.0",
+                    "unit": "PERCENT"
+                  }
+                }}}
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.15.1"}
+                ],
+                "id": {"root": "1b70981c-3acb-455a-ad73-cdc034d3f518"},
+                "code":                 {
+                  "code": "770-8",
+                  "codeSystem": "2.16.840.1.113883.6.1",
+                  "displayName": "NEUTROPHILS/100 LEUKOCYTES",
+                  "translation":                   {
+                    "code": "##NEUT",
+                    "codeSystemName": "L",
+                    "displayName": "NEUT ABS"
+                  }
+                },
+                "text":                 {
+                  "#text": "NEUTROPHILS/100 LEUKOCYTES",
+                  "reference": {"value": "#Observation_394890b2681d3e4ebf2c40"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "200002140945-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "ED",
+                  "#text": "6.72 THOUSAND",
+                  "reference": {"value": "#ObservationValue_6340f486c25c1cc8d4cc96"}
+                },
+                "referenceRange": {"observationRange": {"value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "IVL_PQ",
+                  "low":                   {
+                    "value": "1.90",
+                    "unit": "THOUSAND"
+                  },
+                  "high":                   {
+                    "value": "8.00",
+                    "unit": "THOUSAND"
+                  }
+                }}}
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.15.1"}
+                ],
+                "id": {"root": "72395a87-4052-48c0-b79c-299d68e19c3d"},
+                "code":                 {
+                  "code": "736-9",
+                  "codeSystem": "2.16.840.1.113883.6.1",
+                  "displayName": "LYMPHOCYTES/100 LEUKOCYTES",
+                  "translation":                   {
+                    "code": "##LYMP",
+                    "codeSystemName": "L",
+                    "displayName": "LYMPH ABS"
+                  }
+                },
+                "text":                 {
+                  "#text": "LYMPHOCYTES/100 LEUKOCYTES",
+                  "reference": {"value": "#Observation_5c421d893067b0dbcef6d5"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "200002140945-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "ED",
+                  "#text": "1.3 THOUSAND",
+                  "reference": {"value": "#ObservationValue_2b4233883ca7bf3da94be9"}
+                },
+                "interpretationCode":                 {
+                  "code": "N",
+                  "codeSystem": "2.16.840.1.113883.5.83",
+                  "codeSystemName": "Observation Interpretation",
+                  "displayName": "Normal"
+                },
+                "referenceRange": {"observationRange": {"value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "IVL_PQ",
+                  "low":                   {
+                    "value": "0.90",
+                    "unit": "THOUSAND"
+                  },
+                  "high":                   {
+                    "value": "5.20",
+                    "unit": "THOUSAND"
+                  }
+                }}}
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.15.1"}
+                ],
+                "id": {"root": "cea705fa-78f7-4a14-ad27-c73ae132ac72"},
+                "code":                 {
+                  "code": "5905-5",
+                  "codeSystem": "2.16.840.1.113883.6.1",
+                  "displayName": "MONOCYTES/100 LEUKOCYTES",
+                  "translation":                   {
+                    "code": "##MONO",
+                    "codeSystemName": "L",
+                    "displayName": "MONO ABS"
+                  }
+                },
+                "text":                 {
+                  "#text": "MONOCYTES/100 LEUKOCYTES",
+                  "reference": {"value": "#Observation_464815b50ba334d74f53ed"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "200002140945-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "ED",
+                  "#text": "0.77 THOUSAND",
+                  "reference": {"value": "#ObservationValue_5442dc93f78c1b730a6c3c"}
+                },
+                "referenceRange": {"observationRange": {"value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "IVL_PQ",
+                  "low":                   {
+                    "value": "0.16",
+                    "unit": "THOUSAND"
+                  },
+                  "high":                   {
+                    "value": "1.00",
+                    "unit": "THOUSAND"
+                  }
+                }}}
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.15.1"}
+                ],
+                "id": {"root": "b6b9083f-612a-4da2-bc1f-bff403a333f3"},
+                "code":                 {
+                  "code": "EOS",
+                  "codeSystemName": "L",
+                  "displayName": "EOS ABS"
+                },
+                "text":                 {
+                  "#text": "EOS ABS",
+                  "reference": {"value": "#Observation_2344b0bbd713dd9e19a4d6"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "200002140945-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "ED",
+                  "#text": "0.05 THOUSAND",
+                  "reference": {"value": "#ObservationValue_314cb5b68df72e8e596911"}
+                },
+                "referenceRange": {"observationRange": {"value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "IVL_PQ",
+                  "low":                   {
+                    "value": "0.00",
+                    "unit": "THOUSAND"
+                  },
+                  "high":                   {
+                    "value": "0.80",
+                    "unit": "THOUSAND"
+                  }
+                }}}
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.15.1"}
+                ],
+                "id": {"root": "2ee0ed3f-441a-4b66-b7f6-9ec54737ff16"},
+                "code":                 {
+                  "code": "706-2",
+                  "codeSystem": "2.16.840.1.113883.6.1",
+                  "displayName": "BASOPHILS/100 LEUKOCYTES",
+                  "translation":                   {
+                    "code": "BASO",
+                    "codeSystemName": "L",
+                    "displayName": "BASO ABS"
+                  }
+                },
+                "text":                 {
+                  "#text": "BASOPHILS/100 LEUKOCYTES",
+                  "reference": {"value": "#Observation_654b6796f77b0c4cddccf1"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "200002140945-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "ED",
+                  "#text": "0.07 THOUSAND",
+                  "reference": {"value": "#ObservationValue_8c4d619d6d7790d15dee66"}
+                },
+                "referenceRange": {"observationRange": {"value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "IVL_PQ",
+                  "low":                   {
+                    "value": "0.00",
+                    "unit": "THOUSAND"
+                  },
+                  "high":                   {
+                    "value": "0.20",
+                    "unit": "THOUSAND"
+                  }
+                }}}
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.15.1"}
+                ],
+                "id": {"root": "5315aa5b-c57a-42d8-ac5b-0951cc231199"},
+                "code":                 {
+                  "code": "##LUC",
+                  "codeSystemName": "L",
+                  "displayName": "LUC ABS"
+                },
+                "text":                 {
+                  "#text": "LUC ABS",
+                  "reference": {"value": "#Observation_d645ca95c8e742ae831137"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "200002140945-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "ED",
+                  "#text": "0.07 THOUSAND",
+                  "reference": {"value": "#ObservationValue_664cf3a358da29fa27b252"}
+                },
+                "referenceRange": {"observationRange": {"value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "IVL_PQ",
+                  "low":                   {
+                    "value": "0.00",
+                    "unit": "THOUSAND"
+                  },
+                  "high":                   {
+                    "value": "0.40",
+                    "unit": "THOUSAND"
+                  }
+                }}}
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.15.1"}
+                ],
+                "id": {"root": "bca98575-bd60-4ef0-9189-5c7b2dbb4b51"},
+                "code":                 {
+                  "code": "764-1",
+                  "codeSystem": "2.16.840.1.113883.6.1",
+                  "displayName": "NEUTROPHILS BAND FORM/100 LEUK",
+                  "translation":                   {
+                    "code": "#MNBND",
+                    "codeSystemName": "L",
+                    "displayName": "MAN BAND NEUT"
+                  }
+                },
+                "text":                 {
+                  "#text": "NEUTROPHILS BAND FORM/100 LEUK",
+                  "reference": {"value": "#Observation_a44ca1ac37961198664b42"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "200002140945-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "ED",
+                  "#text": "7 PERCENT",
+                  "reference": {"value": "#ObservationValue_c54896b101ccf8b9905dce"}
+                },
+                "interpretationCode":                 {
+                  "code": "N",
+                  "codeSystem": "2.16.840.1.113883.5.83",
+                  "codeSystemName": "Observation Interpretation",
+                  "displayName": "Normal"
+                },
+                "referenceRange": {"observationRange": {"value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "IVL_PQ",
+                  "low":                   {
+                    "value": "0",
+                    "unit": "PERCENT"
+                  },
+                  "high":                   {
+                    "value": "8",
+                    "unit": "PERCENT"
+                  }
+                }}}
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.15.1"}
+                ],
+                "id": {"root": "f1b7013a-a73c-4db6-b462-514c2b24ec71"},
+                "code":                 {
+                  "code": "769-0",
+                  "codeSystem": "2.16.840.1.113883.6.1",
+                  "displayName": "NEUTROPHILS SEGMENTED/100 LEUK",
+                  "translation":                   {
+                    "code": "#MNSEG",
+                    "codeSystemName": "L",
+                    "displayName": "MAN SEG NEUT"
+                  }
+                },
+                "text":                 {
+                  "#text": "NEUTROPHILS SEGMENTED/100 LEUK",
+                  "reference": {"value": "#Observation_fb4789b9d8673a6eb8bba2"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "200002140945-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "ED",
+                  "#text": "71 PERCENT",
+                  "reference": {"value": "#ObservationValue_3840e1bdd15242a0e6547b"}
+                },
+                "referenceRange": {"observationRange": {"value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "IVL_PQ",
+                  "low":                   {
+                    "value": "40",
+                    "unit": "PERCENT"
+                  },
+                  "high":                   {
+                    "value": "74",
+                    "unit": "PERCENT"
+                  }
+                }}}
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.15.1"}
+                ],
+                "id": {"root": "2559442b-e114-4456-a424-2fe776e504df"},
+                "code":                 {
+                  "code": "737-7",
+                  "codeSystem": "2.16.840.1.113883.6.1",
+                  "displayName": "LYMPHOCYTES/100 LEUKOCYTES",
+                  "translation":                   {
+                    "code": "#MNLYM",
+                    "codeSystemName": "L",
+                    "displayName": "MAN LYMPH"
+                  }
+                },
+                "text":                 {
+                  "#text": "LYMPHOCYTES/100 LEUKOCYTES",
+                  "reference": {"value": "#Observation_e14253ab3d26a2753383a8"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "200002140945-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "ED",
+                  "#text": "23 PERCENT",
+                  "reference": {"value": "#ObservationValue_b541bdbcc81c603a548c40"}
+                },
+                "interpretationCode":                 {
+                  "code": "N",
+                  "codeSystem": "2.16.840.1.113883.5.83",
+                  "codeSystemName": "Observation Interpretation",
+                  "displayName": "Normal"
+                },
+                "referenceRange": {"observationRange": {"value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "IVL_PQ",
+                  "low":                   {
+                    "value": "19",
+                    "unit": "PERCENT"
+                  },
+                  "high":                   {
+                    "value": "48",
+                    "unit": "PERCENT"
+                  }
+                }}}
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.15.1"}
+                ],
+                "id": {"root": "141bc1eb-7ee1-4ca6-8eaa-456c84610bc1"},
+                "code":                 {
+                  "code": "744-3",
+                  "codeSystem": "2.16.840.1.113883.6.1",
+                  "displayName": "MONOCYTES/100 LEUKOCYTES",
+                  "translation":                   {
+                    "code": "#MNMNO",
+                    "codeSystemName": "L",
+                    "displayName": "MAN MONO"
+                  }
+                },
+                "text":                 {
+                  "#text": "MONOCYTES/100 LEUKOCYTES",
+                  "reference": {"value": "#Observation_6d44689bc5255c3052510f"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "200002140945-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "ED",
+                  "#text": "9 PERCENT",
+                  "reference": {"value": "#ObservationValue_ae4bcc8660126bdd646841"}
+                },
+                "referenceRange": {"observationRange": {"value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "IVL_PQ",
+                  "low":                   {
+                    "value": "4",
+                    "unit": "PERCENT"
+                  },
+                  "high":                   {
+                    "value": "9",
+                    "unit": "PERCENT"
+                  }
+                }}}
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.15.1"}
+                ],
+                "id": {"root": "cc73d9f2-fd23-46b4-a7eb-b54ff4c2fafa"},
+                "code":                 {
+                  "code": "714-6",
+                  "codeSystem": "2.16.840.1.113883.6.1",
+                  "displayName": "EOSINOPHILS/100 LEUKOCYTES",
+                  "translation":                   {
+                    "code": "#MNEOS",
+                    "codeSystemName": "L",
+                    "displayName": "MAN EOS"
+                  }
+                },
+                "text":                 {
+                  "#text": "EOSINOPHILS/100 LEUKOCYTES",
+                  "reference": {"value": "#Observation_51439a971316897e0dad20"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "200002140945-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "ED",
+                  "#text": "3 PERCENT",
+                  "reference": {"value": "#ObservationValue_b9440694986413e927cdba"}
+                },
+                "referenceRange": {"observationRange": {"value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "IVL_PQ",
+                  "low":                   {
+                    "value": "0",
+                    "unit": "PERCENT"
+                  },
+                  "high":                   {
+                    "value": "7",
+                    "unit": "PERCENT"
+                  }
+                }}}
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.15.1"}
+                ],
+                "id": {"root": "1621174c-d703-4128-96f3-9cffe1536186"},
+                "code":                 {
+                  "code": "707-0",
+                  "codeSystem": "2.16.840.1.113883.6.1",
+                  "displayName": "BASOPHILS/100 LEUKOCYTES",
+                  "translation":                   {
+                    "code": "#MNBAS",
+                    "codeSystemName": "L",
+                    "displayName": "MAN BASO"
+                  }
+                },
+                "text":                 {
+                  "#text": "BASOPHILS/100 LEUKOCYTES",
+                  "reference": {"value": "#Observation_2840ea8afdcf90287a98bc"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "200002140945-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "ED",
+                  "#text": "0 PERCENT",
+                  "reference": {"value": "#ObservationValue_3a4919a2cde1dad130c325"}
+                },
+                "referenceRange": {"observationRange": {"value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "IVL_PQ",
+                  "low":                   {
+                    "value": "0",
+                    "unit": "PERCENT"
+                  },
+                  "high":                   {
+                    "value": "2",
+                    "unit": "PERCENT"
+                  }
+                }}}
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.15.1"}
+                ],
+                "id": {"root": "65666221-ac99-45ba-8b50-bb07a61e8533"},
+                "code":                 {
+                  "code": "740-1",
+                  "codeSystem": "2.16.840.1.113883.6.1",
+                  "displayName": "METAMYELOCYTES/100 LEUKOCYTES",
+                  "translation":                   {
+                    "code": "#MNMET",
+                    "codeSystemName": "L",
+                    "displayName": "MAN METAMYL"
+                  }
+                },
+                "text":                 {
+                  "#text": "METAMYELOCYTES/100 LEUKOCYTES",
+                  "reference": {"value": "#Observation_2d42f0805129e705e2b568"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "200002140945-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "ED",
+                  "#text": "0 PERCENT",
+                  "reference": {"value": "#ObservationValue_6045e88b92338ae6e7cb59"}
+                },
+                "referenceRange": {"observationRange": {"value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "IVL_PQ",
+                  "low":                   {
+                    "value": "0",
+                    "unit": "PERCENT"
+                  },
+                  "high":                   {
+                    "value": "1",
+                    "unit": "PERCENT"
+                  }
+                }}}
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.15.1"}
+                ],
+                "id": {"root": "9ac5349f-8f88-4092-8f50-018bf3e1244c"},
+                "code":                 {
+                  "code": "749-2",
+                  "codeSystem": "2.16.840.1.113883.6.1",
+                  "displayName": "MYELOCYTES/100 LEUKOCYTES",
+                  "translation":                   {
+                    "code": "#MNMYL",
+                    "codeSystemName": "L",
+                    "displayName": "MAN MYELOCYTE"
+                  }
+                },
+                "text":                 {
+                  "#text": "MYELOCYTES/100 LEUKOCYTES",
+                  "reference": {"value": "#Observation_654c81bbb5b1563511d1da"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "200002140945-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "ED",
+                  "#text": "0 PERCENT",
+                  "reference": {"value": "#ObservationValue_ff4512937ceae47a944870"}
+                },
+                "referenceRange": {"observationRange": {"value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "IVL_PQ",
+                  "low":                   {
+                    "value": "0",
+                    "unit": "PERCENT"
+                  },
+                  "high":                   {
+                    "value": "1",
+                    "unit": "PERCENT"
+                  }
+                }}}
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.15.1"}
+                ],
+                "id": {"root": "39b2c32f-64fc-45c6-9131-be72611ca973"},
+                "code":                 {
+                  "code": "783-1",
+                  "codeSystem": "2.16.840.1.113883.6.1",
+                  "displayName": "PROMYELOCYTES/100 LEUKOCYTES",
+                  "translation":                   {
+                    "code": "#MNPRO",
+                    "codeSystemName": "L",
+                    "displayName": "MAN PROMYELO"
+                  }
+                },
+                "text":                 {
+                  "#text": "PROMYELOCYTES/100 LEUKOCYTES",
+                  "reference": {"value": "#Observation_6e41b89d1dfb03873ae233"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "200002140945-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "ED",
+                  "#text": "0 PERCENT",
+                  "reference": {"value": "#ObservationValue_664aa189cfdb05dc8968a8"}
+                },
+                "referenceRange": {"observationRange": {"value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "IVL_PQ",
+                  "low":                   {
+                    "value": "0",
+                    "unit": "PERCENT"
+                  },
+                  "high":                   {
+                    "value": "0",
+                    "unit": "PERCENT"
+                  }
+                }}}
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.15.1"}
+                ],
+                "id": {"root": "71a6e830-98c5-4b72-8093-1182a553f4fe"},
+                "code":                 {
+                  "code": "709-6",
+                  "codeSystem": "2.16.840.1.113883.6.1",
+                  "displayName": "BLASTS/100 LEUKOCYTES",
+                  "translation":                   {
+                    "code": "#MNBLS",
+                    "codeSystemName": "L",
+                    "displayName": "MAN BLASTS"
+                  }
+                },
+                "text":                 {
+                  "#text": "BLASTS/100 LEUKOCYTES",
+                  "reference": {"value": "#Observation_3a4bb59a8ff2a8b81d31bb"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "200002140945-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "ED",
+                  "#text": "0 PERCENT",
+                  "reference": {"value": "#ObservationValue_d74aea953c943e74bf65cc"}
+                },
+                "referenceRange": {"observationRange": {"value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "IVL_PQ",
+                  "low":                   {
+                    "value": "0",
+                    "unit": "PERCENT"
+                  },
+                  "high":                   {
+                    "value": "0",
+                    "unit": "PERCENT"
+                  }
+                }}}
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.15.1"}
+                ],
+                "id": {"root": "82317ac3-1bda-4de1-b725-bd865b7dd712"},
+                "code":                 {
+                  "code": "#ESPLT",
+                  "codeSystemName": "L",
+                  "displayName": "PLATELET (EST)"
+                },
+                "text":                 {
+                  "#text": "PLATELET (EST)",
+                  "reference": {"value": "#Observation_3b483bb30edf586cf15381"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "200002140945-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "ED",
+                  "#text": "10-12 PER_OIF",
+                  "reference": {"value": "#ObservationValue_e74cf7a1a26ee1ba19dd48"}
+                },
+                "referenceRange": {"observationRange": {"value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "IVL_PQ",
+                  "low":                   {
+                    "value": "7",
+                    "unit": "PER_OIF"
+                  },
+                  "high":                   {
+                    "value": "20",
+                    "unit": "PER_OIF"
+                  }
+                }}}
+              }}
+            ]
+          }},
+          {"organizer":           {
+            "classCode": "BATTERY",
+            "moodCode": "EVN",
+            "templateId": {"root": "2.16.840.1.113883.10.20.1.32"},
+            "id": {"root": "1a009342-d22d-4ed8-aaae-82f92ab29525"},
+            "code":             {
+              "code": "OPUA",
+              "codeSystemName": "L",
+              "displayName": "UA COMPLETE",
+              "translation": {"code": "LAB"}
+            },
+            "statusCode": {"code": "completed"},
+            "component":             [
+              {"procedure":               {
+                "classCode": "PROC",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.29"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.19"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.17"}
+                ],
+                "id": {"root": "9934c0f4-d922-4296-a4bb-7a3988aafc75"},
+                "code":                 {
+                  "nullFlavor": "NI",
+                  "originalText":                   {
+                    "#text": "UA COMPLETE",
+                    "reference": {"value": "#Battery_7b4f39819a1fd492652f3e"}
+                  }
+                },
+                "text":                 {
+                  "#text": "UA COMPLETE",
+                  "reference": {"value": "#Battery_7b4f39819a1fd492652f3e"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"low": {"value": "200002140945-0800"}},
+                "priorityCode":                 {
+                  "code": "S",
+                  "codeSystem": "2.16.840.1.113883.3.88.12.80.71",
+                  "codeSystemName": "Order Priority",
+                  "displayName": "Stat"
+                },
+                "participant":                 [
+                                    {
+                    "typeCode": "RESP",
+                    "contextControlCode": "OP",
+                    "participantRole":                     {
+                      "addr": {"nullFlavor": "NI"},
+                      "playingEntity": {"name":                       {
+                        "given": "Doctor",
+                        "family": "Doom"
+                      }}
+                    }
+                  },
+                                    {
+                    "typeCode": "ORG",
+                    "contextControlCode": "OP",
+                    "participantRole":                     {
+                      "addr": {"nullFlavor": "NI"},
+                      "telecom": {"nullFlavor": "NI"},
+                      "playingEntity": {"name": "UniLab"}
+                    }
+                  }
+                ]
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.15.1"}
+                ],
+                "id": {"root": "c16662f0-bc49-4d0b-b9d8-884cead3f49c"},
+                "code":                 {
+                  "code": "5778-6",
+                  "codeSystem": "2.16.840.1.113883.6.1",
+                  "displayName": "COLOR",
+                  "translation":                   {
+                    "code": "#UACOL",
+                    "codeSystemName": "L",
+                    "displayName": "UA COLOR"
+                  }
+                },
+                "text":                 {
+                  "#text": "COLOR",
+                  "reference": {"value": "#Observation_e249d1b57c1f1aac99db9c"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "200002140945-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "ED",
+                  "#text": "YELLOW",
+                  "reference": {"value": "#ObservationValue_93448d9200f8a365826742"}
+                },
+                "referenceRange": {"observationRange": {"text": "YELLOW-STRAW"}}
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.15.1"}
+                ],
+                "id": {"root": "23bc0abe-2d87-4299-8c65-5a62c38d3a6b"},
+                "code":                 {
+                  "code": "5767-9",
+                  "codeSystem": "2.16.840.1.113883.6.1",
+                  "displayName": "APPEARANCE",
+                  "translation":                   {
+                    "code": "#UAAPP",
+                    "codeSystemName": "L",
+                    "displayName": "UA APPEARANCE"
+                  }
+                },
+                "text":                 {
+                  "#text": "APPEARANCE",
+                  "reference": {"value": "#Observation_89486eb6654566430be78e"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "200002140945-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "ED",
+                  "#text": "CLEAR",
+                  "reference": {"value": "#ObservationValue_384a4f85db16d2b7eee7a4"}
+                },
+                "referenceRange": {"observationRange": {"text": "CLEAR"}}
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.15.1"}
+                ],
+                "id": {"root": "be8b5e99-7ad7-483f-b967-29d287e6dfff"},
+                "code":                 {
+                  "code": "5810-7",
+                  "codeSystem": "2.16.840.1.113883.6.1",
+                  "displayName": "SPECIFIC GRAVITY",
+                  "translation":                   {
+                    "code": "#UASPG",
+                    "codeSystemName": "L",
+                    "displayName": "UA SPEC GRAV"
+                  }
+                },
+                "text":                 {
+                  "#text": "SPECIFIC GRAVITY",
+                  "reference": {"value": "#Observation_6e4abdb41dc023ef4a9edf"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "200002140945-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "ED",
+                  "#text": "1.016 ION.CONC",
+                  "reference": {"value": "#ObservationValue_1a4f59b6e649526757aacd"}
+                },
+                "referenceRange": {"observationRange": {"value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "IVL_PQ",
+                  "low":                   {
+                    "value": "1.003",
+                    "unit": "ION.CONC"
+                  },
+                  "high":                   {
+                    "value": "1.030",
+                    "unit": "ION.CONC"
+                  }
+                }}}
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.15.1"}
+                ],
+                "id": {"root": "507ebf42-05f0-4424-acad-2d97f3122b00"},
+                "code":                 {
+                  "code": "5803-2",
+                  "codeSystem": "2.16.840.1.113883.6.1",
+                  "displayName": "PH",
+                  "translation":                   {
+                    "code": "#UAPH",
+                    "codeSystemName": "L",
+                    "displayName": "UA PH"
+                  }
+                },
+                "text":                 {
+                  "#text": "PH",
+                  "reference": {"value": "#Observation_27479db0e0764ee9e61c3a"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "200002140945-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "ED",
+                  "#text": "6.5",
+                  "reference": {"value": "#ObservationValue_e341bc93f7b5185bd03a89"}
+                },
+                "interpretationCode":                 {
+                  "code": "N",
+                  "codeSystem": "2.16.840.1.113883.5.83",
+                  "codeSystemName": "Observation Interpretation",
+                  "displayName": "Normal"
+                },
+                "referenceRange": {"observationRange": {"value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "IVL_PQ",
+                  "low": {"value": "6.0"},
+                  "high": {"value": "8.0"}
+                }}}
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.15.1"}
+                ],
+                "id": {"root": "b228b0a3-0d7b-4178-9a3a-48fbdfd31875"},
+                "code":                 {
+                  "code": "5792-7",
+                  "codeSystem": "2.16.840.1.113883.6.1",
+                  "displayName": "GLUCOSE",
+                  "translation":                   {
+                    "code": "#UAGLU",
+                    "codeSystemName": "L",
+                    "displayName": "UA GLUCOSE"
+                  }
+                },
+                "text":                 {
+                  "#text": "GLUCOSE",
+                  "reference": {"value": "#Observation_4a444b9a5ad05460dea293"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "200002140945-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "ED",
+                  "#text": "NORMAL MG/DL",
+                  "reference": {"value": "#ObservationValue_474836a37994e78e0d9766"}
+                },
+                "referenceRange": {"observationRange": {"text": "NORMAL"}}
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.15.1"}
+                ],
+                "id": {"root": "60f74692-bb9e-4c83-80e3-e7d4c1ff43b0"},
+                "code":                 {
+                  "code": "5770-3",
+                  "codeSystem": "2.16.840.1.113883.6.1",
+                  "displayName": "BILIRUBIN",
+                  "translation":                   {
+                    "code": "#UABIL",
+                    "codeSystemName": "L",
+                    "displayName": "UA BILIRUBIN"
+                  }
+                },
+                "text":                 {
+                  "#text": "BILIRUBIN",
+                  "reference": {"value": "#Observation_cc4a43a2330ea3858c6bf0"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "200002140945-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "ED",
+                  "#text": "NEGATIVE MG/DL",
+                  "reference": {"value": "#ObservationValue_1045d19a3b13b9c93e34a4"}
+                },
+                "referenceRange": {"observationRange": {"text": "NEGATIVE"}}
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.15.1"}
+                ],
+                "id": {"root": "5772fe81-27be-42be-bd09-2cb33d34bb0b"},
+                "code":                 {
+                  "code": "5797-6",
+                  "codeSystem": "2.16.840.1.113883.6.1",
+                  "displayName": "KETONES",
+                  "translation":                   {
+                    "code": "#UAKET",
+                    "codeSystemName": "L",
+                    "displayName": "UA KETONE"
+                  }
+                },
+                "text":                 {
+                  "#text": "KETONES",
+                  "reference": {"value": "#Observation_95477db123490311300c4d"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "200002140945-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "ED",
+                  "#text": "NEGATIVE MG/DL",
+                  "reference": {"value": "#ObservationValue_e846849aceab62c7b35724"}
+                },
+                "referenceRange": {"observationRange": {"text": "NEGATIVE"}}
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.15.1"}
+                ],
+                "id": {"root": "3fe9dc3e-0328-4d71-adae-f79b84b6c863"},
+                "code":                 {
+                  "code": "5794-3",
+                  "codeSystem": "2.16.840.1.113883.6.1",
+                  "displayName": "HEMOGLOBIN",
+                  "translation":                   {
+                    "code": "#UABLD",
+                    "codeSystemName": "L",
+                    "displayName": "UA BLOOD"
+                  }
+                },
+                "text":                 {
+                  "#text": "HEMOGLOBIN",
+                  "reference": {"value": "#Observation_ed406e92734a9525460ee3"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "200002140945-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "ED",
+                  "#text": "NEGATIVE",
+                  "reference": {"value": "#ObservationValue_fa43f0bfbd6d9c711175de"}
+                },
+                "referenceRange": {"observationRange": {"text": "NEGATIVE"}}
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.15.1"}
+                ],
+                "id": {"root": "3febe6bf-063e-4e12-bd09-f3fbb071a798"},
+                "code":                 {
+                  "code": "5804-0",
+                  "codeSystem": "2.16.840.1.113883.6.1",
+                  "displayName": "PROTEIN.TOTAL",
+                  "translation":                   {
+                    "code": "#UAPRO",
+                    "codeSystemName": "L",
+                    "displayName": "UA PROTEIN"
+                  }
+                },
+                "text":                 {
+                  "#text": "PROTEIN.TOTAL",
+                  "reference": {"value": "#Observation_ca40a6b637ddd5523f3eac"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "200002140945-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "ED",
+                  "#text": "100 MG/DL",
+                  "reference": {"value": "#ObservationValue_d14c7bb600dcd70dbc88e6"}
+                },
+                "referenceRange": {"observationRange": {"text": "NEGATIVE"}}
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.15.1"}
+                ],
+                "id": {"root": "e6f6ce3a-71b1-43aa-add3-cabcceddbc38"},
+                "code":                 {
+                  "code": "5818-0",
+                  "codeSystem": "2.16.840.1.113883.6.1",
+                  "displayName": "UROBILINOGEN",
+                  "translation":                   {
+                    "code": "#UAURO",
+                    "codeSystemName": "L",
+                    "displayName": "UA UROBILINOGEN"
+                  }
+                },
+                "text":                 {
+                  "#text": "UROBILINOGEN",
+                  "reference": {"value": "#Observation_934782bdef412195b700bf"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "200002140945-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "ED",
+                  "#text": "NORMAL MG/DL",
+                  "reference": {"value": "#ObservationValue_d348b38cceb08cb2e955cc"}
+                },
+                "referenceRange": {"observationRange": {"text": "NORMAL"}}
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.15.1"}
+                ],
+                "id": {"root": "a4d70f05-ec70-4953-ad38-f8a57b4f409c"},
+                "code":                 {
+                  "code": "5802-4",
+                  "codeSystem": "2.16.840.1.113883.6.1",
+                  "displayName": "NITRITE",
+                  "translation":                   {
+                    "code": "#UANIT",
+                    "codeSystemName": "L",
+                    "displayName": "UA NITRITE"
+                  }
+                },
+                "text":                 {
+                  "#text": "NITRITE",
+                  "reference": {"value": "#Observation_754b0e8a3d05608b8a7a96"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "200002140945-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "ED",
+                  "#text": "NEGATIVE MG/DL",
+                  "reference": {"value": "#ObservationValue_9d4196a9bb236eeb22afc8"}
+                },
+                "referenceRange": {"observationRange": {"text": "NEGATIVE"}}
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.15.1"}
+                ],
+                "id": {"root": "dc40aef2-195b-4570-9a85-5ebcee14c4d7"},
+                "code":                 {
+                  "code": "5799-2",
+                  "codeSystem": "2.16.840.1.113883.6.1",
+                  "displayName": "LEUKOCYTE ESTERASE",
+                  "translation":                   {
+                    "code": "#UALEU",
+                    "codeSystemName": "L",
+                    "displayName": "UA LEUK ESTER"
+                  }
+                },
+                "text":                 {
+                  "#text": "LEUKOCYTE ESTERASE",
+                  "reference": {"value": "#Observation_c94633ae757bcc6ea48919"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "200002140945-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "ED",
+                  "#text": "NORMAL",
+                  "reference": {"value": "#ObservationValue_24440493ff7bd1ffbb5b42"}
+                },
+                "referenceRange": {"observationRange": {"text": "NORMAL"}}
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.15.1"}
+                ],
+                "id": {"root": "32b04dd9-382f-4477-bb85-67998f8d8bd8"},
+                "code":                 {
+                  "code": "5768-7",
+                  "codeSystem": "2.16.840.1.113883.6.1",
+                  "displayName": "ASCORBATE",
+                  "translation":                   {
+                    "code": "#UAASC",
+                    "codeSystemName": "L",
+                    "displayName": "UA ASCORBIC ACD"
+                  }
+                },
+                "text":                 {
+                  "#text": "ASCORBATE",
+                  "reference": {"value": "#Observation_f9443f9b532fe72f2cb1e5"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "200002140945-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "ED",
+                  "#text": "NEGATIVE MG/DL",
+                  "reference": {"value": "#ObservationValue_04433c82b0cabfef0608b5"}
+                },
+                "referenceRange": {"observationRange": {"text": "NEGATIVE"}}
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.15.1"}
+                ],
+                "id": {"root": "c3c03abd-aa86-47c5-ba21-04cd8156833b"},
+                "code":                 {
+                  "code": "5808-1",
+                  "codeSystem": "2.16.840.1.113883.6.1",
+                  "displayName": "ERYTHROCYTES",
+                  "translation":                   {
+                    "code": "#UARBC",
+                    "codeSystemName": "L",
+                    "displayName": "UA RBC"
+                  }
+                },
+                "text":                 {
+                  "#text": "ERYTHROCYTES",
+                  "reference": {"value": "#Observation_e1413f8b295dd830ac254f"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "200002140945-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "ED",
+                  "#text": "0-2 /HPF",
+                  "reference": {"value": "#ObservationValue_e2406c9ede7ef86ff4f544"}
+                },
+                "referenceRange": {"observationRange": {"text": "0-2-NONE SEEN"}}
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.15.1"}
+                ],
+                "id": {"root": "eb66b0b1-4614-4587-8128-c58a5a692105"},
+                "code":                 {
+                  "code": "5821-4",
+                  "codeSystem": "2.16.840.1.113883.6.1",
+                  "displayName": "LEUKOCYTES",
+                  "translation":                   {
+                    "code": "#UAWBC",
+                    "codeSystemName": "L",
+                    "displayName": "UA WBC"
+                  }
+                },
+                "text":                 {
+                  "#text": "LEUKOCYTES",
+                  "reference": {"value": "#Observation_094f8ca6caa1e46daeb4c2"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "200002140945-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "ED",
+                  "#text": "NONE SEEN /HPF",
+                  "reference": {"value": "#ObservationValue_fd4c55ab72e4a10b6ed0a2"}
+                },
+                "interpretationCode":                 {
+                  "code": "N",
+                  "codeSystem": "2.16.840.1.113883.5.83",
+                  "codeSystemName": "Observation Interpretation",
+                  "displayName": "Normal"
+                },
+                "referenceRange": {"observationRange": {"text": "NONESEEN-0-5"}}
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.15.1"}
+                ],
+                "id": {"root": "a2a9ad8d-5571-45c7-aff4-2fcf13b7a3a3"},
+                "code":                 {
+                  "code": "5769-5",
+                  "codeSystem": "2.16.840.1.113883.6.1",
+                  "displayName": "BACTERIA",
+                  "translation":                   {
+                    "code": "#UABAC",
+                    "codeSystemName": "L",
+                    "displayName": "UA BACTERIA"
+                  }
+                },
+                "text":                 {
+                  "#text": "BACTERIA",
+                  "reference": {"value": "#Observation_c04c76b4559a12a677919d"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "200002140945-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "ED",
+                  "#text": "NONE SEEN",
+                  "reference": {"value": "#ObservationValue_d74bddb69e7e785506fa75"}
+                },
+                "referenceRange": {"observationRange": {"text": "NONESEEN-TRACE"}}
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.15.1"}
+                ],
+                "id": {"root": "bcf9aead-df38-44fb-8e53-23fdfdad22f4"},
+                "code":                 {
+                  "code": "5787-7",
+                  "codeSystem": "2.16.840.1.113883.6.1",
+                  "displayName": "EPITHELIAL CELLS",
+                  "translation":                   {
+                    "code": "#UASQE",
+                    "codeSystemName": "L",
+                    "displayName": "UA SQUAM EPITH"
+                  }
+                },
+                "text":                 {
+                  "#text": "EPITHELIAL CELLS",
+                  "reference": {"value": "#Observation_b0485ca581bbf61a63fe2b"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "200002140945-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "ED",
+                  "#text": "6-10 /HPF",
+                  "reference": {"value": "#ObservationValue_694ddab7ca4e4d5b0c17ad"}
+                },
+                "referenceRange": {"observationRange": {"text": "0-5-6-10"}}
+              }}
+            ]
+          }}
+        ]
+      }},
+      {"section":       {
+        "templateId":         [
+          {"root": "2.16.840.1.113883.10.20.1.16"},
+          {"root": "1.3.6.1.4.1.19376.1.5.3.1.3.25"},
+          {"root": "2.16.840.1.113883.3.88.11.83.119"},
+          {"root": "1.3.6.1.4.1.19376.1.5.3.1.1.5.3.2"}
+        ],
+        "code":         {
+          "code": "8716-3",
+          "codeSystem": "2.16.840.1.113883.6.1",
+          "codeSystemName": "LOINC",
+          "displayName": "Vital signs"
+        },
+        "title": "Vital Signs",
+        "text": {"table":         [
+                    {
+            "caption":             {
+              "ID": "Battery_6c4c27b7a5278f7ee14512",
+              "styleCode": "bold"
+            },
+            "thead": {"tr": {"th":             [
+              "Observation",
+              "Value",
+              "Reference Range",
+              "Units",
+              "Interpretation",
+              "Notes"
+            ]}},
+            "tbody": {"tr":             [
+              {"td":               [
+                                {
+                  "ID": "Observation_f44fe783f1dc2642d541bf",
+                  "#text": "BODY HEIGHT\n                                        (MEASURED)"
+                },
+                "173.0",
+                "No Information",
+                null,
+                "No Information",
+                "No Information"
+              ]},
+              {"td":               [
+                                {
+                  "ID": "Observation_13417cb46f4b463f9207ff",
+                  "#text": "BODY WEIGHT\n                                        (MEASURED)"
+                },
+                "70.0",
+                "No Information",
+                null,
+                "No Information",
+                "No Information"
+              ]},
+              {"td":               [
+                                {
+                  "ID": "Observation_3345d4b5eb91276b3a5e8c",
+                  "#text": "BODY\n                                        TEMPERATURE"
+                },
+                "32.0",
+                "No Information",
+                null,
+                "No Information",
+                "No Information"
+              ]},
+              {"td":               [
+                                {
+                  "ID": "Observation_0449e89e5aaed3452dceb2",
+                  "#text": "INTRAVASCULAR\n                                        SYSTOLIC"
+                },
+                "120.0",
+                "No Information",
+                "mm[Hg]",
+                "No Information",
+                "No Information"
+              ]},
+              {"td":               [
+                                {
+                  "ID": "Observation_0e4683b0a6ecea0957ec8a",
+                  "#text": "INTRAVASCULAR\n                                        DIASTOLIC"
+                },
+                "80.0",
+                "No Information",
+                "mm[Hg]",
+                "No Information",
+                "No Information"
+              ]},
+              {"td":               [
+                                {
+                  "ID": "Observation_ba4f0ea566d486463bd06a",
+                  "#text": "HEART BEAT"
+                },
+                "150.0",
+                "No Information",
+                "/min",
+                "No Information",
+                "No Information"
+              ]},
+              {"td":               [
+                                {
+                  "ID": "Observation_ef47888ddb409c3e87b509",
+                  "#text": "RESPIRATION\n                                        RATE"
+                },
+                "17.0",
+                "No Information",
+                "/min",
+                "No Information",
+                "No Information"
+              ]},
+              {"td":               [
+                                {
+                  "ID": "Observation_d7451488f52f7b404d739e",
+                  "#text": "ELY-PEFR^PEAK\n                                        EXPIRATION FLOW RATE^L"
+                },
+                "93",
+                "No Information",
+                null,
+                "No Information",
+                "No Information"
+              ]},
+              {"td":               [
+                                {
+                  "ID": "Observation_214cbfbec7036357ec671b",
+                  "#text": "BODY MASS INDEX"
+                },
+                "23.4",
+                "No Information",
+                null,
+                "No Information",
+                "No Information"
+              ]}
+            ]}
+          },
+                    {
+            "caption":             {
+              "ID": "Battery_ed4a6295ceb4cb5e116299",
+              "styleCode": "bold",
+              "#text": "Vital\n                                Signs"
+            },
+            "thead": {"tr": {"th":             [
+              "Observation",
+              "Value",
+              "Reference Range",
+              "Units",
+              "Interpretation",
+              "Notes"
+            ]}},
+            "tbody": {"tr":             [
+              {"td":               [
+                                {
+                  "ID": "Observation_7544a5b7f9d2d014b42dc9",
+                  "#text": "BODY HEIGHT\n                                        (MEASURED)"
+                },
+                "70.0",
+                "No Information",
+                "[in_us]",
+                "No Information",
+                "No Information"
+              ]},
+              {"td":               [
+                                {
+                  "ID": "Observation_4043919c5ac8298bf1be0f",
+                  "#text": "BODY WEIGHT\n                                        (MEASURED)"
+                },
+                "150.0",
+                "No Information",
+                "[lb_av]",
+                "No Information",
+                "No Information"
+              ]},
+              {"td":               [
+                                {
+                  "ID": "Observation_a54ef48bbb12bb42c654c0",
+                  "#text": "BODY\n                                        TEMPERATURE"
+                },
+                "98.5",
+                "No Information",
+                null,
+                "No Information",
+                "No Information"
+              ]},
+              {"td":               [
+                                {
+                  "ID": "Observation_ef46dfb181e465553c844f",
+                  "#text": "INTRAVASCULAR\n                                        SYSTOLIC"
+                },
+                "120.0",
+                "No Information",
+                "mm[Hg]",
+                "No Information",
+                "No Information"
+              ]},
+              {"td":               [
+                                {
+                  "ID": "Observation_fb41a38ab291d5e61bedfa",
+                  "#text": "INTRAVASCULAR\n                                        DIASTOLIC"
+                },
+                "60.0",
+                "No Information",
+                "mm[Hg]",
+                "No Information",
+                "No Information"
+              ]},
+              {"td":               [
+                                {
+                  "ID": "Observation_214aee8a755badd8dc610b",
+                  "#text": "HEART BEAT"
+                },
+                "65.0",
+                "No Information",
+                "/min",
+                "No Information",
+                "No Information"
+              ]},
+              {"td":               [
+                                {
+                  "ID": "Observation_2e45a297a2cec3e714f975",
+                  "#text": "RESPIRATION\n                                        RATE"
+                },
+                "99.0",
+                "No Information",
+                "/min",
+                "No Information",
+                "No Information"
+              ]},
+              {"td":               [
+                                {
+                  "ID": "Observation_914c5c936dee9f4717de50",
+                  "#text": "ELY-PEFR^PEAK\n                                        EXPIRATION FLOW RATE^L"
+                },
+                "100",
+                "No Information",
+                null,
+                "No Information",
+                "No Information"
+              ]},
+              {"td":               [
+                                {
+                  "ID": "Observation_134f239e4ef59c57bd64e2",
+                  "#text": "BODY MASS INDEX"
+                },
+                "21.5",
+                "No Information",
+                null,
+                "No Information",
+                "No Information"
+              ]}
+            ]}
+          },
+                    {
+            "caption":             {
+              "ID": "Battery_c545b68439fd31106e095d",
+              "styleCode": "bold",
+              "#text": "Vital\n                                Signs"
+            },
+            "thead": {"tr": {"th":             [
+              "Observation",
+              "Value",
+              "Reference Range",
+              "Units",
+              "Interpretation",
+              "Notes"
+            ]}},
+            "tbody": {"tr":             [
+              {"td":               [
+                                {
+                  "ID": "Observation_774a7e986686be3cb82b98",
+                  "#text": "BODY HEIGHT\n                                        (MEASURED)"
+                },
+                "70.0",
+                "No Information",
+                "[in_us]",
+                "No Information",
+                "No Information"
+              ]},
+              {"td":               [
+                                {
+                  "ID": "Observation_bb4e4b81582ae95eb051fa",
+                  "#text": "BODY WEIGHT\n                                        (MEASURED)"
+                },
+                "150.0",
+                "No Information",
+                "[lb_av]",
+                "No Information",
+                "No Information"
+              ]},
+              {"td":               [
+                                {
+                  "ID": "Observation_c745a68614383356e9f3a4",
+                  "#text": "BODY\n                                        TEMPERATURE"
+                },
+                "98.5",
+                "No Information",
+                null,
+                "No Information",
+                "No Information"
+              ]},
+              {"td":               [
+                                {
+                  "ID": "Observation_344e419ff73e6310a6cdb8",
+                  "#text": "INTRAVASCULAR\n                                        SYSTOLIC"
+                },
+                "120.0",
+                "No Information",
+                "mm[Hg]",
+                "No Information",
+                "No Information"
+              ]},
+              {"td":               [
+                                {
+                  "ID": "Observation_6544b4a892b437edeb3b28",
+                  "#text": "INTRAVASCULAR\n                                        DIASTOLIC"
+                },
+                "60.0",
+                "No Information",
+                "mm[Hg]",
+                "No Information",
+                "No Information"
+              ]},
+              {"td":               [
+                                {
+                  "ID": "Observation_d44eeab4bd9db69e3f6543",
+                  "#text": "HEART BEAT"
+                },
+                "65.0",
+                "No Information",
+                "/min",
+                "No Information",
+                "No Information"
+              ]},
+              {"td":               [
+                                {
+                  "ID": "Observation_fb40508b6308c0e5fa80ea",
+                  "#text": "RESPIRATION\n                                        RATE"
+                },
+                "99.0",
+                "No Information",
+                "/min",
+                "No Information",
+                "No Information"
+              ]},
+              {"td":               [
+                                {
+                  "ID": "Observation_ce475f9f81f96b0858a4d9",
+                  "#text": "ELY-PEFR^PEAK\n                                        EXPIRATION FLOW RATE^L"
+                },
+                "100",
+                "No Information",
+                null,
+                "No Information",
+                "No Information"
+              ]},
+              {"td":               [
+                                {
+                  "ID": "Observation_a24e67b23be57027977aed",
+                  "#text": "BODY MASS INDEX"
+                },
+                "21.5",
+                "No Information",
+                null,
+                "No Information",
+                "No Information"
+              ]}
+            ]}
+          }
+        ]},
+        "entry":         [
+          {"organizer":           {
+            "classCode": "BATTERY",
+            "moodCode": "EVN",
+            "templateId":             [
+              {"root": "2.16.840.1.113883.10.20.1.35"},
+              {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.1"},
+              {"root": "2.16.840.1.113883.10.20.1.32"}
+            ],
+            "id": {"root": "0215fe40-6c64-497d-b9ec-d947baea32bb"},
+            "code":             {
+              "code": "46680005",
+              "codeSystem": "2.16.840.1.113883.6.96",
+              "codeSystemName": "SNOMED CT",
+              "displayName": "Vital signs"
+            },
+            "statusCode": {"code": "completed"},
+            "effectiveTime": {"value": "201201241537-0800"},
+            "component":             [
+              {"procedure":               {
+                "classCode": "PROC",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.29"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.19"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.17"}
+                ],
+                "id": {"root": "03a272af-a1d6-4e62-97da-36bc13c40d82"},
+                "code":                 {
+                  "nullFlavor": "NI",
+                  "originalText": {"reference": {"value": "#Battery_344bd19818db7f7ae2663c"}}
+                },
+                "text": {"reference": {"value": "#Battery_344bd19818db7f7ae2663c"}},
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "201201241537-0800"},
+                "priorityCode": {"nullFlavor": "NI"},
+                "participant":                 [
+                                    {
+                    "typeCode": "RESP",
+                    "contextControlCode": "OP",
+                    "participantRole": {"playingEntity": {"name":                     {
+                      "given": "Doctor",
+                      "family": "Doom"
+                    }}}
+                  },
+                                    {
+                    "typeCode": "ORG",
+                    "contextControlCode": "OP",
+                    "participantRole": {"playingEntity": {"name": "Elysium"}}
+                  }
+                ]
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.14"}
+                ],
+                "id": {"root": "5db46319-e032-4e65-a43e-dc6e5ef0e54f"},
+                "code":                 {
+                  "code": "8302-2",
+                  "codeSystem": "2.16.840.1.113883.6.1",
+                  "displayName": "BODY HEIGHT (MEASURED)"
+                },
+                "text":                 {
+                  "#text": "BODY HEIGHT (MEASURED)",
+                  "reference": {"value": "#Observation_4f4c0eaea556ecba42ffd7"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "201201241537-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "PQ",
+                  "value": "173",
+                  "unit": ".0"
+                }
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.14"}
+                ],
+                "id": {"root": "805c2e37-98cb-4354-b96d-799f290b1432"},
+                "code":                 {
+                  "code": "3141-9",
+                  "codeSystem": "2.16.840.1.113883.6.1",
+                  "displayName": "BODY WEIGHT (MEASURED)"
+                },
+                "text":                 {
+                  "#text": "BODY WEIGHT (MEASURED)",
+                  "reference": {"value": "#Observation_e743aa91ae3518edb85216"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "201201241537-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "PQ",
+                  "value": "70",
+                  "unit": ".0"
+                }
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.14"}
+                ],
+                "id": {"root": "70caf299-7a42-4cd7-bccb-061e2e90cef8"},
+                "code":                 {
+                  "code": "8310-5",
+                  "codeSystem": "2.16.840.1.113883.6.1",
+                  "displayName": "BODY TEMPERATURE"
+                },
+                "text":                 {
+                  "#text": "BODY TEMPERATURE",
+                  "reference": {"value": "#Observation_ad41a5ae7e1d9d7fa66a92"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "201201241537-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "PQ",
+                  "value": "32",
+                  "unit": ".0"
+                }
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.14"}
+                ],
+                "id": {"root": "f19b9d35-3054-4653-9b1e-1b50b46f4409"},
+                "code":                 {
+                  "code": "8480-6",
+                  "codeSystem": "2.16.840.1.113883.6.1",
+                  "displayName": "INTRAVASCULAR SYSTOLIC"
+                },
+                "text":                 {
+                  "#text": "INTRAVASCULAR SYSTOLIC",
+                  "reference": {"value": "#Observation_be4baab4c34fcffde785e3"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "201201241537-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "PQ",
+                  "value": "120.0",
+                  "unit": "mm[Hg]"
+                }
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.14"}
+                ],
+                "id": {"root": "a03456fc-0b62-4018-9bd2-69656750f653"},
+                "code":                 {
+                  "code": "8462-4",
+                  "codeSystem": "2.16.840.1.113883.6.1",
+                  "displayName": "INTRAVASCULAR DIASTOLIC"
+                },
+                "text":                 {
+                  "#text": "INTRAVASCULAR DIASTOLIC",
+                  "reference": {"value": "#Observation_78497895d2ee2ac57595bb"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "201201241537-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "PQ",
+                  "value": "80.0",
+                  "unit": "mm[Hg]"
+                }
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.14"}
+                ],
+                "id": {"root": "8a21b379-92e2-4e0f-a3ab-1b1b70a0d4d3"},
+                "code":                 {
+                  "code": "8867-4",
+                  "codeSystem": "2.16.840.1.113883.6.1",
+                  "displayName": "HEART BEAT"
+                },
+                "text":                 {
+                  "#text": "HEART BEAT",
+                  "reference": {"value": "#Observation_1342bb84600b52c211e0c1"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "201201241537-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "PQ",
+                  "value": "150.0",
+                  "unit": "/min"
+                }
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.14"}
+                ],
+                "id": {"root": "07c2b9a7-b6d8-4c11-90d8-ff906ef862d0"},
+                "code":                 {
+                  "code": "9279-1",
+                  "codeSystem": "2.16.840.1.113883.6.1",
+                  "displayName": "RESPIRATION RATE"
+                },
+                "text":                 {
+                  "#text": "RESPIRATION RATE",
+                  "reference": {"value": "#Observation_4747009c43384f840c1e26"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "201201241537-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "PQ",
+                  "value": "17.0",
+                  "unit": "/min"
+                }
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.14"}
+                ],
+                "id": {"root": "23cec0af-8ff1-4400-adfc-5cb2745613fe"},
+                "code":                 {
+                  "nullFlavor": "NI",
+                  "originalText": "ELY-PEFR^PEAK EXPIRATION FLOW RATE^L"
+                },
+                "text": "ELY-PEFR^PEAK EXPIRATION FLOW RATE^L",
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "201201241537-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "PQ",
+                  "value": "9",
+                  "unit": "3"
+                }
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.14"}
+                ],
+                "id": {"root": "1c510011-210b-421b-a279-da0147da3469"},
+                "code":                 {
+                  "code": "41909-3",
+                  "codeSystem": "2.16.840.1.113883.6.1",
+                  "displayName": "BODY MASS INDEX"
+                },
+                "text":                 {
+                  "#text": "BODY MASS INDEX",
+                  "reference": {"value": "#Observation_314819906247b9b932a427"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "201201241537-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "PQ",
+                  "value": "23",
+                  "unit": ".4"
+                }
+              }}
+            ]
+          }},
+          {"organizer":           {
+            "classCode": "BATTERY",
+            "moodCode": "EVN",
+            "templateId":             [
+              {"root": "2.16.840.1.113883.10.20.1.35"},
+              {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.1"},
+              {"root": "2.16.840.1.113883.10.20.1.32"}
+            ],
+            "id": {"root": "782c3558-4379-4276-acba-a67a3bf55f1e"},
+            "code":             {
+              "code": "46680005",
+              "codeSystem": "2.16.840.1.113883.6.96",
+              "codeSystemName": "SNOMED CT",
+              "displayName": "Vital signs"
+            },
+            "statusCode": {"code": "completed"},
+            "effectiveTime": {"value": "201106061134-0800"},
+            "component":             [
+              {"procedure":               {
+                "classCode": "PROC",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.29"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.19"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.17"}
+                ],
+                "id": {"root": "aad1b118-656d-465b-9af6-954958484fd5"},
+                "code":                 {
+                  "nullFlavor": "NI",
+                  "originalText":                   {
+                    "#text": "Vital Signs",
+                    "reference": {"value": "#Battery_5f42189eabad40f3e63ac2"}
+                  }
+                },
+                "text":                 {
+                  "#text": "Vital Signs",
+                  "reference": {"value": "#Battery_5f42189eabad40f3e63ac2"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "201106061134-0800"},
+                "priorityCode": {"nullFlavor": "NI"},
+                "participant":                 [
+                                    {
+                    "typeCode": "RESP",
+                    "contextControlCode": "OP",
+                    "participantRole": {"playingEntity": {"name":                     {
+                      "given": "Doctor",
+                      "family": "Doom"
+                    }}}
+                  },
+                                    {
+                    "typeCode": "ORG",
+                    "contextControlCode": "OP",
+                    "participantRole": {"playingEntity": {"name": "AOMC"}}
+                  }
+                ]
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.14"}
+                ],
+                "id": {"root": "1baba9e0-4a15-4d5d-b3d6-fb65a74a8aac"},
+                "code":                 {
+                  "code": "8302-2",
+                  "codeSystem": "2.16.840.1.113883.6.1",
+                  "displayName": "BODY HEIGHT (MEASURED)"
+                },
+                "text":                 {
+                  "#text": "BODY HEIGHT (MEASURED)",
+                  "reference": {"value": "#Observation_ab408a980d792b8799e7c7"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "201106061134-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "PQ",
+                  "value": "70.0",
+                  "unit": "[in_us]"
+                }
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.14"}
+                ],
+                "id": {"root": "b757f67e-5d07-454f-8eb7-f2410e6a1a26"},
+                "code":                 {
+                  "code": "3141-9",
+                  "codeSystem": "2.16.840.1.113883.6.1",
+                  "displayName": "BODY WEIGHT (MEASURED)"
+                },
+                "text":                 {
+                  "#text": "BODY WEIGHT (MEASURED)",
+                  "reference": {"value": "#Observation_1342e2bc7772f2c8bd0d47"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "201106061134-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "PQ",
+                  "value": "150.0",
+                  "unit": "[lb_av]"
+                }
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.14"}
+                ],
+                "id": {"root": "8080a10e-f018-42b1-9fa2-b89e37de5f77"},
+                "code":                 {
+                  "code": "8310-5",
+                  "codeSystem": "2.16.840.1.113883.6.1",
+                  "displayName": "BODY TEMPERATURE"
+                },
+                "text":                 {
+                  "#text": "BODY TEMPERATURE",
+                  "reference": {"value": "#Observation_2d47c8bfafa69a6a4d3d2f"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "201106061134-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "PQ",
+                  "value": "98",
+                  "unit": ".5"
+                }
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.14"}
+                ],
+                "id": {"root": "2fd4025f-9e8b-493f-be16-d39196d1b0b7"},
+                "code":                 {
+                  "code": "8480-6",
+                  "codeSystem": "2.16.840.1.113883.6.1",
+                  "displayName": "INTRAVASCULAR SYSTOLIC"
+                },
+                "text":                 {
+                  "#text": "INTRAVASCULAR SYSTOLIC",
+                  "reference": {"value": "#Observation_c04d9985ff18661d4abad0"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "201106061134-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "PQ",
+                  "value": "120.0",
+                  "unit": "mm[Hg]"
+                }
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.14"}
+                ],
+                "id": {"root": "650896bd-c383-49ab-8146-7688b209b872"},
+                "code":                 {
+                  "code": "8462-4",
+                  "codeSystem": "2.16.840.1.113883.6.1",
+                  "displayName": "INTRAVASCULAR DIASTOLIC"
+                },
+                "text":                 {
+                  "#text": "INTRAVASCULAR DIASTOLIC",
+                  "reference": {"value": "#Observation_f64592b470944f95d9c0d3"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "201106061134-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "PQ",
+                  "value": "60.0",
+                  "unit": "mm[Hg]"
+                }
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.14"}
+                ],
+                "id": {"root": "95db751c-46ab-4bdb-975b-c28493859687"},
+                "code":                 {
+                  "code": "8867-4",
+                  "codeSystem": "2.16.840.1.113883.6.1",
+                  "displayName": "HEART BEAT"
+                },
+                "text":                 {
+                  "#text": "HEART BEAT",
+                  "reference": {"value": "#Observation_9d420dad97988ae93f40f8"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "201106061134-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "PQ",
+                  "value": "65.0",
+                  "unit": "/min"
+                }
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.14"}
+                ],
+                "id": {"root": "904abf1d-fc14-42ce-8a39-40f0591623f8"},
+                "code":                 {
+                  "code": "9279-1",
+                  "codeSystem": "2.16.840.1.113883.6.1",
+                  "displayName": "RESPIRATION RATE"
+                },
+                "text":                 {
+                  "#text": "RESPIRATION RATE",
+                  "reference": {"value": "#Observation_2842b8bc0ebfddc7196bf0"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "201106061134-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "PQ",
+                  "value": "99.0",
+                  "unit": "/min"
+                }
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.14"}
+                ],
+                "id": {"root": "d105626c-6c73-4c84-a351-b9ca8e3f5ba3"},
+                "code":                 {
+                  "nullFlavor": "NI",
+                  "originalText": "ELY-PEFR^PEAK EXPIRATION FLOW RATE^L"
+                },
+                "text": "ELY-PEFR^PEAK EXPIRATION FLOW RATE^L",
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "201106061134-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "PQ",
+                  "value": "10",
+                  "unit": "0"
+                }
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.14"}
+                ],
+                "id": {"root": "90cf80c9-27aa-4a51-85d4-b918f15ae0ad"},
+                "code":                 {
+                  "code": "41909-3",
+                  "codeSystem": "2.16.840.1.113883.6.1",
+                  "displayName": "BODY MASS INDEX"
+                },
+                "text":                 {
+                  "#text": "BODY MASS INDEX",
+                  "reference": {"value": "#Observation_31473faf7377059acb8b8b"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "201106061134-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "PQ",
+                  "value": "21",
+                  "unit": ".5"
+                }
+              }}
+            ]
+          }},
+          {"organizer":           {
+            "classCode": "BATTERY",
+            "moodCode": "EVN",
+            "templateId":             [
+              {"root": "2.16.840.1.113883.10.20.1.35"},
+              {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.1"},
+              {"root": "2.16.840.1.113883.10.20.1.32"}
+            ],
+            "id": {"root": "5e6b080a-03a9-42b4-8815-9a472620bf33"},
+            "code":             {
+              "code": "46680005",
+              "codeSystem": "2.16.840.1.113883.6.96",
+              "codeSystemName": "SNOMED CT",
+              "displayName": "Vital signs"
+            },
+            "statusCode": {"code": "completed"},
+            "effectiveTime": {"value": "201106061134-0800"},
+            "component":             [
+              {"procedure":               {
+                "classCode": "PROC",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.29"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.19"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.17"}
+                ],
+                "id": {"root": "219d8535-5206-41cf-9bf8-db22e85a414e"},
+                "code":                 {
+                  "nullFlavor": "NI",
+                  "originalText":                   {
+                    "#text": "Vital Signs",
+                    "reference": {"value": "#Battery_8c4a7c9e10efd5dce2a6f7"}
+                  }
+                },
+                "text":                 {
+                  "#text": "Vital Signs",
+                  "reference": {"value": "#Battery_8c4a7c9e10efd5dce2a6f7"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "201106061134-0800"},
+                "priorityCode": {"nullFlavor": "NI"},
+                "participant":                 [
+                                    {
+                    "typeCode": "RESP",
+                    "contextControlCode": "OP",
+                    "participantRole": {"playingEntity": {"name":                     {
+                      "given": "Doctor",
+                      "family": "Doom"
+                    }}}
+                  },
+                                    {
+                    "typeCode": "ORG",
+                    "contextControlCode": "OP",
+                    "participantRole": {"playingEntity": {"name": "AOMC"}}
+                  }
+                ]
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.14"}
+                ],
+                "id": {"root": "5cc76264-72e8-4fc9-bca8-1b3d87fbddc0"},
+                "code":                 {
+                  "code": "8302-2",
+                  "codeSystem": "2.16.840.1.113883.6.1",
+                  "displayName": "BODY HEIGHT (MEASURED)"
+                },
+                "text":                 {
+                  "#text": "BODY HEIGHT (MEASURED)",
+                  "reference": {"value": "#Observation_8a4048a5078f6b1c58943f"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "201106061134-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "PQ",
+                  "value": "70.0",
+                  "unit": "[in_us]"
+                }
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.14"}
+                ],
+                "id": {"root": "ce24389d-6af5-4f4f-98fe-db4924422d3b"},
+                "code":                 {
+                  "code": "3141-9",
+                  "codeSystem": "2.16.840.1.113883.6.1",
+                  "displayName": "BODY WEIGHT (MEASURED)"
+                },
+                "text":                 {
+                  "#text": "BODY WEIGHT (MEASURED)",
+                  "reference": {"value": "#Observation_814f5b8cee3a5aa7386407"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "201106061134-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "PQ",
+                  "value": "150.0",
+                  "unit": "[lb_av]"
+                }
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.14"}
+                ],
+                "id": {"root": "535068e4-fbc7-4f3b-896b-352f939afcdf"},
+                "code":                 {
+                  "code": "8310-5",
+                  "codeSystem": "2.16.840.1.113883.6.1",
+                  "displayName": "BODY TEMPERATURE"
+                },
+                "text":                 {
+                  "#text": "BODY TEMPERATURE",
+                  "reference": {"value": "#Observation_084750bae68e1ef6b5b826"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "201106061134-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "PQ",
+                  "value": "98",
+                  "unit": ".5"
+                }
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.14"}
+                ],
+                "id": {"root": "fa3bccf1-32a4-453e-b509-5e983c056438"},
+                "code":                 {
+                  "code": "8480-6",
+                  "codeSystem": "2.16.840.1.113883.6.1",
+                  "displayName": "INTRAVASCULAR SYSTOLIC"
+                },
+                "text":                 {
+                  "#text": "INTRAVASCULAR SYSTOLIC",
+                  "reference": {"value": "#Observation_75431bbd78c5b13e07d252"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "201106061134-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "PQ",
+                  "value": "120.0",
+                  "unit": "mm[Hg]"
+                }
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.14"}
+                ],
+                "id": {"root": "132b8d59-073c-456a-b3be-b0f54ae95a75"},
+                "code":                 {
+                  "code": "8462-4",
+                  "codeSystem": "2.16.840.1.113883.6.1",
+                  "displayName": "INTRAVASCULAR DIASTOLIC"
+                },
+                "text":                 {
+                  "#text": "INTRAVASCULAR DIASTOLIC",
+                  "reference": {"value": "#Observation_cf4d5c9d1f06845f71476a"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "201106061134-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "PQ",
+                  "value": "60.0",
+                  "unit": "mm[Hg]"
+                }
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.14"}
+                ],
+                "id": {"root": "4f697a6b-9088-47bf-bd12-90081803a99c"},
+                "code":                 {
+                  "code": "8867-4",
+                  "codeSystem": "2.16.840.1.113883.6.1",
+                  "displayName": "HEART BEAT"
+                },
+                "text":                 {
+                  "#text": "HEART BEAT",
+                  "reference": {"value": "#Observation_dd4020994140f937a500e0"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "201106061134-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "PQ",
+                  "value": "65.0",
+                  "unit": "/min"
+                }
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.14"}
+                ],
+                "id": {"root": "54f6f81e-0463-43f0-bcab-80d5eb50962b"},
+                "code":                 {
+                  "code": "9279-1",
+                  "codeSystem": "2.16.840.1.113883.6.1",
+                  "displayName": "RESPIRATION RATE"
+                },
+                "text":                 {
+                  "#text": "RESPIRATION RATE",
+                  "reference": {"value": "#Observation_2b4837b509d775ca8f900b"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "201106061134-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "PQ",
+                  "value": "99.0",
+                  "unit": "/min"
+                }
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.14"}
+                ],
+                "id": {"root": "1cb49668-87db-42dd-b86b-db548153e3ab"},
+                "code":                 {
+                  "nullFlavor": "NI",
+                  "originalText": "ELY-PEFR^PEAK EXPIRATION FLOW RATE^L"
+                },
+                "text": "ELY-PEFR^PEAK EXPIRATION FLOW RATE^L",
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "201106061134-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "PQ",
+                  "value": "10",
+                  "unit": "0"
+                }
+              }},
+              {"observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.31"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"},
+                  {"root": "2.16.840.1.113883.3.88.11.83.14"}
+                ],
+                "id": {"root": "eaa2b910-8f6f-4a05-957a-642100ab6d18"},
+                "code":                 {
+                  "code": "41909-3",
+                  "codeSystem": "2.16.840.1.113883.6.1",
+                  "displayName": "BODY MASS INDEX"
+                },
+                "text":                 {
+                  "#text": "BODY MASS INDEX",
+                  "reference": {"value": "#Observation_5b485eb6e5d67588df6585"}
+                },
+                "statusCode": {"code": "completed"},
+                "effectiveTime": {"value": "201106061134-0800"},
+                "value":                 {
+                  "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                  "xsi:type": "PQ",
+                  "value": "21",
+                  "unit": ".5"
+                }
+              }}
+            ]
+          }}
+        ]
+      }}
+    ]}},
+    {"section":     {
+      "templateId":       [
+        {"root": "2.16.840.1.113883.10.20.1.8"},
+        {"root": "2.16.840.1.113883.3.88.11.83.112"},
+        {"root": "1.3.6.1.4.1.19376.1.5.3.1.3.19"}
+      ],
+      "id": {"root": "d9e6c1e3-8e5b-44b0-b4ab-ad72196a1eca"},
+      "code":       {
+        "code": "10160-0",
+        "codeSystem": "2.16.840.1.113883.6.1",
+        "codeSystemName": "LOINC",
+        "displayName": "History of medication use"
+      },
+      "title": "Medications",
+      "text": {"table":       {
+        "thead": {"tr": {"th":         [
+          "Original Text",
+          "Start Date",
+          "End Date",
+          "Status"
+        ]}},
+        "tbody": {"tr": {"td":         [
+          {"content":           {
+            "ID": "Medtext_5e40fd8731fb0d8db7c2d0",
+            "#text": "Aspirin Tab Delayed Release 325 MG"
+          }},
+          "Nov 10 2010",
+          "No information in source data",
+          "No information in source data"
+        ]}}
+      }},
+      "entry":       {
+        "typeCode": "DRIV",
+        "substanceAdministration":         {
+          "classCode": "SBADM",
+          "moodCode": "EVN",
+          "templateId":           [
+            {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.7"},
+            {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.7.1"},
+            {"root": "2.16.840.1.113883.3.88.11.83.8"},
+            {"root": "2.16.840.1.113883.10.20.1.24"}
+          ],
+          "id": {"root": "18ad6538-9655-41c6-8f1f-fdd205a97c19"},
+          "text": "1TQ4HP",
+          "statusCode": {"code": "completed"},
+          "effectiveTime":           {
+            "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+            "xsi:type": "IVL_TS",
+            "low": {"value": "20101110"}
+          },
+          "consumable": {"manufacturedProduct":           {
+            "classCode": "MANU",
+            "templateId":             [
+              {"root": "2.16.840.1.113883.10.20.1.53"},
+              {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.7.2"},
+              {"root": "2.16.840.1.113883.3.88.11.83.8.2"}
+            ],
+            "manufacturedMaterial":             {
+              "code":               {
+                "code": "198467",
+                "codeSystem": "2.16.840.1.113883.6.88",
+                "codeSystemName": "RxNorm",
+                "displayName": "Aspirin 325 MG Enteric Coated Tablet",
+                "originalText":                 {
+                  "#text": "Aspirin Tab Delayed Release 325 MG",
+                  "reference": {"value": "#Medtext_5e40fd8731fb0d8db7c2d0"}
+                }
+              },
+              "name": "Aspirin"
+            }
+          }},
+          "entryRelationship":           {
+            "typeCode": "REFR",
+            "supply":             {
+              "classCode": "SPLY",
+              "moodCode": "INT",
+              "author":               {
+                "time": {"nullFlavor": "NI"},
+                "assignedAuthor":                 {
+                  "classCode": "ASSIGNED",
+                  "id":                   {
+                    "root": "1.3.6.1.4.1.29148",
+                    "extension": "DKCIKCIGIFD"
+                  },
+                  "addr": {"nullFlavor": "NI"},
+                  "telecom": {"nullFlavor": "NI"},
+                  "assignedPerson": {"name":                   {
+                    "given": "Doctor",
+                    "family": "Doom"
+                  }}
+                }
+              }
+            }
+          }
+        }
+      }
+    }},
+    {"section":     {
+      "templateId":       [
+                {
+          "root": "2.16.840.1.113883.3.88.11.83.127",
+          "assigningAuthorityName": "HITSP/C83"
+        },
+                {
+          "root": "1.3.6.1.4.1.19376.1.5.3.1.1.5.3.3",
+          "assigningAuthorityName": "IHE PCC"
+        },
+                {
+          "root": "2.16.840.1.113883.10.20.1.3",
+          "assigningAuthorityName": "HL7 CCD"
+        }
+      ],
+      "code":       {
+        "code": "46240-8",
+        "codeSystem": "2.16.840.1.113883.6.1",
+        "codeSystemName": "LOINC",
+        "displayName": "History of encounters"
+      },
+      "title": "Encounters",
+      "text": {"table":       {
+        "border": "1",
+        "width": "100%",
+        "thead": {"tr": {"th":         [
+          "Description",
+          "Codes",
+          "Time"
+        ]}},
+        "tbody": {"tr":         [
+          {"td":           [
+                        {
+              "ID": "encounters-desc-2",
+              "#text": "Encounter Office and Outpatient Consult"
+            },
+                        {
+              "ID": "encounters-code-2",
+              "#text": "CPT: 99241"
+            },
+            "November 10th, 2010 00:00"
+          ]},
+          {"td":           [
+                        {
+              "ID": "encounters-desc-8",
+              "#text": "Encounter Office and Outpatient Consult"
+            },
+                        {
+              "ID": "encounters-code-8",
+              "#text": "CPT: 99241"
+            },
+            "April 1st, 2010 00:00"
+          ]}
+        ]}
+      }},
+      "entry":       [
+                {
+          "typeCode": "DRIV",
+          "encounter":           {
+            "classCode": "ENC",
+            "moodCode": "EVN",
+            "templateId":             [
+                            {
+                "root": "2.16.840.1.113883.3.88.11.83.16",
+                "assigningAuthorityName": "HITSP C83"
+              },
+                            {
+                "root": "2.16.840.1.113883.10.20.1.21",
+                "assigningAuthorityName": "CCD"
+              },
+                            {
+                "root": "1.3.6.1.4.1.19376.1.5.3.1.4.14",
+                "assigningAuthorityName": "IHE PCC"
+              }
+            ],
+            "id": {"root": "f1634260-bc9a-012e-dfde-001f5b35af7c"},
+            "code":             {
+              "code": "99241",
+              "codeSystem": "2.16.840.1.113883.6.12",
+              "originalText": "Encounter Office and Outpatient Consult"
+            },
+            "text":             {
+              "#text": "The patient was very nice.\n                                ",
+              "reference": {"value": "#encounters-desc-2"}
+            },
+            "effectiveTime": {"value": "20120910050000"}
+          }
+        },
+                {
+          "typeCode": "DRIV",
+          "encounter":           {
+            "classCode": "ENC",
+            "moodCode": "EVN",
+            "templateId":             [
+                            {
+                "root": "2.16.840.1.113883.3.88.11.83.16",
+                "assigningAuthorityName": "HITSP C83"
+              },
+                            {
+                "root": "2.16.840.1.113883.10.20.1.21",
+                "assigningAuthorityName": "CCD"
+              },
+                            {
+                "root": "1.3.6.1.4.1.19376.1.5.3.1.4.14",
+                "assigningAuthorityName": "IHE PCC"
+              }
+            ],
+            "id": {"root": "f1635340-bc9a-012e-dfde-001f5b35af7c"},
+            "code":             {
+              "code": "99241",
+              "codeSystem": "2.16.840.1.113883.6.12",
+              "originalText": "Encounter Office and Outpatient Consult"
+            },
+            "text":             {
+              "#text": "The patient was very ornery.\n                                ",
+              "reference": {"value": "#encounters-desc-8"}
+            },
+            "effectiveTime": {"value": "20120401040000"}
+          }
+        }
+      ]
+    }},
+    {"section":     {
+      "templateId":       [
+        {"root": "2.16.840.1.113883.3.88.11.83.103"},
+        {"root": "1.3.6.1.4.1.19376.1.5.3.1.3.6"},
+        {"root": "2.16.840.1.113883.10.20.1.11"}
+      ],
+      "id": {"nullFlavor": "NI"},
+      "code":       {
+        "code": "11450-4",
+        "codeSystem": "2.16.840.1.113883.6.1",
+        "codeSystemName": "LOINC",
+        "displayName": "Problem list"
+      },
+      "title": "Problems List Section",
+      "text": {"table":       {
+        "thead": {"tr": {"th":         [
+          "Condition",
+          "Start Date",
+          "End Date",
+          "Status"
+        ]}},
+        "tbody": {"tr":         [
+          {"td":           [
+                        {
+              "ID": "Condition_d5466aa30018599c84c5cf",
+              "#text": "Hornet/wasp/bee sting"
+            },
+            "May 12 2011",
+            "No information in source data",
+            "Active"
+          ]},
+          {"td":           [
+                        {
+              "ID": "Condition_29482ba63888b52a1eff88",
+              "#text": "Spacecraft acc-occupant"
+            },
+            "Jun 20 2012",
+            "No Information",
+            "Active"
+          ]},
+          {"td":           [
+                        {
+              "ID": "Condition_c340878d3ea465119361d5",
+              "#text": "War injury:lasers"
+            },
+            "Jun 20 2012",
+            "No Information",
+            "Active"
+          ]},
+          {"td":           [
+                        {
+              "ID": "Condition_18491c9ff5e4ad111505f3",
+              "#text": "Benign hypertension"
+            },
+            "Jun 20 2012",
+            "No Information",
+            "Resolved"
+          ]},
+          {"td":           [
+                        {
+              "ID": "Condition_4b4676a6ee5cafcd2faf3a",
+              "#text": "Cosmetic dermatitis"
+            },
+            "May 20 2012",
+            "No Information",
+            "Inactive"
+          ]},
+          {"td":           [
+                        {
+              "ID": "Condition_3348d3a242080500584090",
+              "#text": "Part arterial occlusion"
+            },
+            "Sep 20 2012",
+            "No Information",
+            "Active"
+          ]},
+          {"td":           [
+                        {
+              "ID": "Condition_2849988cfdb73b211ad60b",
+              "#text": "Cardiac dysrhythmia NOS"
+            },
+            "Sep 20 2012",
+            "No Information",
+            "Active"
+          ]}
+        ]}
+      }},
+      "entry":       [
+                {
+          "typeCode": "DRIV",
+          "act":           {
+            "classCode": "ACT",
+            "moodCode": "EVN",
+            "templateId":             [
+              {"root": "2.16.840.1.113883.10.20.1.27"},
+              {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.5.1"},
+              {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.5.2"},
+              {"root": "2.16.840.1.113883.3.88.11.83.7"}
+            ],
+            "id": {"nullFlavor": "NI"},
+            "code": {"nullFlavor": "NA"},
+            "statusCode": {"code": "completed"},
+            "effectiveTime":             {
+              "low": {"nullFlavor": "NI"},
+              "high": {"nullFlavor": "NI"}
+            },
+            "performer":             {
+              "typeCode": "PRF",
+              "assignedEntity":               {
+                "id":                 {
+                  "root": "1.3.6.1.4.1.29148",
+                  "extension": "DKCIKCIGIFD"
+                },
+                "addr":                 {
+                  "streetAddressLine": "445 256th St",
+                  "city": "Hollywood",
+                  "state": "CA",
+                  "postalCode": "90028"
+                },
+                "telecom":                 [
+                  {"value": "fax:+1 650-555-5554"},
+                                    {
+                    "value": "tel:+1 650-555-9854",
+                    "use": "PUB"
+                  }
+                ],
+                "assignedPerson": {"name":                 {
+                  "given": "Doctor",
+                  "family": "Doom"
+                }},
+                "representedOrganization":                 {
+                  "name": "InGen Workgroup",
+                  "telecom": {"nullFlavor": "NI"},
+                  "addr": {"nullFlavor": "NI"}
+                }
+              }
+            },
+            "entryRelationship":             {
+              "typeCode": "SUBJ",
+              "inversionInd": "false",
+              "observation":               {
+                "classCode": "OBS",
+                "moodCode": "EVN",
+                "templateId":                 [
+                  {"root": "2.16.840.1.113883.10.20.1.28"},
+                  {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.5"}
+                ],
+                "id": {"root": "b1b67c35-0f5d-4809-a5d1-318a9b75593e"},
+                "code":                 {
+                  "code": "282291009",
+                  "codeSystem": "2.16.840.1.113883.6.96",
+                  "codeSystemName": "SNOMED CT",
+                  "codeSystemVersion": "20081218",
+                  "displayName": "Diagnosis"
+                },
+                "text": {"reference": {"value": "#Condition_d5466aa30018599c84c5cf"}},
+                "statusCode": {"code": "completed"},
+                "effectiveTime":                 {
+                  "low": {"value": "20110512"},
+                  "high": {"nullFlavor": "NI"}
+                },
+                "value":                 {
+                  "code": "E905.3",
+                  "codeSystem": "2.16.840.1.113883.6.103",
+                  "codeSystemName": "ICD9-CM",
+                  "displayName": "Hornet/wasp/bee sting"
+                },
+                "entryRelationship":                 {
+                  "typeCode": "REFR",
+                  "observation":                   {
+                    "classCode": "OBS",
+                    "moodCode": "EVN",
+                    "templateId": {"root": "2.16.840.1.113883.10.20.1.50"},
+                    "code":                     {
+                      "code": "33999-4",
+                      "codeSystem": "2.16.840.1.113883.6.1",
+                      "codeSystemName": "LOINC",
+                      "displayName": "Status"
+                    },
+                    "statusCode": {"code": "completed"},
+                    "value":                     {
+                      "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                      "code": "55561003",
+                      "xsi:type": "CD",
+                      "codeSystem": "2.16.840.1.113883.6.96",
+                      "codeSystemName": "SNOMED CT",
+                      "codeSystemVersion": "20091109",
+                      "displayName": "Active"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {"act":         {
+          "classCode": "ACT",
+          "moodCode": "EVN",
+          "templateId":           [
+            {"root": "2.16.840.1.113883.10.20.1.27"},
+            {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.5.1"},
+            {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.5.2"},
+            {"root": "2.16.840.1.113883.3.88.11.83.7"}
+          ],
+          "id": {"nullFlavor": "NI"},
+          "code": {"nullFlavor": "NA"},
+          "statusCode": {"code": "completed"},
+          "effectiveTime":           {
+            "low": {"nullFlavor": "NI"},
+            "high": {"nullFlavor": "NI"}
+          },
+          "performer":           {
+            "typeCode": "PRF",
+            "assignedEntity":             {
+              "id":               {
+                "root": "1.3.6.1.4.1.29148",
+                "extension": "DKCIKCIGIFD"
+              },
+              "addr":               {
+                "streetAddressLine": "445 256th St",
+                "city": "Hollywood",
+                "state": "CA",
+                "postalCode": "90028"
+              },
+              "telecom":               [
+                {"value": "fax:+1 650-555-5554"},
+                                {
+                  "value": "tel:+1 650-555-9854",
+                  "use": "PUB"
+                }
+              ],
+              "assignedPerson": {"name":               {
+                "given": "Doctor",
+                "family": "Doom"
+              }},
+              "representedOrganization":               {
+                "name": "InGen Workgroup",
+                "telecom": {"nullFlavor": "NI"},
+                "addr": {"nullFlavor": "NI"}
+              }
+            }
+          },
+          "entryRelationship":           {
+            "typeCode": "SUBJ",
+            "inversionInd": "false",
+            "observation":             {
+              "classCode": "OBS",
+              "moodCode": "EVN",
+              "templateId":               [
+                {"root": "2.16.840.1.113883.10.20.1.28"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.5"}
+              ],
+              "id": {"root": "aa02fd1e-fca8-460a-88bd-ee28bd11d26d"},
+              "code":               {
+                "code": "282291009",
+                "codeSystem": "2.16.840.1.113883.6.96",
+                "codeSystemName": "SNOMED CT",
+                "codeSystemVersion": "20081218",
+                "displayName": "Diagnosis"
+              },
+              "text": {"reference": {"value": "#Condition_29482ba63888b52a1eff88"}},
+              "statusCode": {"code": "completed"},
+              "effectiveTime":               {
+                "low": {"value": "20120620"},
+                "high": {"nullFlavor": "NI"}
+              },
+              "value":               {
+                "code": "E845.0",
+                "codeSystem": "2.16.840.1.113883.6.103",
+                "codeSystemName": "ICD9-CM",
+                "displayName": "Spacecraft acc-occupant"
+              },
+              "entryRelationship":               {
+                "typeCode": "REFR",
+                "observation":                 {
+                  "classCode": "OBS",
+                  "moodCode": "EVN",
+                  "templateId": {"root": "2.16.840.1.113883.10.20.1.50"},
+                  "code":                   {
+                    "code": "33999-4",
+                    "codeSystem": "2.16.840.1.113883.6.1",
+                    "codeSystemName": "LOINC",
+                    "displayName": "Status"
+                  },
+                  "statusCode": {"code": "completed"},
+                  "value":                   {
+                    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "code": "55561003",
+                    "xsi:type": "CD",
+                    "codeSystem": "2.16.840.1.113883.6.96",
+                    "codeSystemName": "SNOMED CT",
+                    "codeSystemVersion": "20091109",
+                    "displayName": "Active"
+                  }
+                }
+              }
+            }
+          }
+        }},
+        {"act":         {
+          "classCode": "ACT",
+          "moodCode": "EVN",
+          "templateId":           [
+            {"root": "2.16.840.1.113883.10.20.1.27"},
+            {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.5.1"},
+            {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.5.2"},
+            {"root": "2.16.840.1.113883.3.88.11.83.7"}
+          ],
+          "id": {"nullFlavor": "NI"},
+          "code": {"nullFlavor": "NA"},
+          "statusCode": {"code": "completed"},
+          "effectiveTime":           {
+            "low": {"nullFlavor": "NI"},
+            "high": {"nullFlavor": "NI"}
+          },
+          "performer":           {
+            "typeCode": "PRF",
+            "assignedEntity":             {
+              "id":               {
+                "root": "1.3.6.1.4.1.29148",
+                "extension": "DKCIKCIGIFD"
+              },
+              "addr":               {
+                "streetAddressLine": "445 256th St",
+                "city": "Hollywood",
+                "state": "CA",
+                "postalCode": "90028"
+              },
+              "telecom":               [
+                {"value": "fax:+1 650-555-5554"},
+                                {
+                  "value": "tel:+1 650-555-9854",
+                  "use": "PUB"
+                }
+              ],
+              "assignedPerson": {"name":               {
+                "given": "Doctor",
+                "family": "Doom"
+              }},
+              "representedOrganization":               {
+                "name": "InGen Workgroup",
+                "telecom": {"nullFlavor": "NI"},
+                "addr": {"nullFlavor": "NI"}
+              }
+            }
+          },
+          "entryRelationship":           {
+            "typeCode": "SUBJ",
+            "inversionInd": "false",
+            "observation":             {
+              "classCode": "OBS",
+              "moodCode": "EVN",
+              "templateId":               [
+                {"root": "2.16.840.1.113883.10.20.1.28"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.5"}
+              ],
+              "id": {"root": "cb3256e4-ed94-442f-a039-5e2f1e0d8a24"},
+              "code":               {
+                "code": "282291009",
+                "codeSystem": "2.16.840.1.113883.6.96",
+                "codeSystemName": "SNOMED CT",
+                "codeSystemVersion": "20081218",
+                "displayName": "Diagnosis"
+              },
+              "text": {"reference": {"value": "#Condition_c340878d3ea465119361d5"}},
+              "statusCode": {"code": "completed"},
+              "effectiveTime":               {
+                "low": {"value": "20120620"},
+                "high": {"nullFlavor": "NI"}
+              },
+              "value":               {
+                "code": "E997.0",
+                "codeSystem": "2.16.840.1.113883.6.103",
+                "codeSystemName": "ICD9-CM",
+                "displayName": "War injury:lasers"
+              },
+              "entryRelationship":               {
+                "typeCode": "REFR",
+                "observation":                 {
+                  "classCode": "OBS",
+                  "moodCode": "EVN",
+                  "templateId": {"root": "2.16.840.1.113883.10.20.1.50"},
+                  "code":                   {
+                    "code": "33999-4",
+                    "codeSystem": "2.16.840.1.113883.6.1",
+                    "codeSystemName": "LOINC",
+                    "displayName": "Status"
+                  },
+                  "statusCode": {"code": "completed"},
+                  "value":                   {
+                    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "code": "55561003",
+                    "xsi:type": "CD",
+                    "codeSystem": "2.16.840.1.113883.6.96",
+                    "codeSystemName": "SNOMED CT",
+                    "codeSystemVersion": "20091109",
+                    "displayName": "Active"
+                  }
+                }
+              }
+            }
+          }
+        }},
+        {"act":         {
+          "classCode": "ACT",
+          "moodCode": "EVN",
+          "templateId":           [
+            {"root": "2.16.840.1.113883.10.20.1.27"},
+            {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.5.1"},
+            {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.5.2"},
+            {"root": "2.16.840.1.113883.3.88.11.83.7"}
+          ],
+          "id": {"nullFlavor": "NI"},
+          "code": {"nullFlavor": "NA"},
+          "statusCode": {"code": "completed"},
+          "effectiveTime":           {
+            "low": {"nullFlavor": "NI"},
+            "high": {"nullFlavor": "NI"}
+          },
+          "performer":           {
+            "typeCode": "PRF",
+            "assignedEntity":             {
+              "id":               {
+                "root": "1.3.6.1.4.1.29148",
+                "extension": "DKCIKCIGIFD"
+              },
+              "addr":               {
+                "streetAddressLine": "445 256th St",
+                "city": "Hollywood",
+                "state": "CA",
+                "postalCode": "90028"
+              },
+              "telecom":               [
+                {"value": "fax:+1 650-555-5554"},
+                                {
+                  "value": "tel:+1 650-555-9854",
+                  "use": "PUB"
+                }
+              ],
+              "assignedPerson": {"name":               {
+                "given": "Doctor",
+                "family": "Doom"
+              }},
+              "representedOrganization":               {
+                "name": "InGen Workgroup",
+                "telecom": {"nullFlavor": "NI"},
+                "addr": {"nullFlavor": "NI"}
+              }
+            }
+          },
+          "entryRelationship":           {
+            "typeCode": "SUBJ",
+            "inversionInd": "false",
+            "observation":             {
+              "classCode": "OBS",
+              "moodCode": "EVN",
+              "templateId":               [
+                {"root": "2.16.840.1.113883.10.20.1.28"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.5"}
+              ],
+              "id": {"root": "f80b1f84-d314-4215-bee4-c3b19cf305ca"},
+              "code":               {
+                "code": "282291009",
+                "codeSystem": "2.16.840.1.113883.6.96",
+                "codeSystemName": "SNOMED CT",
+                "codeSystemVersion": "20081218",
+                "displayName": "Diagnosis"
+              },
+              "text": {"reference": {"value": "#Condition_18491c9ff5e4ad111505f3"}},
+              "statusCode": {"code": "completed"},
+              "effectiveTime":               {
+                "low": {"value": "20120620"},
+                "high": {"nullFlavor": "NI"}
+              },
+              "value":               {
+                "code": "E905.3",
+                "codeSystem": "2.16.840.1.113883.6.103",
+                "codeSystemName": "ICD9-CM",
+                "displayName": "Benign hypertension"
+              },
+              "entryRelationship":               {
+                "typeCode": "REFR",
+                "observation":                 {
+                  "classCode": "OBS",
+                  "moodCode": "EVN",
+                  "templateId": {"root": "2.16.840.1.113883.10.20.1.50"},
+                  "code":                   {
+                    "code": "33999-4",
+                    "codeSystem": "2.16.840.1.113883.6.1",
+                    "codeSystemName": "LOINC",
+                    "displayName": "Status"
+                  },
+                  "statusCode": {"code": "completed"},
+                  "value":                   {
+                    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "code": "413322009",
+                    "xsi:type": "CD",
+                    "codeSystem": "2.16.840.1.113883.6.96",
+                    "codeSystemName": "SNOMED CT",
+                    "codeSystemVersion": "20091109",
+                    "displayName": "Resolved"
+                  }
+                }
+              }
+            }
+          }
+        }},
+        {"act":         {
+          "classCode": "ACT",
+          "moodCode": "EVN",
+          "templateId":           [
+            {"root": "2.16.840.1.113883.10.20.1.27"},
+            {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.5.1"},
+            {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.5.2"},
+            {"root": "2.16.840.1.113883.3.88.11.83.7"}
+          ],
+          "id": {"nullFlavor": "NI"},
+          "code": {"nullFlavor": "NA"},
+          "statusCode": {"code": "completed"},
+          "effectiveTime":           {
+            "low": {"nullFlavor": "NI"},
+            "high": {"nullFlavor": "NI"}
+          },
+          "performer":           {
+            "typeCode": "PRF",
+            "assignedEntity":             {
+              "id":               {
+                "root": "1.3.6.1.4.1.29148",
+                "extension": "DKCIKCIGIFD"
+              },
+              "addr":               {
+                "streetAddressLine": "445 256th St",
+                "city": "Hollywood",
+                "state": "CA",
+                "postalCode": "90028"
+              },
+              "telecom":               [
+                {"value": "fax:+1 650-555-5554"},
+                                {
+                  "value": "tel:+1 650-555-9854",
+                  "use": "PUB"
+                }
+              ],
+              "assignedPerson": {"name":               {
+                "given": "Doctor",
+                "family": "Doom"
+              }},
+              "representedOrganization":               {
+                "name": "InGen Workgroup",
+                "telecom": {"nullFlavor": "NI"},
+                "addr": {"nullFlavor": "NI"}
+              }
+            }
+          },
+          "entryRelationship":           {
+            "typeCode": "SUBJ",
+            "inversionInd": "false",
+            "observation":             {
+              "classCode": "OBS",
+              "moodCode": "EVN",
+              "templateId":               [
+                {"root": "2.16.840.1.113883.10.20.1.28"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.5"}
+              ],
+              "id": {"root": "8f781e92-63b9-464f-ad37-51dc89aa694b"},
+              "code":               {
+                "code": "282291009",
+                "codeSystem": "2.16.840.1.113883.6.96",
+                "codeSystemName": "SNOMED CT",
+                "codeSystemVersion": "20081218",
+                "displayName": "Diagnosis"
+              },
+              "text": {"reference": {"value": "#Condition_4b4676a6ee5cafcd2faf3a"}},
+              "statusCode": {"code": "completed"},
+              "effectiveTime":               {
+                "low": {"value": "20120520"},
+                "high": {"nullFlavor": "NI"}
+              },
+              "value":               {
+                "code": "692.81",
+                "codeSystem": "2.16.840.1.113883.6.103",
+                "codeSystemName": "ICD9-CM",
+                "displayName": "Cosmetic dermatitis"
+              },
+              "entryRelationship":               {
+                "typeCode": "REFR",
+                "observation":                 {
+                  "classCode": "OBS",
+                  "moodCode": "EVN",
+                  "templateId": {"root": "2.16.840.1.113883.10.20.1.50"},
+                  "code":                   {
+                    "code": "33999-4",
+                    "codeSystem": "2.16.840.1.113883.6.1",
+                    "codeSystemName": "LOINC",
+                    "displayName": "Status"
+                  },
+                  "statusCode": {"code": "completed"},
+                  "value":                   {
+                    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "code": "73425007",
+                    "xsi:type": "CD",
+                    "codeSystem": "2.16.840.1.113883.6.96",
+                    "codeSystemName": "SNOMED CT",
+                    "codeSystemVersion": "20091109",
+                    "displayName": "Inactive"
+                  }
+                }
+              }
+            }
+          }
+        }},
+        {"act":         {
+          "classCode": "ACT",
+          "moodCode": "EVN",
+          "templateId":           [
+            {"root": "2.16.840.1.113883.10.20.1.27"},
+            {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.5.1"},
+            {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.5.2"},
+            {"root": "2.16.840.1.113883.3.88.11.83.7"}
+          ],
+          "id": {"nullFlavor": "NI"},
+          "code": {"nullFlavor": "NA"},
+          "statusCode": {"code": "completed"},
+          "effectiveTime":           {
+            "low": {"nullFlavor": "NI"},
+            "high": {"nullFlavor": "NI"}
+          },
+          "performer":           {
+            "typeCode": "PRF",
+            "assignedEntity":             {
+              "id":               {
+                "root": "1.3.6.1.4.1.29148",
+                "extension": "DKCIKCIGIFD"
+              },
+              "addr":               {
+                "streetAddressLine": "445 256th St",
+                "city": "Hollywood",
+                "state": "CA",
+                "postalCode": "90028"
+              },
+              "telecom":               [
+                {"value": "fax:+1 650-555-5554"},
+                                {
+                  "value": "tel:+1 650-555-9854",
+                  "use": "PUB"
+                }
+              ],
+              "assignedPerson": {"name":               {
+                "given": "Doctor",
+                "family": "Doom"
+              }},
+              "representedOrganization":               {
+                "name": "InGen Workgroup",
+                "telecom": {"nullFlavor": "NI"},
+                "addr": {"nullFlavor": "NI"}
+              }
+            }
+          },
+          "entryRelationship":           {
+            "typeCode": "SUBJ",
+            "inversionInd": "false",
+            "observation":             {
+              "classCode": "OBS",
+              "moodCode": "EVN",
+              "templateId":               [
+                {"root": "2.16.840.1.113883.10.20.1.28"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.5"}
+              ],
+              "id": {"root": "4e1bcd9c-d6a9-4b35-80e0-fd2944962466"},
+              "code":               {
+                "code": "282291009",
+                "codeSystem": "2.16.840.1.113883.6.96",
+                "codeSystemName": "SNOMED CT",
+                "codeSystemVersion": "20081218",
+                "displayName": "Diagnosis"
+              },
+              "text": {"reference": {"value": "#Condition_3348d3a242080500584090"}},
+              "statusCode": {"code": "completed"},
+              "effectiveTime":               {
+                "low": {"value": "20120920"},
+                "high": {"nullFlavor": "NI"}
+              },
+              "value":               {
+                "code": "362.33",
+                "codeSystem": "2.16.840.1.113883.6.103",
+                "codeSystemName": "ICD9-CM",
+                "displayName": "Part arterial occlusion"
+              },
+              "entryRelationship":               {
+                "typeCode": "REFR",
+                "observation":                 {
+                  "classCode": "OBS",
+                  "moodCode": "EVN",
+                  "templateId": {"root": "2.16.840.1.113883.10.20.1.50"},
+                  "code":                   {
+                    "code": "33999-4",
+                    "codeSystem": "2.16.840.1.113883.6.1",
+                    "codeSystemName": "LOINC",
+                    "displayName": "Status"
+                  },
+                  "statusCode": {"code": "completed"},
+                  "value":                   {
+                    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "code": "55561003",
+                    "xsi:type": "CD",
+                    "codeSystem": "2.16.840.1.113883.6.96",
+                    "codeSystemName": "SNOMED CT",
+                    "codeSystemVersion": "20091109",
+                    "displayName": "Active"
+                  }
+                }
+              }
+            }
+          }
+        }},
+        {"act":         {
+          "classCode": "ACT",
+          "moodCode": "EVN",
+          "templateId":           [
+            {"root": "2.16.840.1.113883.10.20.1.27"},
+            {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.5.1"},
+            {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.5.2"},
+            {"root": "2.16.840.1.113883.3.88.11.83.7"}
+          ],
+          "id": {"nullFlavor": "NI"},
+          "code": {"nullFlavor": "NA"},
+          "statusCode": {"code": "completed"},
+          "effectiveTime":           {
+            "low": {"nullFlavor": "NI"},
+            "high": {"nullFlavor": "NI"}
+          },
+          "performer":           {
+            "typeCode": "PRF",
+            "assignedEntity":             {
+              "id":               {
+                "root": "1.3.6.1.4.1.29148",
+                "extension": "DKCIKCIGIFD"
+              },
+              "addr":               {
+                "streetAddressLine": "445 256th St",
+                "city": "Hollywood",
+                "state": "CA",
+                "postalCode": "90028"
+              },
+              "telecom":               [
+                {"value": "fax:+1 650-555-5554"},
+                                {
+                  "value": "tel:+1 650-555-9854",
+                  "use": "PUB"
+                }
+              ],
+              "assignedPerson": {"name":               {
+                "given": "Doctor",
+                "family": "Doom"
+              }},
+              "representedOrganization":               {
+                "name": "InGen Workgroup",
+                "telecom": {"nullFlavor": "NI"},
+                "addr": {"nullFlavor": "NI"}
+              }
+            }
+          },
+          "entryRelationship":           {
+            "typeCode": "SUBJ",
+            "inversionInd": "false",
+            "observation":             {
+              "classCode": "OBS",
+              "moodCode": "EVN",
+              "templateId":               [
+                {"root": "2.16.840.1.113883.10.20.1.28"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.5"}
+              ],
+              "id": {"root": "7cb88525-aa5c-44e8-83b2-d88ee7b7b138"},
+              "code":               {
+                "code": "282291009",
+                "codeSystem": "2.16.840.1.113883.6.96",
+                "codeSystemName": "SNOMED CT",
+                "codeSystemVersion": "20081218",
+                "displayName": "Diagnosis"
+              },
+              "text": {"reference": {"value": "#Condition_2849988cfdb73b211ad60b"}},
+              "statusCode": {"code": "completed"},
+              "effectiveTime":               {
+                "low": {"value": "20120920"},
+                "high": {"nullFlavor": "NI"}
+              },
+              "value":               {
+                "code": "427.9",
+                "codeSystem": "2.16.840.1.113883.6.103",
+                "codeSystemName": "ICD9-CM",
+                "displayName": "Cardiac dysrhythmia NOS"
+              },
+              "entryRelationship":               {
+                "typeCode": "REFR",
+                "observation":                 {
+                  "classCode": "OBS",
+                  "moodCode": "EVN",
+                  "templateId": {"root": "2.16.840.1.113883.10.20.1.50"},
+                  "code":                   {
+                    "code": "33999-4",
+                    "codeSystem": "2.16.840.1.113883.6.1",
+                    "codeSystemName": "LOINC",
+                    "displayName": "Status"
+                  },
+                  "statusCode": {"code": "completed"},
+                  "value":                   {
+                    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "code": "55561003",
+                    "xsi:type": "CD",
+                    "codeSystem": "2.16.840.1.113883.6.96",
+                    "codeSystemName": "SNOMED CT",
+                    "codeSystemVersion": "20091109",
+                    "displayName": "Active"
+                  }
+                }
+              }
+            }
+          }
+        }}
+      ]
+    }},
     {"section":     {
       "templateId":       [
         {"root": "2.16.840.1.113883.10.20.1.14"},
@@ -53107,313 +59460,1236 @@ var currentPatient = {
           ]}
         }
       ]},
-      "entry": {"organizer":       {
-        "classCode": "BATTERY",
-        "moodCode": "EVN",
-        "templateId":         [
-          {"root": "2.16.840.1.113883.10.20.1.35"},
-          {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.1"},
-          {"root": "2.16.840.1.113883.10.20.1.32"}
-        ],
-        "id": {"root": "5e6b080a-03a9-42b4-8815-9a472620bf33"},
-        "code":         {
-          "code": "46680005",
-          "codeSystem": "2.16.840.1.113883.6.96",
-          "codeSystemName": "SNOMED CT",
-          "displayName": "Vital signs"
-        },
-        "statusCode": {"code": "completed"},
-        "effectiveTime": {"value": "201204070945-0800"},
-        "component":         [
-          {"procedure":           {
-            "classCode": "PROC",
-            "moodCode": "EVN",
-            "templateId":             [
-              {"root": "2.16.840.1.113883.10.20.1.29"},
-              {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.19"},
-              {"root": "2.16.840.1.113883.3.88.11.83.17"}
-            ],
-            "id": {"root": "219d8535-5206-41cf-9bf8-db22e85a414e"},
-            "code":             {
-              "nullFlavor": "NI",
-              "originalText":               {
+      "entry":       [
+        {"organizer":         {
+          "classCode": "BATTERY",
+          "moodCode": "EVN",
+          "templateId":           [
+            {"root": "2.16.840.1.113883.10.20.1.35"},
+            {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.1"},
+            {"root": "2.16.840.1.113883.10.20.1.32"}
+          ],
+          "id": {"root": "5e6b080a-03a9-42b4-8815-9a472620bf33"},
+          "code":           {
+            "code": "46680005",
+            "codeSystem": "2.16.840.1.113883.6.96",
+            "codeSystemName": "SNOMED CT",
+            "displayName": "Vital signs"
+          },
+          "statusCode": {"code": "completed"},
+          "effectiveTime": {"value": "201204070945-0800"},
+          "component":           [
+            {"procedure":             {
+              "classCode": "PROC",
+              "moodCode": "EVN",
+              "templateId":               [
+                {"root": "2.16.840.1.113883.10.20.1.29"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.19"},
+                {"root": "2.16.840.1.113883.3.88.11.83.17"}
+              ],
+              "id": {"root": "219d8535-5206-41cf-9bf8-db22e85a414e"},
+              "code":               {
+                "nullFlavor": "NI",
+                "originalText":                 {
+                  "#text": "Vital Signs",
+                  "reference": {"value": "#Battery_8c4a7c9e10efd5dce2a6f7"}
+                }
+              },
+              "text":               {
                 "#text": "Vital Signs",
                 "reference": {"value": "#Battery_8c4a7c9e10efd5dce2a6f7"}
-              }
-            },
-            "text":             {
-              "#text": "Vital Signs",
-              "reference": {"value": "#Battery_8c4a7c9e10efd5dce2a6f7"}
-            },
-            "statusCode": {"code": "completed"},
-            "effectiveTime": {"value": "201204070945-0800"},
-            "priorityCode": {"nullFlavor": "NI"},
-            "participant":             [
-                            {
-                "typeCode": "RESP",
-                "contextControlCode": "OP",
-                "participantRole": {"playingEntity": {"name":                 {
-                  "given": "Doctor",
-                  "family": "Doom"
-                }}}
               },
-                            {
-                "typeCode": "ORG",
-                "contextControlCode": "OP",
-                "participantRole": {"playingEntity": {"name": "AOMC"}}
+              "statusCode": {"code": "completed"},
+              "effectiveTime": {"value": "201204070945-0800"},
+              "priorityCode": {"nullFlavor": "NI"},
+              "participant":               [
+                                {
+                  "typeCode": "RESP",
+                  "contextControlCode": "OP",
+                  "participantRole": {"playingEntity": {"name":                   {
+                    "given": "Doctor",
+                    "family": "Doom"
+                  }}}
+                },
+                                {
+                  "typeCode": "ORG",
+                  "contextControlCode": "OP",
+                  "participantRole": {"playingEntity": {"name": "AOMC"}}
+                }
+              ]
+            }},
+            {"observation":             {
+              "classCode": "OBS",
+              "moodCode": "EVN",
+              "templateId":               [
+                {"root": "2.16.840.1.113883.10.20.1.31"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"},
+                {"root": "2.16.840.1.113883.3.88.11.83.14"}
+              ],
+              "id": {"root": "5cc76264-72e8-4fc9-bca8-1b3d87fbddc0"},
+              "code":               {
+                "code": "8302-2",
+                "codeSystem": "2.16.840.1.113883.6.1",
+                "displayName": "BODY HEIGHT (MEASURED)"
+              },
+              "text":               {
+                "#text": "BODY HEIGHT (MEASURED)",
+                "reference": {"value": "#Observation_8a4048a5078f6b1c58943f"}
+              },
+              "statusCode": {"code": "completed"},
+              "effectiveTime": {"value": "201204070945-0800"},
+              "value":               {
+                "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                "xsi:type": "PQ",
+                "value": "70.0",
+                "unit": "[in_us]"
               }
-            ]
-          }},
-          {"observation":           {
-            "classCode": "OBS",
-            "moodCode": "EVN",
-            "templateId":             [
-              {"root": "2.16.840.1.113883.10.20.1.31"},
-              {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
-              {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"},
-              {"root": "2.16.840.1.113883.3.88.11.83.14"}
-            ],
-            "id": {"root": "5cc76264-72e8-4fc9-bca8-1b3d87fbddc0"},
-            "code":             {
-              "code": "8302-2",
-              "codeSystem": "2.16.840.1.113883.6.1",
-              "displayName": "BODY HEIGHT (MEASURED)"
-            },
-            "text":             {
-              "#text": "BODY HEIGHT (MEASURED)",
-              "reference": {"value": "#Observation_8a4048a5078f6b1c58943f"}
-            },
-            "statusCode": {"code": "completed"},
-            "effectiveTime": {"value": "201204070945-0700"},
-            "value":             {
-              "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
-              "xsi:type": "PQ",
-              "value": "70.0",
-              "unit": "[in_us]"
-            }
-          }},
-          {"observation":           {
-            "classCode": "OBS",
-            "moodCode": "EVN",
-            "templateId":             [
-              {"root": "2.16.840.1.113883.10.20.1.31"},
-              {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
-              {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"},
-              {"root": "2.16.840.1.113883.3.88.11.83.14"}
-            ],
-            "id": {"root": "ce24389d-6af5-4f4f-98fe-db4924422d3b"},
-            "code":             {
-              "code": "3141-9",
-              "codeSystem": "2.16.840.1.113883.6.1",
-              "displayName": "BODY WEIGHT (MEASURED)"
-            },
-            "text":             {
-              "#text": "BODY WEIGHT (MEASURED)",
-              "reference": {"value": "#Observation_814f5b8cee3a5aa7386407"}
-            },
-            "statusCode": {"code": "completed"},
-            "effectiveTime": {"value": "201204070945-0700"},
-            "value":             {
-              "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
-              "xsi:type": "PQ",
-              "value": "150.0",
-              "unit": "[lb_av]"
-            }
-          }},
-          {"observation":           {
-            "classCode": "OBS",
-            "moodCode": "EVN",
-            "templateId":             [
-              {"root": "2.16.840.1.113883.10.20.1.31"},
-              {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
-              {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"},
-              {"root": "2.16.840.1.113883.3.88.11.83.14"}
-            ],
-            "id": {"root": "535068e4-fbc7-4f3b-896b-352f939afcdf"},
-            "code":             {
-              "code": "8310-5",
-              "codeSystem": "2.16.840.1.113883.6.1",
-              "displayName": "BODY TEMPERATURE"
-            },
-            "text":             {
-              "#text": "BODY TEMPERATURE",
-              "reference": {"value": "#Observation_084750bae68e1ef6b5b826"}
-            },
-            "statusCode": {"code": "completed"},
-            "effectiveTime": {"value": "201204070945-0700"},
-            "value":             {
-              "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
-              "xsi:type": "PQ",
-              "value": "98",
-              "unit": ".5"
-            }
-          }},
-          {"observation":           {
-            "classCode": "OBS",
-            "moodCode": "EVN",
-            "templateId":             [
-              {"root": "2.16.840.1.113883.10.20.1.31"},
-              {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
-              {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"},
-              {"root": "2.16.840.1.113883.3.88.11.83.14"}
-            ],
-            "id": {"root": "fa3bccf1-32a4-453e-b509-5e983c056438"},
-            "code":             {
-              "code": "8480-6",
-              "codeSystem": "2.16.840.1.113883.6.1",
-              "displayName": "INTRAVASCULAR SYSTOLIC"
-            },
-            "text":             {
-              "#text": "INTRAVASCULAR SYSTOLIC",
-              "reference": {"value": "#Observation_75431bbd78c5b13e07d252"}
-            },
-            "statusCode": {"code": "completed"},
-            "effectiveTime": {"value": "201204070945-0700"},
-            "value":             {
-              "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
-              "xsi:type": "PQ",
-              "value": "120.0",
-              "unit": "mm[Hg]"
-            }
-          }},
-          {"observation":           {
-            "classCode": "OBS",
-            "moodCode": "EVN",
-            "templateId":             [
-              {"root": "2.16.840.1.113883.10.20.1.31"},
-              {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
-              {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"},
-              {"root": "2.16.840.1.113883.3.88.11.83.14"}
-            ],
-            "id": {"root": "132b8d59-073c-456a-b3be-b0f54ae95a75"},
-            "code":             {
-              "code": "8462-4",
-              "codeSystem": "2.16.840.1.113883.6.1",
-              "displayName": "INTRAVASCULAR DIASTOLIC"
-            },
-            "text":             {
-              "#text": "INTRAVASCULAR DIASTOLIC",
-              "reference": {"value": "#Observation_cf4d5c9d1f06845f71476a"}
-            },
-            "statusCode": {"code": "completed"},
-            "effectiveTime": {"value": "201204070945-0700"},
-            "value":             {
-              "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
-              "xsi:type": "PQ",
-              "value": "60.0",
-              "unit": "mm[Hg]"
-            }
-          }},
-          {"observation":           {
-            "classCode": "OBS",
-            "moodCode": "EVN",
-            "templateId":             [
-              {"root": "2.16.840.1.113883.10.20.1.31"},
-              {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
-              {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"},
-              {"root": "2.16.840.1.113883.3.88.11.83.14"}
-            ],
-            "id": {"root": "4f697a6b-9088-47bf-bd12-90081803a99c"},
-            "code":             {
-              "code": "8867-4",
-              "codeSystem": "2.16.840.1.113883.6.1",
-              "displayName": "HEART BEAT"
-            },
-            "text":             {
-              "#text": "HEART BEAT",
-              "reference": {"value": "#Observation_dd4020994140f937a500e0"}
-            },
-            "statusCode": {"code": "completed"},
-            "effectiveTime": {"value": "201204070945-0700"},
-            "value":             {
-              "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
-              "xsi:type": "PQ",
-              "value": "65.0",
-              "unit": "/min"
-            }
-          }},
-          {"observation":           {
-            "classCode": "OBS",
-            "moodCode": "EVN",
-            "templateId":             [
-              {"root": "2.16.840.1.113883.10.20.1.31"},
-              {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
-              {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"},
-              {"root": "2.16.840.1.113883.3.88.11.83.14"}
-            ],
-            "id": {"root": "54f6f81e-0463-43f0-bcab-80d5eb50962b"},
-            "code":             {
-              "code": "9279-1",
-              "codeSystem": "2.16.840.1.113883.6.1",
-              "displayName": "RESPIRATION RATE"
-            },
-            "text":             {
-              "#text": "RESPIRATION RATE",
-              "reference": {"value": "#Observation_2b4837b509d775ca8f900b"}
-            },
-            "statusCode": {"code": "completed"},
-            "effectiveTime": {"value": "201204070945-0700"},
-            "value":             {
-              "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
-              "xsi:type": "PQ",
-              "value": "99.0",
-              "unit": "/min"
-            }
-          }},
-          {"observation":           {
-            "classCode": "OBS",
-            "moodCode": "EVN",
-            "templateId":             [
-              {"root": "2.16.840.1.113883.10.20.1.31"},
-              {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
-              {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"},
-              {"root": "2.16.840.1.113883.3.88.11.83.14"}
-            ],
-            "id": {"root": "1cb49668-87db-42dd-b86b-db548153e3ab"},
-            "code":             {
-              "nullFlavor": "NI",
-              "originalText": "ELY-PEFR^PEAK EXPIRATION FLOW RATE^L"
-            },
-            "text": "ELY-PEFR^PEAK EXPIRATION FLOW RATE^L",
-            "statusCode": {"code": "completed"},
-            "effectiveTime": {"value": "201204070945-0700"},
-            "value":             {
-              "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
-              "xsi:type": "PQ",
-              "value": "10",
-              "unit": "0"
-            }
-          }},
-          {"observation":           {
-            "classCode": "OBS",
-            "moodCode": "EVN",
-            "templateId":             [
-              {"root": "2.16.840.1.113883.10.20.1.31"},
-              {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
-              {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"},
-              {"root": "2.16.840.1.113883.3.88.11.83.14"}
-            ],
-            "id": {"root": "eaa2b910-8f6f-4a05-957a-642100ab6d18"},
-            "code":             {
-              "code": "41909-3",
-              "codeSystem": "2.16.840.1.113883.6.1",
-              "displayName": "BODY MASS INDEX"
-            },
-            "text":             {
-              "#text": "BODY MASS INDEX",
-              "reference": {"value": "#Observation_5b485eb6e5d67588df6585"}
-            },
-            "statusCode": {"code": "completed"},
-            "effectiveTime": {"value": "201204070945-0700"},
-            "value":             {
-              "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
-              "xsi:type": "PQ",
-              "value": "21",
-              "unit": ".5"
-            }
-          }}
-        ]
-      }}
+            }},
+            {"observation":             {
+              "classCode": "OBS",
+              "moodCode": "EVN",
+              "templateId":               [
+                {"root": "2.16.840.1.113883.10.20.1.31"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"},
+                {"root": "2.16.840.1.113883.3.88.11.83.14"}
+              ],
+              "id": {"root": "ce24389d-6af5-4f4f-98fe-db4924422d3b"},
+              "code":               {
+                "code": "3141-9",
+                "codeSystem": "2.16.840.1.113883.6.1",
+                "displayName": "BODY WEIGHT (MEASURED)"
+              },
+              "text":               {
+                "#text": "BODY WEIGHT (MEASURED)",
+                "reference": {"value": "#Observation_814f5b8cee3a5aa7386407"}
+              },
+              "statusCode": {"code": "completed"},
+              "effectiveTime": {"value": "201204070945-0800"},
+              "value":               {
+                "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                "xsi:type": "PQ",
+                "value": "150.0",
+                "unit": "[lb_av]"
+              }
+            }},
+            {"observation":             {
+              "classCode": "OBS",
+              "moodCode": "EVN",
+              "templateId":               [
+                {"root": "2.16.840.1.113883.10.20.1.31"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"},
+                {"root": "2.16.840.1.113883.3.88.11.83.14"}
+              ],
+              "id": {"root": "535068e4-fbc7-4f3b-896b-352f939afcdf"},
+              "code":               {
+                "code": "8310-5",
+                "codeSystem": "2.16.840.1.113883.6.1",
+                "displayName": "BODY TEMPERATURE"
+              },
+              "text":               {
+                "#text": "BODY TEMPERATURE",
+                "reference": {"value": "#Observation_084750bae68e1ef6b5b826"}
+              },
+              "statusCode": {"code": "completed"},
+              "effectiveTime": {"value": "201204070945-0800"},
+              "value":               {
+                "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                "xsi:type": "PQ",
+                "value": "98",
+                "unit": ".5"
+              }
+            }},
+            {"observation":             {
+              "classCode": "OBS",
+              "moodCode": "EVN",
+              "templateId":               [
+                {"root": "2.16.840.1.113883.10.20.1.31"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"},
+                {"root": "2.16.840.1.113883.3.88.11.83.14"}
+              ],
+              "id": {"root": "fa3bccf1-32a4-453e-b509-5e983c056438"},
+              "code":               {
+                "code": "8480-6",
+                "codeSystem": "2.16.840.1.113883.6.1",
+                "displayName": "INTRAVASCULAR SYSTOLIC"
+              },
+              "text":               {
+                "#text": "INTRAVASCULAR SYSTOLIC",
+                "reference": {"value": "#Observation_75431bbd78c5b13e07d252"}
+              },
+              "statusCode": {"code": "completed"},
+              "effectiveTime": {"value": "201204070945-0800"},
+              "value":               {
+                "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                "xsi:type": "PQ",
+                "value": "120.0",
+                "unit": "mm[Hg]"
+              }
+            }},
+            {"observation":             {
+              "classCode": "OBS",
+              "moodCode": "EVN",
+              "templateId":               [
+                {"root": "2.16.840.1.113883.10.20.1.31"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"},
+                {"root": "2.16.840.1.113883.3.88.11.83.14"}
+              ],
+              "id": {"root": "132b8d59-073c-456a-b3be-b0f54ae95a75"},
+              "code":               {
+                "code": "8462-4",
+                "codeSystem": "2.16.840.1.113883.6.1",
+                "displayName": "INTRAVASCULAR DIASTOLIC"
+              },
+              "text":               {
+                "#text": "INTRAVASCULAR DIASTOLIC",
+                "reference": {"value": "#Observation_cf4d5c9d1f06845f71476a"}
+              },
+              "statusCode": {"code": "completed"},
+              "effectiveTime": {"value": "201204070945-0800"},
+              "value":               {
+                "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                "xsi:type": "PQ",
+                "value": "60.0",
+                "unit": "mm[Hg]"
+              }
+            }},
+            {"observation":             {
+              "classCode": "OBS",
+              "moodCode": "EVN",
+              "templateId":               [
+                {"root": "2.16.840.1.113883.10.20.1.31"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"},
+                {"root": "2.16.840.1.113883.3.88.11.83.14"}
+              ],
+              "id": {"root": "4f697a6b-9088-47bf-bd12-90081803a99c"},
+              "code":               {
+                "code": "8867-4",
+                "codeSystem": "2.16.840.1.113883.6.1",
+                "displayName": "HEART BEAT"
+              },
+              "text":               {
+                "#text": "HEART BEAT",
+                "reference": {"value": "#Observation_dd4020994140f937a500e0"}
+              },
+              "statusCode": {"code": "completed"},
+              "effectiveTime": {"value": "201204070945-0800"},
+              "value":               {
+                "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                "xsi:type": "PQ",
+                "value": "65.0",
+                "unit": "/min"
+              }
+            }},
+            {"observation":             {
+              "classCode": "OBS",
+              "moodCode": "EVN",
+              "templateId":               [
+                {"root": "2.16.840.1.113883.10.20.1.31"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"},
+                {"root": "2.16.840.1.113883.3.88.11.83.14"}
+              ],
+              "id": {"root": "54f6f81e-0463-43f0-bcab-80d5eb50962b"},
+              "code":               {
+                "code": "9279-1",
+                "codeSystem": "2.16.840.1.113883.6.1",
+                "displayName": "RESPIRATION RATE"
+              },
+              "text":               {
+                "#text": "RESPIRATION RATE",
+                "reference": {"value": "#Observation_2b4837b509d775ca8f900b"}
+              },
+              "statusCode": {"code": "completed"},
+              "effectiveTime": {"value": "201204070945-0800"},
+              "value":               {
+                "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                "xsi:type": "PQ",
+                "value": "99.0",
+                "unit": "/min"
+              }
+            }},
+            {"observation":             {
+              "classCode": "OBS",
+              "moodCode": "EVN",
+              "templateId":               [
+                {"root": "2.16.840.1.113883.10.20.1.31"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"},
+                {"root": "2.16.840.1.113883.3.88.11.83.14"}
+              ],
+              "id": {"root": "1cb49668-87db-42dd-b86b-db548153e3ab"},
+              "code":               {
+                "nullFlavor": "NI",
+                "originalText": "ELY-PEFR^PEAK EXPIRATION FLOW RATE^L"
+              },
+              "text": "ELY-PEFR^PEAK EXPIRATION FLOW RATE^L",
+              "statusCode": {"code": "completed"},
+              "effectiveTime": {"value": "201204070945-0800"},
+              "value":               {
+                "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                "xsi:type": "PQ",
+                "value": "10",
+                "unit": "0"
+              }
+            }},
+            {"observation":             {
+              "classCode": "OBS",
+              "moodCode": "EVN",
+              "templateId":               [
+                {"root": "2.16.840.1.113883.10.20.1.31"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"},
+                {"root": "2.16.840.1.113883.3.88.11.83.14"}
+              ],
+              "id": {"root": "eaa2b910-8f6f-4a05-957a-642100ab6d18"},
+              "code":               {
+                "code": "41909-3",
+                "codeSystem": "2.16.840.1.113883.6.1",
+                "displayName": "BODY MASS INDEX"
+              },
+              "text":               {
+                "#text": "BODY MASS INDEX",
+                "reference": {"value": "#Observation_5b485eb6e5d67588df6585"}
+              },
+              "statusCode": {"code": "completed"},
+              "effectiveTime": {"value": "201204070945-0800"},
+              "value":               {
+                "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                "xsi:type": "PQ",
+                "value": "21",
+                "unit": ".5"
+              }
+            }}
+          ]
+        }},
+        {"organizer":         {
+          "classCode": "BATTERY",
+          "moodCode": "EVN",
+          "templateId":           [
+            {"root": "2.16.840.1.113883.10.20.1.35"},
+            {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.1"},
+            {"root": "2.16.840.1.113883.10.20.1.32"}
+          ],
+          "id": {"root": "5e6b080a-03a9-42b4-8815-9a472620bf33"},
+          "code":           {
+            "code": "46680005",
+            "codeSystem": "2.16.840.1.113883.6.96",
+            "codeSystemName": "SNOMED CT",
+            "displayName": "Vital signs"
+          },
+          "statusCode": {"code": "completed"},
+          "effectiveTime": {"value": "201204140945-0800"},
+          "component":           [
+            {"procedure":             {
+              "classCode": "PROC",
+              "moodCode": "EVN",
+              "templateId":               [
+                {"root": "2.16.840.1.113883.10.20.1.29"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.19"},
+                {"root": "2.16.840.1.113883.3.88.11.83.17"}
+              ],
+              "id": {"root": "219d8535-5206-41cf-9bf8-db22e85a414e"},
+              "code":               {
+                "nullFlavor": "NI",
+                "originalText":                 {
+                  "#text": "Vital Signs",
+                  "reference": {"value": "#Battery_8c4a7c9e10efd5dce2a6f7"}
+                }
+              },
+              "text":               {
+                "#text": "Vital Signs",
+                "reference": {"value": "#Battery_8c4a7c9e10efd5dce2a6f7"}
+              },
+              "statusCode": {"code": "completed"},
+              "effectiveTime": {"value": "201204140945-0800"},
+              "priorityCode": {"nullFlavor": "NI"},
+              "participant":               [
+                                {
+                  "typeCode": "RESP",
+                  "contextControlCode": "OP",
+                  "participantRole": {"playingEntity": {"name":                   {
+                    "given": "Doctor",
+                    "family": "Doom"
+                  }}}
+                },
+                                {
+                  "typeCode": "ORG",
+                  "contextControlCode": "OP",
+                  "participantRole": {"playingEntity": {"name": "AOMC"}}
+                }
+              ]
+            }},
+            {"observation":             {
+              "classCode": "OBS",
+              "moodCode": "EVN",
+              "templateId":               [
+                {"root": "2.16.840.1.113883.10.20.1.31"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"},
+                {"root": "2.16.840.1.113883.3.88.11.83.14"}
+              ],
+              "id": {"root": "5cc76264-72e8-4fc9-bca8-1b3d87fbddc0"},
+              "code":               {
+                "code": "8302-2",
+                "codeSystem": "2.16.840.1.113883.6.1",
+                "displayName": "BODY HEIGHT (MEASURED)"
+              },
+              "text":               {
+                "#text": "BODY HEIGHT (MEASURED)",
+                "reference": {"value": "#Observation_8a4048a5078f6b1c58943f"}
+              },
+              "statusCode": {"code": "completed"},
+              "effectiveTime": {"value": "201204140945-0800"},
+              "value":               {
+                "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                "xsi:type": "PQ",
+                "value": "70.0",
+                "unit": "[in_us]"
+              }
+            }},
+            {"observation":             {
+              "classCode": "OBS",
+              "moodCode": "EVN",
+              "templateId":               [
+                {"root": "2.16.840.1.113883.10.20.1.31"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"},
+                {"root": "2.16.840.1.113883.3.88.11.83.14"}
+              ],
+              "id": {"root": "ce24389d-6af5-4f4f-98fe-db4924422d3b"},
+              "code":               {
+                "code": "3141-9",
+                "codeSystem": "2.16.840.1.113883.6.1",
+                "displayName": "BODY WEIGHT (MEASURED)"
+              },
+              "text":               {
+                "#text": "BODY WEIGHT (MEASURED)",
+                "reference": {"value": "#Observation_814f5b8cee3a5aa7386407"}
+              },
+              "statusCode": {"code": "completed"},
+              "effectiveTime": {"value": "201204140945-0800"},
+              "value":               {
+                "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                "xsi:type": "PQ",
+                "value": "150.0",
+                "unit": "[lb_av]"
+              }
+            }},
+            {"observation":             {
+              "classCode": "OBS",
+              "moodCode": "EVN",
+              "templateId":               [
+                {"root": "2.16.840.1.113883.10.20.1.31"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"},
+                {"root": "2.16.840.1.113883.3.88.11.83.14"}
+              ],
+              "id": {"root": "535068e4-fbc7-4f3b-896b-352f939afcdf"},
+              "code":               {
+                "code": "8310-5",
+                "codeSystem": "2.16.840.1.113883.6.1",
+                "displayName": "BODY TEMPERATURE"
+              },
+              "text":               {
+                "#text": "BODY TEMPERATURE",
+                "reference": {"value": "#Observation_084750bae68e1ef6b5b826"}
+              },
+              "statusCode": {"code": "completed"},
+              "effectiveTime": {"value": "201204140945-0800"},
+              "value":               {
+                "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                "xsi:type": "PQ",
+                "value": "98",
+                "unit": ".5"
+              }
+            }},
+            {"observation":             {
+              "classCode": "OBS",
+              "moodCode": "EVN",
+              "templateId":               [
+                {"root": "2.16.840.1.113883.10.20.1.31"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"},
+                {"root": "2.16.840.1.113883.3.88.11.83.14"}
+              ],
+              "id": {"root": "fa3bccf1-32a4-453e-b509-5e983c056438"},
+              "code":               {
+                "code": "8480-6",
+                "codeSystem": "2.16.840.1.113883.6.1",
+                "displayName": "INTRAVASCULAR SYSTOLIC"
+              },
+              "text":               {
+                "#text": "INTRAVASCULAR SYSTOLIC",
+                "reference": {"value": "#Observation_75431bbd78c5b13e07d252"}
+              },
+              "statusCode": {"code": "completed"},
+              "effectiveTime": {"value": "201204140945-0800"},
+              "value":               {
+                "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                "xsi:type": "PQ",
+                "value": "120.0",
+                "unit": "mm[Hg]"
+              }
+            }},
+            {"observation":             {
+              "classCode": "OBS",
+              "moodCode": "EVN",
+              "templateId":               [
+                {"root": "2.16.840.1.113883.10.20.1.31"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"},
+                {"root": "2.16.840.1.113883.3.88.11.83.14"}
+              ],
+              "id": {"root": "132b8d59-073c-456a-b3be-b0f54ae95a75"},
+              "code":               {
+                "code": "8462-4",
+                "codeSystem": "2.16.840.1.113883.6.1",
+                "displayName": "INTRAVASCULAR DIASTOLIC"
+              },
+              "text":               {
+                "#text": "INTRAVASCULAR DIASTOLIC",
+                "reference": {"value": "#Observation_cf4d5c9d1f06845f71476a"}
+              },
+              "statusCode": {"code": "completed"},
+              "effectiveTime": {"value": "201204140945-0800"},
+              "value":               {
+                "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                "xsi:type": "PQ",
+                "value": "60.0",
+                "unit": "mm[Hg]"
+              }
+            }},
+            {"observation":             {
+              "classCode": "OBS",
+              "moodCode": "EVN",
+              "templateId":               [
+                {"root": "2.16.840.1.113883.10.20.1.31"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"},
+                {"root": "2.16.840.1.113883.3.88.11.83.14"}
+              ],
+              "id": {"root": "4f697a6b-9088-47bf-bd12-90081803a99c"},
+              "code":               {
+                "code": "8867-4",
+                "codeSystem": "2.16.840.1.113883.6.1",
+                "displayName": "HEART BEAT"
+              },
+              "text":               {
+                "#text": "HEART BEAT",
+                "reference": {"value": "#Observation_dd4020994140f937a500e0"}
+              },
+              "statusCode": {"code": "completed"},
+              "effectiveTime": {"value": "201204140945-0800"},
+              "value":               {
+                "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                "xsi:type": "PQ",
+                "value": "65.0",
+                "unit": "/min"
+              }
+            }},
+            {"observation":             {
+              "classCode": "OBS",
+              "moodCode": "EVN",
+              "templateId":               [
+                {"root": "2.16.840.1.113883.10.20.1.31"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"},
+                {"root": "2.16.840.1.113883.3.88.11.83.14"}
+              ],
+              "id": {"root": "54f6f81e-0463-43f0-bcab-80d5eb50962b"},
+              "code":               {
+                "code": "9279-1",
+                "codeSystem": "2.16.840.1.113883.6.1",
+                "displayName": "RESPIRATION RATE"
+              },
+              "text":               {
+                "#text": "RESPIRATION RATE",
+                "reference": {"value": "#Observation_2b4837b509d775ca8f900b"}
+              },
+              "statusCode": {"code": "completed"},
+              "effectiveTime": {"value": "201204140945-0800"},
+              "value":               {
+                "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                "xsi:type": "PQ",
+                "value": "99.0",
+                "unit": "/min"
+              }
+            }},
+            {"observation":             {
+              "classCode": "OBS",
+              "moodCode": "EVN",
+              "templateId":               [
+                {"root": "2.16.840.1.113883.10.20.1.31"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"},
+                {"root": "2.16.840.1.113883.3.88.11.83.14"}
+              ],
+              "id": {"root": "1cb49668-87db-42dd-b86b-db548153e3ab"},
+              "code":               {
+                "nullFlavor": "NI",
+                "originalText": "ELY-PEFR^PEAK EXPIRATION FLOW RATE^L"
+              },
+              "text": "ELY-PEFR^PEAK EXPIRATION FLOW RATE^L",
+              "statusCode": {"code": "completed"},
+              "effectiveTime": {"value": "201204140945-0800"},
+              "value":               {
+                "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                "xsi:type": "PQ",
+                "value": "10",
+                "unit": "0"
+              }
+            }},
+            {"observation":             {
+              "classCode": "OBS",
+              "moodCode": "EVN",
+              "templateId":               [
+                {"root": "2.16.840.1.113883.10.20.1.31"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"},
+                {"root": "2.16.840.1.113883.3.88.11.83.14"}
+              ],
+              "id": {"root": "eaa2b910-8f6f-4a05-957a-642100ab6d18"},
+              "code":               {
+                "code": "41909-3",
+                "codeSystem": "2.16.840.1.113883.6.1",
+                "displayName": "BODY MASS INDEX"
+              },
+              "text":               {
+                "#text": "BODY MASS INDEX",
+                "reference": {"value": "#Observation_5b485eb6e5d67588df6585"}
+              },
+              "statusCode": {"code": "completed"},
+              "effectiveTime": {"value": "201204140945-0800"},
+              "value":               {
+                "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                "xsi:type": "PQ",
+                "value": "21",
+                "unit": ".5"
+              }
+            }}
+          ]
+        }},
+        {"organizer":         {
+          "classCode": "BATTERY",
+          "moodCode": "EVN",
+          "templateId":           [
+            {"root": "2.16.840.1.113883.10.20.1.35"},
+            {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.1"},
+            {"root": "2.16.840.1.113883.10.20.1.32"}
+          ],
+          "id": {"root": "5e6b080a-03a9-42b4-8815-9a472620bf33"},
+          "code":           {
+            "code": "46680005",
+            "codeSystem": "2.16.840.1.113883.6.96",
+            "codeSystemName": "SNOMED CT",
+            "displayName": "Vital signs"
+          },
+          "statusCode": {"code": "completed"},
+          "effectiveTime": {"value": "201204210945-0800"},
+          "component":           [
+            {"procedure":             {
+              "classCode": "PROC",
+              "moodCode": "EVN",
+              "templateId":               [
+                {"root": "2.16.840.1.113883.10.20.1.29"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.19"},
+                {"root": "2.16.840.1.113883.3.88.11.83.17"}
+              ],
+              "id": {"root": "219d8535-5206-41cf-9bf8-db22e85a414e"},
+              "code":               {
+                "nullFlavor": "NI",
+                "originalText":                 {
+                  "#text": "Vital Signs",
+                  "reference": {"value": "#Battery_8c4a7c9e10efd5dce2a6f7"}
+                }
+              },
+              "text":               {
+                "#text": "Vital Signs",
+                "reference": {"value": "#Battery_8c4a7c9e10efd5dce2a6f7"}
+              },
+              "statusCode": {"code": "completed"},
+              "effectiveTime": {"value": "201204210945-0800"},
+              "priorityCode": {"nullFlavor": "NI"},
+              "participant":               [
+                                {
+                  "typeCode": "RESP",
+                  "contextControlCode": "OP",
+                  "participantRole": {"playingEntity": {"name":                   {
+                    "given": "Doctor",
+                    "family": "Doom"
+                  }}}
+                },
+                                {
+                  "typeCode": "ORG",
+                  "contextControlCode": "OP",
+                  "participantRole": {"playingEntity": {"name": "AOMC"}}
+                }
+              ]
+            }},
+            {"observation":             {
+              "classCode": "OBS",
+              "moodCode": "EVN",
+              "templateId":               [
+                {"root": "2.16.840.1.113883.10.20.1.31"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"},
+                {"root": "2.16.840.1.113883.3.88.11.83.14"}
+              ],
+              "id": {"root": "5cc76264-72e8-4fc9-bca8-1b3d87fbddc0"},
+              "code":               {
+                "code": "8302-2",
+                "codeSystem": "2.16.840.1.113883.6.1",
+                "displayName": "BODY HEIGHT (MEASURED)"
+              },
+              "text":               {
+                "#text": "BODY HEIGHT (MEASURED)",
+                "reference": {"value": "#Observation_8a4048a5078f6b1c58943f"}
+              },
+              "statusCode": {"code": "completed"},
+              "effectiveTime": {"value": "201204210945-0800"},
+              "value":               {
+                "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                "xsi:type": "PQ",
+                "value": "70.0",
+                "unit": "[in_us]"
+              }
+            }},
+            {"observation":             {
+              "classCode": "OBS",
+              "moodCode": "EVN",
+              "templateId":               [
+                {"root": "2.16.840.1.113883.10.20.1.31"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"},
+                {"root": "2.16.840.1.113883.3.88.11.83.14"}
+              ],
+              "id": {"root": "ce24389d-6af5-4f4f-98fe-db4924422d3b"},
+              "code":               {
+                "code": "3141-9",
+                "codeSystem": "2.16.840.1.113883.6.1",
+                "displayName": "BODY WEIGHT (MEASURED)"
+              },
+              "text":               {
+                "#text": "BODY WEIGHT (MEASURED)",
+                "reference": {"value": "#Observation_814f5b8cee3a5aa7386407"}
+              },
+              "statusCode": {"code": "completed"},
+              "effectiveTime": {"value": "201204210945-0800"},
+              "value":               {
+                "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                "xsi:type": "PQ",
+                "value": "150.0",
+                "unit": "[lb_av]"
+              }
+            }},
+            {"observation":             {
+              "classCode": "OBS",
+              "moodCode": "EVN",
+              "templateId":               [
+                {"root": "2.16.840.1.113883.10.20.1.31"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"},
+                {"root": "2.16.840.1.113883.3.88.11.83.14"}
+              ],
+              "id": {"root": "535068e4-fbc7-4f3b-896b-352f939afcdf"},
+              "code":               {
+                "code": "8310-5",
+                "codeSystem": "2.16.840.1.113883.6.1",
+                "displayName": "BODY TEMPERATURE"
+              },
+              "text":               {
+                "#text": "BODY TEMPERATURE",
+                "reference": {"value": "#Observation_084750bae68e1ef6b5b826"}
+              },
+              "statusCode": {"code": "completed"},
+              "effectiveTime": {"value": "201204210945-0800"},
+              "value":               {
+                "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                "xsi:type": "PQ",
+                "value": "98",
+                "unit": ".5"
+              }
+            }},
+            {"observation":             {
+              "classCode": "OBS",
+              "moodCode": "EVN",
+              "templateId":               [
+                {"root": "2.16.840.1.113883.10.20.1.31"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"},
+                {"root": "2.16.840.1.113883.3.88.11.83.14"}
+              ],
+              "id": {"root": "fa3bccf1-32a4-453e-b509-5e983c056438"},
+              "code":               {
+                "code": "8480-6",
+                "codeSystem": "2.16.840.1.113883.6.1",
+                "displayName": "INTRAVASCULAR SYSTOLIC"
+              },
+              "text":               {
+                "#text": "INTRAVASCULAR SYSTOLIC",
+                "reference": {"value": "#Observation_75431bbd78c5b13e07d252"}
+              },
+              "statusCode": {"code": "completed"},
+              "effectiveTime": {"value": "201204210945-0800"},
+              "value":               {
+                "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                "xsi:type": "PQ",
+                "value": "120.0",
+                "unit": "mm[Hg]"
+              }
+            }},
+            {"observation":             {
+              "classCode": "OBS",
+              "moodCode": "EVN",
+              "templateId":               [
+                {"root": "2.16.840.1.113883.10.20.1.31"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"},
+                {"root": "2.16.840.1.113883.3.88.11.83.14"}
+              ],
+              "id": {"root": "132b8d59-073c-456a-b3be-b0f54ae95a75"},
+              "code":               {
+                "code": "8462-4",
+                "codeSystem": "2.16.840.1.113883.6.1",
+                "displayName": "INTRAVASCULAR DIASTOLIC"
+              },
+              "text":               {
+                "#text": "INTRAVASCULAR DIASTOLIC",
+                "reference": {"value": "#Observation_cf4d5c9d1f06845f71476a"}
+              },
+              "statusCode": {"code": "completed"},
+              "effectiveTime": {"value": "201204210945-0800"},
+              "value":               {
+                "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                "xsi:type": "PQ",
+                "value": "60.0",
+                "unit": "mm[Hg]"
+              }
+            }},
+            {"observation":             {
+              "classCode": "OBS",
+              "moodCode": "EVN",
+              "templateId":               [
+                {"root": "2.16.840.1.113883.10.20.1.31"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"},
+                {"root": "2.16.840.1.113883.3.88.11.83.14"}
+              ],
+              "id": {"root": "4f697a6b-9088-47bf-bd12-90081803a99c"},
+              "code":               {
+                "code": "8867-4",
+                "codeSystem": "2.16.840.1.113883.6.1",
+                "displayName": "HEART BEAT"
+              },
+              "text":               {
+                "#text": "HEART BEAT",
+                "reference": {"value": "#Observation_dd4020994140f937a500e0"}
+              },
+              "statusCode": {"code": "completed"},
+              "effectiveTime": {"value": "201204210945-0800"},
+              "value":               {
+                "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                "xsi:type": "PQ",
+                "value": "65.0",
+                "unit": "/min"
+              }
+            }},
+            {"observation":             {
+              "classCode": "OBS",
+              "moodCode": "EVN",
+              "templateId":               [
+                {"root": "2.16.840.1.113883.10.20.1.31"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"},
+                {"root": "2.16.840.1.113883.3.88.11.83.14"}
+              ],
+              "id": {"root": "54f6f81e-0463-43f0-bcab-80d5eb50962b"},
+              "code":               {
+                "code": "9279-1",
+                "codeSystem": "2.16.840.1.113883.6.1",
+                "displayName": "RESPIRATION RATE"
+              },
+              "text":               {
+                "#text": "RESPIRATION RATE",
+                "reference": {"value": "#Observation_2b4837b509d775ca8f900b"}
+              },
+              "statusCode": {"code": "completed"},
+              "effectiveTime": {"value": "201204210945-0800"},
+              "value":               {
+                "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                "xsi:type": "PQ",
+                "value": "99.0",
+                "unit": "/min"
+              }
+            }},
+            {"observation":             {
+              "classCode": "OBS",
+              "moodCode": "EVN",
+              "templateId":               [
+                {"root": "2.16.840.1.113883.10.20.1.31"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"},
+                {"root": "2.16.840.1.113883.3.88.11.83.14"}
+              ],
+              "id": {"root": "1cb49668-87db-42dd-b86b-db548153e3ab"},
+              "code":               {
+                "nullFlavor": "NI",
+                "originalText": "ELY-PEFR^PEAK EXPIRATION FLOW RATE^L"
+              },
+              "text": "ELY-PEFR^PEAK EXPIRATION FLOW RATE^L",
+              "statusCode": {"code": "completed"},
+              "effectiveTime": {"value": "201204210945-0800"},
+              "value":               {
+                "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                "xsi:type": "PQ",
+                "value": "10",
+                "unit": "0"
+              }
+            }},
+            {"observation":             {
+              "classCode": "OBS",
+              "moodCode": "EVN",
+              "templateId":               [
+                {"root": "2.16.840.1.113883.10.20.1.31"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"},
+                {"root": "2.16.840.1.113883.3.88.11.83.14"}
+              ],
+              "id": {"root": "eaa2b910-8f6f-4a05-957a-642100ab6d18"},
+              "code":               {
+                "code": "41909-3",
+                "codeSystem": "2.16.840.1.113883.6.1",
+                "displayName": "BODY MASS INDEX"
+              },
+              "text":               {
+                "#text": "BODY MASS INDEX",
+                "reference": {"value": "#Observation_5b485eb6e5d67588df6585"}
+              },
+              "statusCode": {"code": "completed"},
+              "effectiveTime": {"value": "201204210945-0800"},
+              "value":               {
+                "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                "xsi:type": "PQ",
+                "value": "21",
+                "unit": ".5"
+              }
+            }}
+          ]
+        }},
+        {"organizer":         {
+          "classCode": "BATTERY",
+          "moodCode": "EVN",
+          "templateId":           [
+            {"root": "2.16.840.1.113883.10.20.1.35"},
+            {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.1"},
+            {"root": "2.16.840.1.113883.10.20.1.32"}
+          ],
+          "id": {"root": "5e6b080a-03a9-42b4-8815-9a472620bf33"},
+          "code":           {
+            "code": "46680005",
+            "codeSystem": "2.16.840.1.113883.6.96",
+            "codeSystemName": "SNOMED CT",
+            "displayName": "Vital signs"
+          },
+          "statusCode": {"code": "completed"},
+          "effectiveTime": {"value": "201204280945-0800"},
+          "component":           [
+            {"procedure":             {
+              "classCode": "PROC",
+              "moodCode": "EVN",
+              "templateId":               [
+                {"root": "2.16.840.1.113883.10.20.1.29"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.19"},
+                {"root": "2.16.840.1.113883.3.88.11.83.17"}
+              ],
+              "id": {"root": "219d8535-5206-41cf-9bf8-db22e85a414e"},
+              "code":               {
+                "nullFlavor": "NI",
+                "originalText":                 {
+                  "#text": "Vital Signs",
+                  "reference": {"value": "#Battery_8c4a7c9e10efd5dce2a6f7"}
+                }
+              },
+              "text":               {
+                "#text": "Vital Signs",
+                "reference": {"value": "#Battery_8c4a7c9e10efd5dce2a6f7"}
+              },
+              "statusCode": {"code": "completed"},
+              "effectiveTime": {"value": "201204280945-0800"},
+              "priorityCode": {"nullFlavor": "NI"},
+              "participant":               [
+                                {
+                  "typeCode": "RESP",
+                  "contextControlCode": "OP",
+                  "participantRole": {"playingEntity": {"name":                   {
+                    "given": "Doctor",
+                    "family": "Doom"
+                  }}}
+                },
+                                {
+                  "typeCode": "ORG",
+                  "contextControlCode": "OP",
+                  "participantRole": {"playingEntity": {"name": "AOMC"}}
+                }
+              ]
+            }},
+            {"observation":             {
+              "classCode": "OBS",
+              "moodCode": "EVN",
+              "templateId":               [
+                {"root": "2.16.840.1.113883.10.20.1.31"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"},
+                {"root": "2.16.840.1.113883.3.88.11.83.14"}
+              ],
+              "id": {"root": "5cc76264-72e8-4fc9-bca8-1b3d87fbddc0"},
+              "code":               {
+                "code": "8302-2",
+                "codeSystem": "2.16.840.1.113883.6.1",
+                "displayName": "BODY HEIGHT (MEASURED)"
+              },
+              "text":               {
+                "#text": "BODY HEIGHT (MEASURED)",
+                "reference": {"value": "#Observation_8a4048a5078f6b1c58943f"}
+              },
+              "statusCode": {"code": "completed"},
+              "effectiveTime": {"value": "201204280945-0800"},
+              "value":               {
+                "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                "xsi:type": "PQ",
+                "value": "70.0",
+                "unit": "[in_us]"
+              }
+            }},
+            {"observation":             {
+              "classCode": "OBS",
+              "moodCode": "EVN",
+              "templateId":               [
+                {"root": "2.16.840.1.113883.10.20.1.31"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"},
+                {"root": "2.16.840.1.113883.3.88.11.83.14"}
+              ],
+              "id": {"root": "ce24389d-6af5-4f4f-98fe-db4924422d3b"},
+              "code":               {
+                "code": "3141-9",
+                "codeSystem": "2.16.840.1.113883.6.1",
+                "displayName": "BODY WEIGHT (MEASURED)"
+              },
+              "text":               {
+                "#text": "BODY WEIGHT (MEASURED)",
+                "reference": {"value": "#Observation_814f5b8cee3a5aa7386407"}
+              },
+              "statusCode": {"code": "completed"},
+              "effectiveTime": {"value": "201204280945-0800"},
+              "value":               {
+                "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                "xsi:type": "PQ",
+                "value": "150.0",
+                "unit": "[lb_av]"
+              }
+            }},
+            {"observation":             {
+              "classCode": "OBS",
+              "moodCode": "EVN",
+              "templateId":               [
+                {"root": "2.16.840.1.113883.10.20.1.31"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"},
+                {"root": "2.16.840.1.113883.3.88.11.83.14"}
+              ],
+              "id": {"root": "535068e4-fbc7-4f3b-896b-352f939afcdf"},
+              "code":               {
+                "code": "8310-5",
+                "codeSystem": "2.16.840.1.113883.6.1",
+                "displayName": "BODY TEMPERATURE"
+              },
+              "text":               {
+                "#text": "BODY TEMPERATURE",
+                "reference": {"value": "#Observation_084750bae68e1ef6b5b826"}
+              },
+              "statusCode": {"code": "completed"},
+              "effectiveTime": {"value": "201204280945-0800"},
+              "value":               {
+                "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                "xsi:type": "PQ",
+                "value": "98",
+                "unit": ".5"
+              }
+            }},
+            {"observation":             {
+              "classCode": "OBS",
+              "moodCode": "EVN",
+              "templateId":               [
+                {"root": "2.16.840.1.113883.10.20.1.31"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"},
+                {"root": "2.16.840.1.113883.3.88.11.83.14"}
+              ],
+              "id": {"root": "fa3bccf1-32a4-453e-b509-5e983c056438"},
+              "code":               {
+                "code": "8480-6",
+                "codeSystem": "2.16.840.1.113883.6.1",
+                "displayName": "INTRAVASCULAR SYSTOLIC"
+              },
+              "text":               {
+                "#text": "INTRAVASCULAR SYSTOLIC",
+                "reference": {"value": "#Observation_75431bbd78c5b13e07d252"}
+              },
+              "statusCode": {"code": "completed"},
+              "effectiveTime": {"value": "201204280945-0800"},
+              "value":               {
+                "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                "xsi:type": "PQ",
+                "value": "120.0",
+                "unit": "mm[Hg]"
+              }
+            }},
+            {"observation":             {
+              "classCode": "OBS",
+              "moodCode": "EVN",
+              "templateId":               [
+                {"root": "2.16.840.1.113883.10.20.1.31"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"},
+                {"root": "2.16.840.1.113883.3.88.11.83.14"}
+              ],
+              "id": {"root": "132b8d59-073c-456a-b3be-b0f54ae95a75"},
+              "code":               {
+                "code": "8462-4",
+                "codeSystem": "2.16.840.1.113883.6.1",
+                "displayName": "INTRAVASCULAR DIASTOLIC"
+              },
+              "text":               {
+                "#text": "INTRAVASCULAR DIASTOLIC",
+                "reference": {"value": "#Observation_cf4d5c9d1f06845f71476a"}
+              },
+              "statusCode": {"code": "completed"},
+              "effectiveTime": {"value": "201204280945-0800"},
+              "value":               {
+                "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                "xsi:type": "PQ",
+                "value": "60.0",
+                "unit": "mm[Hg]"
+              }
+            }},
+            {"observation":             {
+              "classCode": "OBS",
+              "moodCode": "EVN",
+              "templateId":               [
+                {"root": "2.16.840.1.113883.10.20.1.31"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"},
+                {"root": "2.16.840.1.113883.3.88.11.83.14"}
+              ],
+              "id": {"root": "4f697a6b-9088-47bf-bd12-90081803a99c"},
+              "code":               {
+                "code": "8867-4",
+                "codeSystem": "2.16.840.1.113883.6.1",
+                "displayName": "HEART BEAT"
+              },
+              "text":               {
+                "#text": "HEART BEAT",
+                "reference": {"value": "#Observation_dd4020994140f937a500e0"}
+              },
+              "statusCode": {"code": "completed"},
+              "effectiveTime": {"value": "201204280945-0800"},
+              "value":               {
+                "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                "xsi:type": "PQ",
+                "value": "65.0",
+                "unit": "/min"
+              }
+            }},
+            {"observation":             {
+              "classCode": "OBS",
+              "moodCode": "EVN",
+              "templateId":               [
+                {"root": "2.16.840.1.113883.10.20.1.31"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"},
+                {"root": "2.16.840.1.113883.3.88.11.83.14"}
+              ],
+              "id": {"root": "54f6f81e-0463-43f0-bcab-80d5eb50962b"},
+              "code":               {
+                "code": "9279-1",
+                "codeSystem": "2.16.840.1.113883.6.1",
+                "displayName": "RESPIRATION RATE"
+              },
+              "text":               {
+                "#text": "RESPIRATION RATE",
+                "reference": {"value": "#Observation_2b4837b509d775ca8f900b"}
+              },
+              "statusCode": {"code": "completed"},
+              "effectiveTime": {"value": "201204280945-0800"},
+              "value":               {
+                "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                "xsi:type": "PQ",
+                "value": "99.0",
+                "unit": "/min"
+              }
+            }},
+            {"observation":             {
+              "classCode": "OBS",
+              "moodCode": "EVN",
+              "templateId":               [
+                {"root": "2.16.840.1.113883.10.20.1.31"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"},
+                {"root": "2.16.840.1.113883.3.88.11.83.14"}
+              ],
+              "id": {"root": "1cb49668-87db-42dd-b86b-db548153e3ab"},
+              "code":               {
+                "nullFlavor": "NI",
+                "originalText": "ELY-PEFR^PEAK EXPIRATION FLOW RATE^L"
+              },
+              "text": "ELY-PEFR^PEAK EXPIRATION FLOW RATE^L",
+              "statusCode": {"code": "completed"},
+              "effectiveTime": {"value": "201204280945-0800"},
+              "value":               {
+                "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                "xsi:type": "PQ",
+                "value": "10",
+                "unit": "0"
+              }
+            }},
+            {"observation":             {
+              "classCode": "OBS",
+              "moodCode": "EVN",
+              "templateId":               [
+                {"root": "2.16.840.1.113883.10.20.1.31"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13"},
+                {"root": "1.3.6.1.4.1.19376.1.5.3.1.4.13.2"},
+                {"root": "2.16.840.1.113883.3.88.11.83.14"}
+              ],
+              "id": {"root": "eaa2b910-8f6f-4a05-957a-642100ab6d18"},
+              "code":               {
+                "code": "41909-3",
+                "codeSystem": "2.16.840.1.113883.6.1",
+                "displayName": "BODY MASS INDEX"
+              },
+              "text":               {
+                "#text": "BODY MASS INDEX",
+                "reference": {"value": "#Observation_5b485eb6e5d67588df6585"}
+              },
+              "statusCode": {"code": "completed"},
+              "effectiveTime": {"value": "201204280945-0800"},
+              "value":               {
+                "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                "xsi:type": "PQ",
+                "value": "21",
+                "unit": ".5"
+              }
+            }}
+          ]
+        }}
+      ]
     }}
   ]}}
 }

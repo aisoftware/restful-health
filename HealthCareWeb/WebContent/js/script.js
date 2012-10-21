@@ -30,49 +30,68 @@ var retrievePatientName = function() {
 var retrievePayerObject = function() {
 	var structure = currentPatient.component.structuredBody.component;
 	for (var i=0;i<structure.length;i++) {
-		if(structure[i].section.title==="Payers Section") {
-			return structure[i];
+		if(structure[i].section!==undefined) {
+			if(structure[i].section.title==="Payers Section") {
+				return structure[i];
+			}
 		}
 	};
 };
 var retrieveVitalsObject = function() {
 	var structure = currentPatient.component.structuredBody.component;
 	for (var i=0;i<structure.length;i++) {
-		if(structure[i].section.title==="Vital Signs") {
-			return structure[i];
+		if(structure[i].section!==undefined) {
+			if(structure[i].section.title==="Vital Signs") {
+				return structure[i];
+			}
 		}
 	};
 };
 var retrieveLabsObject = function() {
 	var structure = currentPatient.component.structuredBody.component;
 	for (var i=0;i<structure.length;i++) {
-		if(structure[i].section.title==="Results") {
-			return structure[i];
+		if(structure[i].section!==undefined) {
+			if(structure[i].section.title==="Results") {
+				return structure[i];
+			}
 		}
 	};
 };
 
 var parseLabResults = function() {
 	var labArray = retrieveLabsObject().section;
+	var labResults=[];
+	
 	if(labArray.entry.length!==undefined) {
 		for (var i=0;i<labArray.entry.length;i++) {
 			//parent in here
 			var drivEntry = labArray.entry[i];
-			
-			for (var j=0;j<labArray.entry[i].organizer.component.length;j++) {
+			labResults[i] = [];
+			for (var j=1;j<labArray.entry[i].organizer.component.length;j++) {
 				//timestamp in here
-				var observation = labArray.entry[i].organizer.component[j];
+				var observation = labArray.entry[i].organizer.component[j].observation;
+				labResults[i][0]=new Date(observation.effectiveTime.value.substring(0,4),observation.effectiveTime.value.substring(4,6),observation.effectiveTime.value.substring(6,8));
+					
+				if(observation.code.code=='#LYMPH') {
+					labResults[i][1] = observation.value['#text'];
+				};
+				
+				if(observation.code.code=='#WBC') {
+					labResults[i][2] = observation.value['#text'];
+				};
 			};
 		};
 	}else{
 		//sometimes the entry is an object instead of array fix here later
 	}
+	
+	return labResults;
 };
 
 var parseVitalSigns = function() {
 	var vitalsArray = retrieveVitalsObject().section;
 	if(vitalsArray.entry.length!==undefined) {
-		for (var i=0;i<vitalsArray.entry.length;i++) {
+		for (var i=0;i<1;i++) {
 			//parent in here
 			var batteryEntry = vitalsArray.entry[i];
 			
@@ -135,7 +154,71 @@ var renderPayer = function() {
 	           { "sTitle": "Coverage Start Date", "sClass": "center" },
 	           { "sTitle": "Coverage End Date", "sClass": "center" }
 	       ]
-           });
+   });
+};
+
+var renderLabs = function() {
+	var labsArray = parseLabResults();
+	
+	$("#lab-result .hero-unit.datatable").html('<table cellpadding="0" cellspacing="0" border="0" class="display table" id="lab-results"></table');
+	var labsTables = $("#lab-results").dataTable( {
+        "aaData": labsArray,
+        "aoColumns": [
+       	           { "sTitle": "Date" },
+       	           { "sTitle": "Lymph","sClass": "center", "bSortable":false  },
+       	           { "sTitle": "WBC","sClass": "center", "bSortable":false  }
+       	       ],
+   	    "bPaginate": false,
+   	    "aaSorting": [[ 0, "desc" ]],
+		 "fnRowCallback": function( nRow, aData, iDisplayIndex, iDisplayIndexFull ) {
+		     // Bold the grade for all 'A' grade browsers
+		       $('td:eq(0)', nRow).html(stringifyDate($('td:eq(0)', nRow).html()));
+		   }
+	});
+
+	$('#lab-results td, #lab-results th').hover(function(){
+		var iCol = $('td, th').index(this) % 3;
+		if(iCol===1 || iCol===2){
+			$('td:nth-child('+(iCol+1)+'),th:nth-child('+(iCol+1)+')').addClass("highlighted");
+		}
+	}, function(){
+		var iCol = $('td, th').index(this) % 3;
+		$('td:nth-child('+(iCol+1)+'),th:nth-child('+(iCol+1)+')').removeClass("highlighted");
+	});
+	$('#lab-results td, #lab-results th').click(function(){
+		var iCol = $('td, th').index(this) % 3;
+		if(iCol===1) {
+			$('#lab-result .graphTitle').html('Lymph Lab Results Timeline<span class="grey"> (Click on a column to switch graphs)</span>');
+			var graphArray = "Date,Lymph Count\n";
+			
+			for (var i=0;i<labsArray.length;i++) {
+				graphArray = graphArray+sanitizeDate(labsArray[i][0])+","+labsArray[i][1]+"\n"
+			};
+			console.log(graphArray);
+			g = new Dygraph(document.getElementById("graphdiv"), graphArray);
+		}else if(iCol===2) {
+			$('#lab-result .graphTitle').html('WBC Lab Results Timeline<span class="grey"> (Click on a column to switch graphs)</span>');
+			var graphArray = "Date,WBC\n";
+			
+			for (var i=0;i<labsArray.length;i++) {
+				graphArray = graphArray+sanitizeDate(labsArray[i][0])+","+labsArray[i][2]+"\n"
+			};
+			console.log(graphArray);
+			g = new Dygraph(document.getElementById("graphdiv"), graphArray);
+		}
+	});
+	
+	var graphArray = "Date,Lymph Count\n";
+	
+	for (var i=0;i<labsArray.length;i++) {
+		graphArray = graphArray+sanitizeDate(labsArray[i][0])+","+labsArray[i][1]+"\n"
+	};
+	console.log(graphArray);
+	g = new Dygraph(document.getElementById("graphdiv"), graphArray);
+	
+	//oh god heres some hover binds
+	
+	
 };
 
 var parsePayers = function() {
@@ -147,7 +230,7 @@ var parsePayers = function() {
 	
 	return payers;
 };
-
+//Yes there are 3 differnt functions for date formatting, i am lazy as hell TODO FIX THIS HORROR
 var renderBirthday = function() {
 	var m_names = new Array("January", "February", "March", 
 			"April", "May", "June", "July", "August", "September", 
@@ -159,6 +242,28 @@ var renderBirthday = function() {
 			var curr_year = d.getFullYear();
 			var bday = m_names[curr_month]+ " " +curr_date + " " + curr_year;
 			return bday;
+};
+
+var stringifyDate = function(date) {
+	var m_names = new Array("January", "February", "March", 
+			"April", "May", "June", "July", "August", "September", 
+			"October", "November", "December");
+
+			var d = new Date(date);
+			var curr_date = d.getDate();
+			var curr_month = d.getMonth();
+			var curr_year = d.getFullYear();
+			var stringDate = m_names[curr_month]+ " " +curr_date + " " + curr_year;
+			return stringDate;
+};
+
+var sanitizeDate = function(date) {
+			var d = new Date(date);
+			var curr_date = d.getDate();
+			var curr_month = d.getMonth();
+			var curr_year = d.getFullYear();
+			var stringDate = curr_year + "-" + curr_month + "-" + curr_date;
+			return stringDate;
 };
 
 var retrieveBirthday = function() {
