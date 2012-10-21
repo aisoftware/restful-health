@@ -29,12 +29,64 @@ var retrievePatientName = function() {
 
 var retrievePayerObject = function() {
 	var structure = currentPatient.component.structuredBody.component;
-	for (var i=0;i<structure.length;i++) { 
+	for (var i=0;i<structure.length;i++) {
 		if(structure[i].section.title==="Payers Section") {
 			return structure[i];
 		}
 	};
 };
+var retrieveVitalsObject = function() {
+	var structure = currentPatient.component.structuredBody.component;
+	for (var i=0;i<structure.length;i++) {
+		if(structure[i].section.title==="Vital Signs") {
+			return structure[i];
+		}
+	};
+};
+var retrieveLabsObject = function() {
+	var structure = currentPatient.component.structuredBody.component;
+	for (var i=0;i<structure.length;i++) {
+		if(structure[i].section.title==="Results") {
+			return structure[i];
+		}
+	};
+};
+
+var parseLabResults = function() {
+	var labArray = retrieveLabsObject().section;
+	if(labArray.entry.length!==undefined) {
+		for (var i=0;i<labArray.entry.length;i++) {
+			//parent in here
+			var drivEntry = labArray.entry[i];
+			
+			for (var j=0;j<labArray.entry[i].organizer.component.length;j++) {
+				//timestamp in here
+				var observation = labArray.entry[i].organizer.component[j];
+			};
+		};
+	}else{
+		//sometimes the entry is an object instead of array fix here later
+	}
+};
+
+var parseVitalSigns = function() {
+	var vitalsArray = retrieveVitalsObject().section;
+	if(vitalsArray.entry.length!==undefined) {
+		for (var i=0;i<vitalsArray.entry.length;i++) {
+			//parent in here
+			var batteryEntry = vitalsArray.entry[i];
+			
+			for (var j=0;j<vitalsArray.entry[i].organizer.component.length;j++) {
+				//timestamp in here
+				var observation = vitalsArray.entry[i].organizer.component[j];
+			};
+		};
+	}else{
+		//sometimes the entry is an object instead of array fix here later
+	}
+	
+};
+
 //Overview is rendered on patient init always
 var renderOverView = function() {
 	//name
