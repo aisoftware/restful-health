@@ -72,7 +72,7 @@ var renderOverView = function() {
 
 var renderPayer = function() {
 	var payerArray = parsePayers();
-	$("#payer").html('<table cellpadding="0" cellspacing="0" border="0" class="display table" id="payers"></table>');
+	$("#payer").html('<div class="hero-unit"><table cellpadding="0" cellspacing="0" border="0" class="display table" id="payers"></table></div>');
 	$("#payers").dataTable( {
         "aaData": payerArray,
 	       "aoColumns": [
