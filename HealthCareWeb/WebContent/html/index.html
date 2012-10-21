@@ -28,7 +28,7 @@
 	              Welcome <a href="#" class="navbar-link">Dr. Ray Placeholder</a>
 	            </p>
 	            <ul id="primaryNav" class="nav">
-	              <li class="active"><a onclick="initializePatientView()" href="#">Patients</a></li>
+	              <li id="patientNav" class="active"><a onclick="initializePatientView()" href="#">Patients</a></li>
 	              <li><a href="#contact">Logout</a></li>
 	            </ul>
 	          </div>
@@ -58,7 +58,17 @@
 			    <li><a href="#">Allergies</a></li>		
 			    <li><a href="#">Medication</a></li>
 			    <li><a href="#">Conditions</a></li>
+					<label class="checkbox nav-conditions-filter">
+						<input checked="checked" value="circ" type="checkbox"> Circulatory System
+					</label>
+					<label class="checkbox nav-conditions-filter">
+						<input checked="checked" value="injury" type="checkbox"> Injury and Poisoning
+					</label>
+					<label class="checkbox nav-conditions-filter">
+						<input checked="checked" value="disease" type="checkbox"> Diseases of the skin
+					</label>
 			    <li><a href="#">Lab Results</a></li>
+			    <li><a href="#">Encounters</a></li>
 			  </ul>
 			</div><!--/.well -->
 			<div class="row row-fluid main">
@@ -166,7 +176,7 @@
 				
 				<div style="display:none;" id="vital-sign" class="vital-signs span11 span-fixed-sidebar">
 					<div class="hero-unit">
-						<h2 class="graphTitle">Lymph Lab Results Timeline<span class="grey"> (Click on a column to switch graphs)</span></h2>
+						<h2 class="graphTitle">Heart Beats Timeline<span class="grey"> (Click on a column to switch graphs)</span></h2>
 						<div style="width:940px; height:300px;" id="graphvitalsdiv"></div>
 					</div>
 					<div class="hero-unit datatable">
@@ -176,13 +186,20 @@
 				
 				<div style="display:none;" id="lab-result" class="lab-results span11 span-fixed-sidebar">
 					<div class="hero-unit">
-						<h2 class="graphTitle">Heart Beats Timeline<span class="grey"> (Click on a column to switch graphs)</span></h2>
+						<h2 class="graphTitle">Lymph Lab Results Timeline<span class="grey"> (Click on a column to switch graphs)</span></h2>
 						<div style="width:940px; height:300px;" id="graphdiv"></div>
 					</div>
 					<div class="hero-unit datatable">
 						<table cellpadding="0" cellspacing="0" border="0" class="display table" id="lab-results"></table>
 					</div>
 				</div>
+				
+				<div style="display:none;" id="condition" class="conditions span11 span-fixed-sidebar">
+					<div class="hero-unit datatable">
+						<table cellpadding="0" cellspacing="0" border="0" class="display table" id="conditions"></table>
+					</div>
+				</div>
+				
 			</div>
 		</div>
 	</body>
