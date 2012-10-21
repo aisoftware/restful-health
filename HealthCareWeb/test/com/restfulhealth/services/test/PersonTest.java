@@ -94,9 +94,8 @@ public class PersonTest {
 	@Test
 	public void getPatientByID(){		
 		try {
-//			String uuid = "ba75ec50-dbba-4671-8556-79c668a37c1d"; //song
-			String uuid =  "78fcfbc4-b7dc-4714-a446-1ebfd9ed58a9"; //song22
-//			String uuid = "66792a0d-c4ae-4468-8a38-2cb108a0e0c2";//binary song2
+			String uuid = "32ef95b8-0cf2-4332-a655-dda8b1fd3442"; //song
+//			String uuid =  "78fcfbc4-b7dc-4714-a446-1ebfd9ed58a9"; //song22
 			Client client = Client.create();
 			WebResource clientResource = client.resource(uri+"patient/"+uuid);
 			
@@ -135,6 +134,28 @@ public class PersonTest {
 			String patientJSON =  getPatientResp.getEntity(String.class);
 			if(patientJSON != null)
 				System.out.println("Get patient by Name :" + patientJSON);
+			else
+				System.out.println("get no patient data back");
+		
+			System.out.println(" .... \n");
+		}
+		catch(Throwable t){
+			t.printStackTrace();
+		}
+	}
+	
+	@Test
+	public void getAllPatient(){		
+		try {
+			Client client = Client.create();
+			WebResource clientResource = client.resource(uri+"patient/list");
+			
+			ClientResponse getPatientResp = clientResource.get(ClientResponse.class);
+			
+			System.out.println("getPatientResp response :" + getPatientResp.getStatus());
+			String patients =  getPatientResp.getEntity(String.class);
+			if(patients != null)
+				System.out.println("Get all patients size= :" + patients);
 			else
 				System.out.println("get no patient data back");
 		
