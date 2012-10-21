@@ -1,6 +1,8 @@
 package com.restfulhealth.services;
 
+import java.util.ArrayList;
 import java.util.UUID;
+import java.util.regex.Pattern;
 
 import javax.servlet.ServletContext;
 import javax.ws.rs.Consumes;
@@ -14,6 +16,7 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 import com.mongodb.BasicDBObject;
+import com.mongodb.DBObject;
 import com.restfulhealth.mongoDB.MongoDB;
 
 /**
@@ -41,9 +44,11 @@ public class PatientService {
 			return null;
 		String psersonID = UUID.randomUUID().toString();
 		try{
-			BasicDBObject obj = new BasicDBObject();			
+			BasicDBObject obj = new BasicDBObject();	
+			
 			obj.put("personID", psersonID);
 			obj.put("PersonJSON", patientJson);
+//			obj.put("PersonJSON", patientJson.getBytes("UTF-8"));
 			ServiceUtil.mongo.put(dbCollectionName, obj);
 		}
 		catch(Throwable t){
@@ -61,7 +66,7 @@ public class PatientService {
 	 */
 	@GET
 	@Path("/patient/list")
-	public Response getPatientList() {
+	public Response getPatientList() throws Throwable{
 		return Response.status(200)
 				.entity("Would have returned a full patient list.").build();
 	}
@@ -73,10 +78,26 @@ public class PatientService {
 	 * @return
 	 */
 	@GET
-	@Path("/patient/{id}")
-	public Response getPatientByID(@PathParam("id") String id) {
+	@Path("/{id}")
+	public Response getPatientByID(@PathParam("id") String id) throws Throwable{
+		String patientJSON = "";
+		try{
+			BasicDBObject query = new BasicDBObject();			
+			query.put("personID", id);
+			ArrayList<DBObject> obj = ServiceUtil.mongo.query(dbCollectionName, query);
+			if(obj != null && obj.size() >0){
+				DBObject dbo = obj.get(0);
+				
+				patientJSON = dbo.toString();
+			}
+		}
+		catch(Throwable t){
+			t.printStackTrace();
+			throw t;
+		}
+		
 		return Response.status(200)
-				.entity("Would have gotten patient " + id).build();
+				.entity(patientJSON).build();
 	}
 	
 	/**
@@ -85,15 +106,32 @@ public class PatientService {
 	 * @param identifier patient identifier
 	 * @return
 	 */
-	@GET
-	@Path("/patient/{firstname}/{lastname}")
-	public Response getPatient(@FormParam("firstname") String firstname,
-			@FormParam("lastname") String lastname) {
+	@POST
+	@Path("/name")
+	public Response getPatientByName(@FormParam("firstname") String firstname,
+			@FormParam("lastname") String lastname) throws Throwable{
+		String patientJSON = "";
+		try{
+			BasicDBObject query = new BasicDBObject();
+			//I treat: just do lastname for now, filter later
+//			Pattern regex = Pattern.compile(firstname,Pattern.CASE_INSENSITIVE );
+			
+			Pattern regex = Pattern.compile("\"family\":\""+lastname +"\"",Pattern.CASE_INSENSITIVE );
+			query.put("PersonJSON",  regex);
+
+			ArrayList<DBObject> obj = ServiceUtil.mongo.query(dbCollectionName, query);
+			if(obj != null && obj.size() >0){
+				DBObject dbo = obj.get(0);
+				patientJSON = dbo.toString();
+			}
+		}
+		catch(Throwable t){
+			t.printStackTrace();
+			throw t;
+		}
 		
-		BasicDBObject query = new BasicDBObject();
-//		query.put(key, val)
 		return Response.status(200)
-				.entity("").build();
+				.entity(patientJSON).build();
 	}
 	
 	
@@ -106,8 +144,8 @@ public class PatientService {
 	 * @return a collection of LabReport
 	 */
 	@GET
-	@Path("/patient/{identifier}/labs")
-	public Response getPatientLabs(@PathParam("identifier") String identifier) {
+	@Path("/{identifier}/labs")
+	public Response getPatientLabs(@PathParam("identifier") String identifier) throws Throwable{
 		return Response.status(200)
 				.entity("Would have gotten labs for patient " + identifier).build();
 	}
